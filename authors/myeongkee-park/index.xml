@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Myeongkee Park on Zheng Zhang</title>
+    <link>https://zhangresearch.org/authors/myeongkee-park/</link>
+    <description>Recent content in Myeongkee Park on Zheng Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
+    <lastBuildDate>Mon, 04 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhangresearch.org/authors/myeongkee-park/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sub-10 nm Patterning with DNA Nanostructures: A Short Perspective</title>
+      <link>https://zhangresearch.org/publication/dna-patterning-perspective/</link>
+      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/dna-patterning-perspective/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ye Tian on Zheng Zhang</title>
+    <link>https://zhangresearch.org/authors/ye-tian/</link>
+    <description>Recent content in Ye Tian on Zheng Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
+    <lastBuildDate>Wed, 01 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhangresearch.org/authors/ye-tian/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Boosting polymer viscosity via nano-confinement</title>
+      <link>https://zhangresearch.org/publication/boosting-polymer-viscosity/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/boosting-polymer-viscosity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Healing X-ray scattering images</title>
+      <link>https://zhangresearch.org/publication/healing-x-ray-scattering-images/</link>
+      <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/healing-x-ray-scattering-images/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

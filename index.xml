@@ -1,0 +1,287 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zheng Zhang on Zheng Zhang</title>
+    <link>https://zhangresearch.org/</link>
+    <description>Recent content in Zheng Zhang on Zheng Zhang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
+    <lastBuildDate>Wed, 15 May 2019 00:00:00 -0500</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>IGPT Software Development</title>
+      <link>https://zhangresearch.org/project/wukong-app-dev/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://zhangresearch.org/project/wukong-app-dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</title>
+      <link>https://zhangresearch.org/post/compile-vtk-8.2.0/</link>
+      <pubDate>Mon, 06 May 2019 00:19:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/post/compile-vtk-8.2.0/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://vtk.org/&#34; target=&#34;_blank&#34;&gt;The Visualization Toolkit (VTK)&lt;/a&gt; is the 3D engine behind many scientific visualization applications, such as &lt;a href=&#34;https://docs.enthought.com/mayavi/mayavi/&#34; target=&#34;_blank&#34;&gt;MayaVi&lt;/a&gt;, the popular scientific data visualizer for Python. It is also the cornerstone of several advanced 3D-enabled biomedical applications, such as &lt;a href=&#34;https://www.paraview.org/&#34; target=&#34;_blank&#34;&gt;ParaView&lt;/a&gt; and &lt;a href=&#34;https://www.slicer.org/&#34; target=&#34;_blank&#34;&gt;3D Slicer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Perhaps lesser known, VTK provides a built-in &lt;a href=&#34;https://pyscience.wordpress.com/2014/09/08/dicom-in-python-importing-medical-image-data-into-numpy-with-pydicom-and-vtk/&#34; target=&#34;_blank&#34;&gt;high performance DICOM parser&lt;/a&gt;, because of its deep roots within the biomedical community. For my own clinical project, I have recently started learning and using VTK. I found its learning curve to be somewhat steep for a beginner, mostly due to the scarcity of up-to-date tutorials. These are my notes on compiling VTK 8.2.0 from source under Windows 10 after trial-and-error and copious amount of googling, for future reference; I hope they can help you save some time, if you happen to be in the same shoes.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-obtain-vtk&#34;&gt;How to obtain VTK?&lt;/h2&gt;
+
+&lt;p&gt;VTK is written in C++. The easiest approach that I found to obtain pre-compiled binaries is through PyPI. &lt;a href=&#34;http://prabhuramachandran.blogspot.com/2018/01/vtk-810-wheels-for-all-platforms-on-pypi.html&#34; target=&#34;_blank&#34;&gt;VTK wheels for all major platforms are available&lt;/a&gt;. On Windows, pip downloads pre-compiled DLLs into the &amp;ldquo;site-packages\vtk&amp;rdquo; directory of your Python distribution.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; pip install vtk
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can call methods within these DLLs through the Python bindings.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import vtk
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The Python bindings expose the VTK function signatures, but there are no equivalent C/C++ header files in this PIP-installed VTK directory. To build against VTK using C++, it&amp;rsquo;s better to compile directly from source code, which is available at &lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;vtk.org&lt;/a&gt; under BSD license.&lt;/p&gt;
+
+&lt;h2 id=&#34;where-to-find-the-most-up-to-date-compiling-building-guide&#34;&gt;Where to find the most up-to-date compiling/building guide?&lt;/h2&gt;
+
+&lt;p&gt;VTK is under active development by &lt;a href=&#34;https://www.kitware.com/&#34; target=&#34;_blank&#34;&gt;Kitware, Inc&lt;/a&gt;. This means that if you google &amp;ldquo;compile vtk&amp;rdquo; like I did, you will likely end up with obsolete tutorials. In fact, by the time you saw this blog post, it has probably become outdated in many ways.&lt;/p&gt;
+
+&lt;p&gt;I found that the best guide for building the latest release is directly hosted on VTK&amp;rsquo;s development GitLab repository: &lt;a href=&#34;https://gitlab.kitware.com/vtk/vtk/blob/master/Documentation/dev/build_windows_vs.md&#34; target=&#34;_blank&#34;&gt;build_windows_vs.md&lt;/a&gt;. I assume this document gets the maintainers&amp;rsquo; first attention whenever something is changed between releases.&lt;/p&gt;
+
+&lt;p&gt;In addition, the &lt;a href=&#34;https://vtk.org/Wiki/VTK&#34; target=&#34;_blank&#34;&gt;VTK Wiki&lt;/a&gt; contains lots of useful information. There is also the &lt;a href=&#34;http://www.vtk.org/mailing-lists/&#34; target=&#34;_blank&#34;&gt;VTK Mailing List&lt;/a&gt; if you&amp;rsquo;d like to reach out to the VTK community directly.&lt;/p&gt;
+
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://chocolatey.org/install&#34; target=&#34;_blank&#34;&gt;Chocolatey&lt;/a&gt; to help manage packages.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CMake&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; choco install cmake
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://visualstudio.microsoft.com/downloads/&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and install Visual Studio. This is for the Microsoft Visual C++ compilers, so be sure to select them during installation.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;VTK source code&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;generate-visual-studio-project-using-cmake&#34;&gt;Generate Visual Studio project using CMake&lt;/h2&gt;
+
+&lt;p&gt;I put all of my dev tools under the same directory (C:\toolchain). Extract VTK code source to &amp;ldquo;C:/toolchain/VTK/VTK-8.2.0-src&amp;rdquo;. Set the &amp;ldquo;Where to build the binaries&amp;rdquo; blank to &amp;ldquo;C:/toolchain/VTK/VTK-8.2.0-bld&amp;rdquo;. It is preferable to put the build directory &lt;em&gt;outside&lt;/em&gt; the source directory.&lt;/p&gt;
+
+&lt;p&gt;Click &amp;ldquo;Configure&amp;rdquo; to have CMake sort out the compilation variables. CMake will first prompt you to choose the generator.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/compile-vtk-8.2.0/generator.png&#34; alt=&#34;generator&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;compilation-variables&#34;&gt;Compilation variables&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;CMAKE_INSTALL_PREFIX&lt;/strong&gt;: This is rather important, as it sets the installation path of your compiled binaries. I changed the default path to a non-privileged location (C:/toolchain/VTK/VTK-8.2.0) so as to avoid dealing with permissions. While it is okay not to &amp;ldquo;install&amp;rdquo; VTK after building it - you can simply reference the build directory - the installation process extracts the &amp;ldquo;essence&amp;rdquo; of the built VTK files (.h, .lib, .dll, etc.) into an independent directory, and modifies the system environment variables for your convenience.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;BUILD_SHARED_LIBS&lt;/strong&gt;: Check to build DLLs. Otherwise, only static libraries (.lib) will be generated.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;CMAKE_CXX_MP_FLAG&lt;/strong&gt;: Check to support multi-core processors.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;BUILD_TESTING&lt;/strong&gt;: Check to build testing cases.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;BUILD_EXAMPLES&lt;/strong&gt;: Check to build examples.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;BUILD_DOCUMENTATION&lt;/strong&gt;: Check to build documentation.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If you are building VTK for use with Java, Python, MFC or Qt, you will need to check relevant compilation variables. I do not need those, so I skipped them.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;BUILD_DOCUMENTATION is not really necessary, because it&amp;rsquo;s available for &lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;download&lt;/a&gt; (vtkDocHtml). It takes a long time to build the documentation and needs extra dev packages to support the compilation. I was mainly curious to see if there are any differences between my build vs the downloaded one.&lt;/p&gt;
+
+&lt;p&gt;Several tutorials that I read recommend unchecking BUILD_TESTING, BUILD_EXAMPLES to save compilation time, because these examples tend to take even more time to compile than the core part of the VTK library. I figured that sample codes can be tremendously helpful for a beginner, so I decided to build them anyway.&lt;/p&gt;
+
+&lt;p&gt;For building these extra parts, you will need additional packages:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;For building documentation&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.doxygen.nl/download.html&#34; target=&#34;_blank&#34;&gt;Doxygen&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Perl&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;  &amp;gt; choco install strawberryperl
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Graphviz. This package contains the dot executable required by Doxygen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;  &amp;gt; choco install graphviz
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For building testing&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;VTKData and VTKLargeData&lt;/a&gt;. These are data and baseline images for VTK regression testing and other VTK examples. In principle, these two data sets should have been put together. They are separated into two batches because of long cvs checkout times. If you wish to test on VTKLargeData, you will need to check the &lt;strong&gt;VTK_USE_LARGE_DATA&lt;/strong&gt; variable in CMake.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vtkdata&#34;&gt;VTKData&lt;/h3&gt;
+
+&lt;p&gt;Older tutorials instructed me to set the &lt;strong&gt;VTK_DATA_ROOT&lt;/strong&gt; for building examples. This variable is nowhere to be found in the current release. As it turns out, the VTK maintainers made some changes to the structure of the test data. You will now only need to extract the &amp;ldquo;.ExternalData&amp;rdquo; folder directly into the source directory (C:/toolchain/VTK/VTK-8.2.0-src/.ExternalData) and CMake will automatically download everything.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;On Tuesday, September 12, 2017 9:32 AM, &lt;a href=&#34;https://vtk.org/pipermail/vtkusers/2017-September/099670.html&#34; target=&#34;_blank&#34;&gt;David E DeMarle &lt;dave.demarle at kitware.com&gt; wrote&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;We changed the structure of regression test data in 6.1 to allow developers to make proposed changes to code and data concurrently and ensure that the continuous integration test machines do not fail when they run new tests on old data.
+The net result is that a VTK build tree has test data files that are actually symbolic links to the md5 files which live elsewhere. You can generally open and use the symbolic links exactly as you would a normal data file. If you turn on testing in your build, cmake will try to download each one of the files. Alternatively you can untar the source and data packages for a release in the same directory and the default build setup will use them and avoid downloading anything else.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;compiling&#34;&gt;Compiling&lt;/h2&gt;
+
+&lt;p&gt;Click &amp;ldquo;Configure&amp;rdquo; every time you change any variables. It may take a few times. Correct all errors and make sure there are no reds, as seen below:
+&lt;img src=&#34;https://zhangresearch.org/img/compile-vtk-8.2.0/cmake-variables.png&#34; alt=&#34;cmake-variables&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then click &amp;ldquo;Generate&amp;rdquo; to create the Visual Studio solution file, and then click &amp;ldquo;Open Project&amp;rdquo;. This will launch Visual Studio. Set the Build Configuration to &amp;ldquo;RelWithDebInfo&amp;rdquo;.
+&lt;img src=&#34;https://zhangresearch.org/img/compile-vtk-8.2.0/build-configuration.png&#34; alt=&#34;build-configuration&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Build (&amp;ldquo;Build &amp;ndash;&amp;gt; Build Solution&amp;rdquo;) the &lt;strong&gt;ALL_BUILD&lt;/strong&gt; project first, which is the default when Visual Studio is launched.
+&lt;img src=&#34;https://zhangresearch.org/img/compile-vtk-8.2.0/building.png&#34; alt=&#34;building&#34; /&gt;
+This may take a while. The compiled DLLs will be located in &amp;ldquo;C:\toolchain\VTK\VTK-8.2.0-bld\bin\RelWithDebInfo\&amp;ldquo;.&lt;/p&gt;
+
+&lt;p&gt;Build the &lt;strong&gt;INSTALL&lt;/strong&gt; project. This installs VTK into the directory as set in the &lt;strong&gt;CMAKE_INSTALL_PREFIX&lt;/strong&gt; CMake variable.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Boosting polymer viscosity via nano-confinement</title>
+      <link>https://zhangresearch.org/publication/boosting-polymer-viscosity/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/boosting-polymer-viscosity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nanoconfinement and salt complexing synergistically suppress crystallization in polyethylene oxide</title>
+      <link>https://zhangresearch.org/publication/nanoconfinement-and-salt/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/nanoconfinement-and-salt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flat-panel Detector (FPD) Calibration</title>
+      <link>https://zhangresearch.org/project/fpd-calibration/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0600</pubDate>
+      
+      <guid>https://zhangresearch.org/project/fpd-calibration/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/project-fpd-calibration/header.png&#34; alt=&#34;Schematic 3D-2D calibration routine&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nanoconfined Polymer Electrolytes for Rechargeable Thin Film Lithium-ion Batteries</title>
+      <link>https://zhangresearch.org/talk/2018grc/</link>
+      <pubDate>Wed, 28 Feb 2018 16:00:00 -0600</pubDate>
+      
+      <guid>https://zhangresearch.org/talk/2018grc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nanoconfined polymer electrolytes</title>
+      <link>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</link>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
+      
+      <guid>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</guid>
+      <description>&lt;p&gt;This project probes the physical properties of polymeric materials when confined within nanometer-scale volumes. We used grazing-incidence X-ray photon correlation spectroscopy to establish that the nanoscale viscosity of a polymer melt, as probed by gold nanoparticle tracers, is substantially boosted under nanoconfinement. Our experiments have taken advantage of recent instrumental improvements at the CHX X-ray beamline at the National Synchrotron Light Source II to increase the signal-to-noise, and extend the range of accessible timescales.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sub-10 nm Patterning with DNA Nanostructures: A Short Perspective</title>
+      <link>https://zhangresearch.org/publication/dna-patterning-perspective/</link>
+      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/dna-patterning-perspective/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formation of a Crack-Free, Hybrid Skin Layer with Tunable Surface Topography and Improved Gas Permeation Selectivity on Elastomers Using Gel–Liquid Infiltration Polymerization</title>
+      <link>https://zhangresearch.org/publication/pdms-skin-infiltration-polymerization/</link>
+      <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/pdms-skin-infiltration-polymerization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Healing X-ray scattering images</title>
+      <link>https://zhangresearch.org/publication/healing-x-ray-scattering-images/</link>
+      <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/healing-x-ray-scattering-images/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nanoconfined Polymer Electrolytes for Rechargeable Thin Film Lithium-ion Batteries</title>
+      <link>https://zhangresearch.org/talk/2017acs/</link>
+      <pubDate>Mon, 03 Apr 2017 14:50:00 -0500</pubDate>
+      
+      <guid>https://zhangresearch.org/talk/2017acs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Capillary rupture of suspended polymer concentric rings</title>
+      <link>https://zhangresearch.org/publication/concentric-rings/</link>
+      <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/concentric-rings/</guid>
+      <description>&lt;p&gt;This article was featured on the back cover of Soft Matter, 2015, 11.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/concentric-rings/cover.png&#34; alt=&#34;Cover Feature&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>External normal pressure prevents preferential wetting of PS/PMMA blend thin films</title>
+      <link>https://zhangresearch.org/publication/external-normal-pressure/</link>
+      <pubDate>Tue, 05 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/external-normal-pressure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Morphing metal–polymer Janus particles</title>
+      <link>https://zhangresearch.org/publication/metal-polymer-janus-particles/</link>
+      <pubDate>Fri, 25 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/metal-polymer-janus-particles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Carbon nanopatterns and nanoribbons from directly nanoimprinted polyacrylonitrile</title>
+      <link>https://zhangresearch.org/publication/carbon-nanopattern/</link>
+      <pubDate>Fri, 04 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/carbon-nanopattern/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    
+Fabrication Process
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/carbon-nanopattern/fab-large.png&#34; alt=&#34;Fabrication Process&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dae Up Ahn on Zheng Zhang</title>
+    <link>https://zhangresearch.org/authors/dae-up-ahn/</link>
+    <description>Recent content in Dae Up Ahn on Zheng Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
+    <lastBuildDate>Wed, 15 Feb 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhangresearch.org/authors/dae-up-ahn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Instabilities of PS/PMMA Bilayer Patterns with a Corrugated Surface and Interface</title>
+      <link>https://zhangresearch.org/publication/instabilities-of-pspmma/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/instabilities-of-pspmma/</guid>
+      <description>We study the patterns spontaneously formed by bilayer polymer films upon annealing. Specifically, polystyrene (PS) films were spin-cast on topographically patterned poly(methyl methacrylate) (PMMA) substrates and subsequently annealed at temperatures above the glass transition temperature of both polymers. The influence of the molecular weight and the volume of PS on the morphological evolution of the corrugated liquid–liquid interface was examined. By controlling the molecular weight and the spin-cast volume of the top layer, the kinetics of morphological evolution and the resulting patterns can be controlled.</description>
+    </item>
+    
+  </channel>
+</rss>

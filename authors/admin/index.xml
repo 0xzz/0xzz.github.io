@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>admin on Zheng Zhang</title>
+    <link>https://zhangresearch.org/authors/admin/</link>
+    <description>Recent content in admin on Zheng Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
+    <lastBuildDate>Mon, 06 May 2019 00:19:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhangresearch.org/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</title>
+      <link>https://zhangresearch.org/post/compile-vtk-8.2.0/</link>
+      <pubDate>Mon, 06 May 2019 00:19:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/post/compile-vtk-8.2.0/</guid>
+      <description>The Visualization Toolkit (VTK) is the 3D engine behind many scientific visualization applications, such as MayaVi, the popular scientific data visualizer for Python. It is also the cornerstone of several advanced 3D-enabled biomedical applications, such as ParaView and 3D Slicer.
+Perhaps lesser known, VTK provides a built-in high performance DICOM parser, because of its deep roots within the biomedical community. For my own clinical project, I have recently started learning and using VTK.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zhangresearch.org/author/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/author/admin/</guid>
+      <description>I am a research fellow with the Department of Radiation Oncology at Mayo Clinic. I am working on a 4D X-ray imaging improvement project for image-guided proton therapy (IGPT). To this end, my current work focuses on developing a software/hardware package to be clinically deployed for motion-managed radiotherapy delivery.
+Previously, I worked on the development of nanostructured polymer electrolytes for safer rechargeable lithium-ion batteries at Brookhaven National Laboratory (BNL). There, I investigated the molecular structure and local dynamics of nanoconfined polyelectrolytes, using synchrotron X-ray scattering methods.</description>
+    </item>
+    
+  </channel>
+</rss>
