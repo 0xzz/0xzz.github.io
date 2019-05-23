@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Mon, 06 May 2019 00:19:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 May 2019 00:19:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhangresearch.org/tags/vtk/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</title>
       <link>https://zhangresearch.org/post/compile-vtk-8.2.0/</link>
-      <pubDate>Mon, 06 May 2019 00:19:00 +0000</pubDate>
+      <pubDate>Thu, 16 May 2019 00:19:00 +0000</pubDate>
       
       <guid>https://zhangresearch.org/post/compile-vtk-8.2.0/</guid>
       <description>The Visualization Toolkit (VTK) is the 3D engine behind many scientific visualization applications, such as MayaVi, the popular scientific data visualizer for Python. It is also the cornerstone of several advanced 3D-enabled biomedical applications, such as ParaView and 3D Slicer.

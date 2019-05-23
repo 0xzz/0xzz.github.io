@@ -6,22 +6,13 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Wed, 15 May 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 16 May 2019 00:19:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>IGPT Software Development</title>
-      <link>https://zhangresearch.org/project/wukong-app-dev/</link>
-      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://zhangresearch.org/project/wukong-app-dev/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</title>
       <link>https://zhangresearch.org/post/compile-vtk-8.2.0/</link>
-      <pubDate>Mon, 06 May 2019 00:19:00 +0000</pubDate>
+      <pubDate>Thu, 16 May 2019 00:19:00 +0000</pubDate>
       
       <guid>https://zhangresearch.org/post/compile-vtk-8.2.0/</guid>
       <description>
@@ -150,6 +141,15 @@ This may take a while. The compiled DLLs will be located in &amp;ldquo;C:\toolch
 
 &lt;p&gt;Build the &lt;strong&gt;INSTALL&lt;/strong&gt; project. This installs VTK into the directory as set in the &lt;strong&gt;CMAKE_INSTALL_PREFIX&lt;/strong&gt; CMake variable.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>IGPT Software Development</title>
+      <link>https://zhangresearch.org/project/wukong-app-dev/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://zhangresearch.org/project/wukong-app-dev/</guid>
+      <description></description>
     </item>
     
     <item>
