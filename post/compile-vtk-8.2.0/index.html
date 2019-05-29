@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.2.0">
-  <meta name="generator" content="Hugo 0.55.0" />
+  <meta name="generator" content="Hugo 0.55.6" />
 
   
 
@@ -529,8 +529,9 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 <li><p>CMake</p>
 
 <pre><code class="language-console">&gt; choco install cmake
-</code></pre></li>
+</code></pre>
 
+<ul>
 <li><p><a href="https://visualstudio.microsoft.com/downloads/" target="_blank">Download</a> and install Visual Studio. This is for the Microsoft Visual C++ compilers, so be sure to select them during installation.</p></li>
 
 <li><p><a href="https://vtk.org/download/" target="_blank">VTK source code</a></p></li>
@@ -569,9 +570,8 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 <p>For building these extra parts, you will need additional packages:</p>
 
 <ul>
-<li><p>For building documentation</p>
+<li><p>For building documentation</p></li>
 
-<ul>
 <li><p><a href="http://www.doxygen.nl/download.html" target="_blank">Doxygen</a></p></li>
 
 <li><p>Perl</p></li>
@@ -585,13 +585,12 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 </ul>
 
 <pre><code class="language-console">  &gt; choco install graphviz
-</code></pre></li>
-
-<li><p>For building testing</p>
+</code></pre>
 
 <ul>
-<li><a href="https://vtk.org/download/" target="_blank">VTKData and VTKLargeData</a>. These are data and baseline images for VTK regression testing and other VTK examples. In principle, these two data sets should have been put together. They are separated into two batches because of long cvs checkout times. If you wish to test on VTKLargeData, you will need to check the <strong>VTK_USE_LARGE_DATA</strong> variable in CMake.</li>
-</ul></li>
+<li><p>For building testing</p></li>
+
+<li><p><a href="https://vtk.org/download/" target="_blank">VTKData and VTKLargeData</a>. These are data and baseline images for VTK regression testing and other VTK examples. In principle, these two data sets should have been put together. They are separated into two batches because of long cvs checkout times. If you wish to test on VTKLargeData, you will need to check the <strong>VTK_USE_LARGE_DATA</strong> variable in CMake.</p></li>
 </ul>
 
 <h3 id="vtkdata">VTKData</h3>
@@ -617,7 +616,8 @@ The net result is that a VTK build tree has test data files that are actually sy
 <img src="/img/compile-vtk-8.2.0/building.png" alt="building" />
 This may take a while. The compiled DLLs will be located in &ldquo;C:\toolchain\VTK\VTK-8.2.0-bld\bin\RelWithDebInfo\&ldquo;.</p>
 
-<p>Build the <strong>INSTALL</strong> project. This installs VTK into the directory as set in the <strong>CMAKE_INSTALL_PREFIX</strong> CMake variable.</p>
+<p>Build the <strong>INSTALL</strong> project. This installs VTK into the directory as set in the <strong>CMAKE_INSTALL_PREFIX</strong> CMake variable.</p></li>
+</ul>
 
     </div>
 

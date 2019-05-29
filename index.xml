@@ -51,8 +51,9 @@
 &lt;li&gt;&lt;p&gt;CMake&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; choco install cmake
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://visualstudio.microsoft.com/downloads/&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and install Visual Studio. This is for the Microsoft Visual C++ compilers, so be sure to select them during installation.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;VTK source code&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -91,9 +92,8 @@
 &lt;p&gt;For building these extra parts, you will need additional packages:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;For building documentation&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;For building documentation&lt;/p&gt;&lt;/li&gt;
 
-&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.doxygen.nl/download.html&#34; target=&#34;_blank&#34;&gt;Doxygen&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Perl&lt;/p&gt;&lt;/li&gt;
@@ -107,13 +107,12 @@
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;  &amp;gt; choco install graphviz
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;For building testing&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;VTKData and VTKLargeData&lt;/a&gt;. These are data and baseline images for VTK regression testing and other VTK examples. In principle, these two data sets should have been put together. They are separated into two batches because of long cvs checkout times. If you wish to test on VTKLargeData, you will need to check the &lt;strong&gt;VTK_USE_LARGE_DATA&lt;/strong&gt; variable in CMake.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For building testing&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;VTKData and VTKLargeData&lt;/a&gt;. These are data and baseline images for VTK regression testing and other VTK examples. In principle, these two data sets should have been put together. They are separated into two batches because of long cvs checkout times. If you wish to test on VTKLargeData, you will need to check the &lt;strong&gt;VTK_USE_LARGE_DATA&lt;/strong&gt; variable in CMake.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;vtkdata&#34;&gt;VTKData&lt;/h3&gt;
@@ -139,7 +138,8 @@ The net result is that a VTK build tree has test data files that are actually sy
 &lt;img src=&#34;https://zhangresearch.org/img/compile-vtk-8.2.0/building.png&#34; alt=&#34;building&#34; /&gt;
 This may take a while. The compiled DLLs will be located in &amp;ldquo;C:\toolchain\VTK\VTK-8.2.0-bld\bin\RelWithDebInfo\&amp;ldquo;.&lt;/p&gt;
 
-&lt;p&gt;Build the &lt;strong&gt;INSTALL&lt;/strong&gt; project. This installs VTK into the directory as set in the &lt;strong&gt;CMAKE_INSTALL_PREFIX&lt;/strong&gt; CMake variable.&lt;/p&gt;
+&lt;p&gt;Build the &lt;strong&gt;INSTALL&lt;/strong&gt; project. This installs VTK into the directory as set in the &lt;strong&gt;CMAKE_INSTALL_PREFIX&lt;/strong&gt; CMake variable.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -168,6 +168,100 @@ This may take a while. The compiled DLLs will be located in &amp;ldquo;C:\toolch
       
       <guid>https://zhangresearch.org/publication/nanoconfinement-and-salt/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Parse DICOM RTSTRUCT (Radiotherapy Structure Set) into binary masks using Numpy</title>
+      <link>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</link>
+      <pubDate>Sat, 13 Apr 2019 00:19:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</guid>
+      <description>
+
+&lt;h2 id=&#34;dicom-rtstruct-contour-data&#34;&gt;DICOM-RTSTRUCT Contour Data&lt;/h2&gt;
+
+&lt;p&gt;Contours drawn for radiotherapy are saved as &lt;a href=&#34;http://dicom.nema.org/dicom/2013/output/chtml/part03/sect_A.19.html&#34; target=&#34;_blank&#34;&gt;DICOM RT Structure Set&lt;/a&gt; (&amp;ldquo;RT&amp;rdquo; stands for radiotherapy.) in DICOM Standard, and usually as a single file. You can locate this file among CT or MRI data sets quite reliably, by traversing recursively through the directories and looking for MODALITY of &amp;ldquo;RTSTRUCT&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;In this modality, the contours are saved as 2D polygons slice by slice under the &lt;a href=&#34;http://dicom.nema.org/MEDICAL/dicom/2017b/output/chtml/part03/sect_C.8.8.6.html&#34; target=&#34;_blank&#34;&gt;Contour Data (3006,0050)&lt;/a&gt; tag, which species the data format as:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Sequence of (x,y,z) triplets defining a contour in the patient based coordinate system described in &lt;a href=&#34;http://dicom.nema.org/MEDICAL/dicom/2017b/output/chtml/part03/sect_C.7.6.2.html#sect_C.7.6.2.1.1&#34; target=&#34;_blank&#34;&gt;Section C.7.6.2.1.1 (mm)&lt;/a&gt;. See &lt;a href=&#34;http://dicom.nema.org/MEDICAL/dicom/2017b/output/chtml/part03/sect_C.8.8.6.html#sect_C.8.8.6.1&#34; target=&#34;_blank&#34;&gt;Section C.8.8.6.1&lt;/a&gt; and &lt;a href=&#34;http://dicom.nema.org/MEDICAL/dicom/2017b/output/chtml/part03/sect_C.8.8.6.3.html&#34; target=&#34;_blank&#34;&gt;Section C.8.8.6.3&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In other words, the perimeter of a sliced contour is specified by a sequence of discrete points.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;[x0, y0, z0, x1, y1, z1, x2, y2, z2, ... xn, yn, zn]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This can be reshaped to (n+1)*3, representing n+1 points along this perimeter.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+pixelCoords = np.array([[x0, y0, z0],
+                        [x1, y1, z1],
+                        [x2, y2, z2], 
+                        ...
+                        [xn, yn, zn],
+                        ])
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For example, the image below is a CT slice of a &lt;a href=&#34;https://github.com/SlicerRt/SlicerRtData/tree/master/eclipse-8.1.20-phantom-prostate&#34; target=&#34;_blank&#34;&gt;prostate phantom&lt;/a&gt; overlaid with these discrete points.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/parse-dicom-rtstruct-into-binary-masks/overlay.png&#34; alt=&#34;overlay&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;contours-as-discrete-points&#34;&gt;Contours as discrete points&lt;/h2&gt;
+
+&lt;p&gt;To generate a 2D representation of these discrete points, you will need to first convert the Contour Data from real word units (mm) to Pixel Coordinates (integers).&lt;/p&gt;
+
+&lt;p&gt;I usually first generate an all-false boolean 2D array&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+arr = np.zeros(shape).astype(bool)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then change those Contour Data pixels to True using fancy indexing.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;cols = pixelCoords[:,0]
+rows = pixelCoords[:,1]
+arr[(cols, rows)] # Note the order of indices (cols before rows)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There is a more numerically efficient way to do this indexing, using &lt;em&gt;&lt;a href=&#34;https://docs.scipy.org/doc/numpy/reference/generated/numpy.unravel_index.html&#34; target=&#34;_blank&#34;&gt;numpy.unravel_index&lt;/a&gt;&lt;/em&gt;. I describe this method in better details in a &lt;a href=&#34;../numpy-unravel-index&#34;&gt;separate post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;contours-as-binary-mask&#34;&gt;Contours as binary mask&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/parse-dicom-rtstruct-into-binary-masks/mask.png&#34; alt=&#34;mask&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Binary masks as shown above can be useful for things like pixel-wise semantic segmentation in deep learning. To create these masks, you might attempt to treat these points as a &lt;a href=&#34;https://en.wikipedia.org/wiki/Point_cloud&#34; target=&#34;_blank&#34;&gt;point cloud&lt;/a&gt;, and calculate their &lt;a href=&#34;https://en.wikipedia.org/wiki/Alpha_shape&#34; target=&#34;_blank&#34;&gt;alpha shape&lt;/a&gt;. For concaved shapes, finding the correct parameter to draw the correct envelope can be &lt;a href=&#34;http://blog.thehumangeo.com/2014/05/12/drawing-boundaries-in-python/&#34; target=&#34;_blank&#34;&gt;tricky&lt;/a&gt;. In a field that focuses as much on reducing errors and uncertainties as Radiation Oncology, this method is simply not generic/robust enough.&lt;/p&gt;
+
+&lt;p&gt;Luckily, the DICOM-RT file exported by treatment planning systems preserve the &amp;ldquo;connectivity&amp;rdquo; between the points, that is, they are saved consecutively either clockwise or counter-clockwise.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/parse-dicom-rtstruct-into-binary-masks/clockwise.png&#34; alt=&#34;clockwise&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It turns out the easiest approach to fill this contour is simply draw a filled polygon and cast that into a boolean 2D array.&lt;/p&gt;
+
+&lt;p&gt;You can do this with OpenCV:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import cv2
+arr = np.zeros(shape)
+poly = pixelCoords[:,:2]
+cv2.fillPoly(img=arr, pts=[poly], color=1)
+mask = img.astype(bool)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or with Scikit-image:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from skimage import draw
+vertex_col_coords = pixelCoords[:, 0]
+vertex_row_coords = pixelCoords[:, 1]
+
+fill_row_coords, fill_col_coords = draw.polygon(vertex_row_coords, vertex_col_coords, shape)
+mask = np.zeros(shape, dtype=np.bool)
+mask[fill_row_coords, fill_col_coords] = True
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/parse-dicom-rtstruct-into-binary-masks/filled-polygon.png&#34; alt=&#34;filled-polygon&#34; /&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -263,24 +357,6 @@ This may take a while. The compiled DLLs will be located in &amp;ldquo;C:\toolch
       
       <guid>https://zhangresearch.org/publication/metal-polymer-janus-particles/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Carbon nanopatterns and nanoribbons from directly nanoimprinted polyacrylonitrile</title>
-      <link>https://zhangresearch.org/publication/carbon-nanopattern/</link>
-      <pubDate>Fri, 04 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/carbon-nanopattern/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    
-Fabrication Process
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/carbon-nanopattern/fab-large.png&#34; alt=&#34;Fabrication Process&#34; /&gt;&lt;/p&gt;
-</description>
     </item>
     
   </channel>

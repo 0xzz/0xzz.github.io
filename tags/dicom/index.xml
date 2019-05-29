@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DICOM on Zheng Zhang</title>
+    <link>https://zhangresearch.org/tags/dicom/</link>
+    <description>Recent content in DICOM on Zheng Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
+    <lastBuildDate>Sat, 13 Apr 2019 00:19:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhangresearch.org/tags/dicom/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Parse DICOM RTSTRUCT (Radiotherapy Structure Set) into binary masks using Numpy</title>
+      <link>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</link>
+      <pubDate>Sat, 13 Apr 2019 00:19:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</guid>
+      <description>DICOM-RTSTRUCT Contour Data Contours drawn for radiotherapy are saved as DICOM RT Structure Set (&amp;ldquo;RT&amp;rdquo; stands for radiotherapy.) in DICOM Standard, and usually as a single file. You can locate this file among CT or MRI data sets quite reliably, by traversing recursively through the directories and looking for MODALITY of &amp;ldquo;RTSTRUCT&amp;rdquo;.
+In this modality, the contours are saved as 2D polygons slice by slice under the Contour Data (3006,0050) tag, which species the data format as:</description>
+    </item>
+    
+  </channel>
+</rss>
