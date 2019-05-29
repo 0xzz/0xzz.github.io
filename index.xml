@@ -228,7 +228,7 @@ arr[(cols, rows)] # Note the order of indices (cols before rows)
 
 &lt;p&gt;There is a more numerically efficient way to do this indexing, using &lt;em&gt;&lt;a href=&#34;https://docs.scipy.org/doc/numpy/reference/generated/numpy.unravel_index.html&#34; target=&#34;_blank&#34;&gt;numpy.unravel_index&lt;/a&gt;&lt;/em&gt;. I describe this method in better details in a &lt;a href=&#34;../numpy-unravel-index&#34;&gt;separate post&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;contours-as-binary-mask&#34;&gt;Contours as binary mask&lt;/h1&gt;
+&lt;h2 id=&#34;contours-as-binary-mask&#34;&gt;Contours as binary mask&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/parse-dicom-rtstruct-into-binary-masks/mask.png&#34; alt=&#34;mask&#34; /&gt;&lt;/p&gt;
 
