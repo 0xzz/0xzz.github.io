@@ -206,22 +206,28 @@
   
     <url>
     
+      <loc>https://zhangresearch.org/post/numpy-unravel-index/</loc>
+      <lastmod>2019-04-15T00:19:00+00:00</lastmod>
+    </url>
+  
+    <url>
+    
       <loc>https://zhangresearch.org/tags/dicom/</loc>
-      <lastmod>2019-04-13T00:19:00+00:00</lastmod>
+      <lastmod>2019-04-15T00:19:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+    
+      <loc>https://zhangresearch.org/tags/numpy/</loc>
+      <lastmod>2019-04-15T00:19:00+00:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
     
       <loc>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</loc>
-      <lastmod>2019-04-13T00:19:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/tags/numpy/</loc>
-      <lastmod>2019-04-13T00:19:00+00:00</lastmod>
-      <priority>0</priority>
+      <lastmod>2019-03-13T00:19:00+00:00</lastmod>
     </url>
   
     <url>
