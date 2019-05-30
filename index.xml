@@ -171,7 +171,7 @@ This may take a while. The compiled DLLs will be located in &amp;ldquo;C:\toolch
     </item>
     
     <item>
-      <title>Access the elements of Numpy arrays with fancy indexing or ravel_multi_index</title>
+      <title>Modify multiple elements of a Numpy ndarray with ravel_multi_index</title>
       <link>https://zhangresearch.org/post/numpy-unravel-index/</link>
       <pubDate>Mon, 15 Apr 2019 00:19:00 +0000</pubDate>
       
@@ -182,7 +182,7 @@ This may take a while. The compiled DLLs will be located in &amp;ldquo;C:\toolch
 
 &lt;p&gt;Accessing a multi-dimensional Numpy array by indices is useful for many tasks, such as &lt;a href=&#34;parse-dicom-rtstruct-into-binary-masks&#34; target=&#34;_blank&#34;&gt;parsing the contours in a DICOM-RTSTRUCT file&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;For example, given a 5 x 6 array &lt;em&gt;arr&lt;/em&gt;, and a list of the coordinates of 3 points &lt;em&gt;coords&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;As a simple example, we are given a 5 x 6 array &lt;em&gt;arr&lt;/em&gt;, and a list of the coordinates of 3 points &lt;em&gt;coords&lt;/em&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; import numpy as np
 &amp;gt;&amp;gt;&amp;gt; arr = np.arange(30).reshape(5,6)
@@ -199,7 +199,7 @@ array([[0, 1],
        [3, 2]])
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;To obtain the values of the targeted pixels as a list [arr[0,1], arr[3,4], arr[3,2]], that is [1, 22, 20], it is tempting to write &amp;ldquo;arr[coords]&amp;ldquo;. But it is incorrect.&lt;/p&gt;
+&lt;p&gt;To obtain the values of the targeted pixels as a list [arr[0,1], arr[3,4], arr[3,2]], that is [1, 22, 20], it is tempting to write &amp;ldquo;arr[coords]&amp;ldquo;. But this is incorrect.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; arr[coords]
 array([[[ 0,  1,  2,  3,  4,  5],
@@ -212,16 +212,16 @@ array([[[ 0,  1,  2,  3,  4,  5],
         [12, 13, 14, 15, 16, 17]]])
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Why?&lt;/p&gt;
+&lt;p&gt;Using a list of indices like this is correct in MATLAB, but not in Numpy. Why?&lt;/p&gt;
 
 &lt;h2 id=&#34;fancy-indexing&#34;&gt;Fancy indexing&lt;/h2&gt;
 
-&lt;p&gt;Passing a list of indices like this is correct in MATLAB, but not in Numpy. Passing an &lt;em&gt;array&lt;/em&gt; of indices to access multiple elements at once is referred to as &lt;a href=&#34;https://jakevdp.github.io/PythonDataScienceHandbook/02.07-fancy-indexing.html&#34; target=&#34;_blank&#34;&gt;Fancy Indexing&lt;/a&gt; in the Numpy.&lt;/p&gt;
+&lt;p&gt;Passing an &lt;em&gt;array&lt;/em&gt; of indices to access multiple elements at once is referred to as &lt;a href=&#34;https://jakevdp.github.io/PythonDataScienceHandbook/02.07-fancy-indexing.html&#34; target=&#34;_blank&#34;&gt;Fancy Indexing&lt;/a&gt; in Numpy.&lt;/p&gt;
 
-&lt;p&gt;The most important thing to remember is that:&lt;/p&gt;
+&lt;p&gt;The most important rule to remember is that:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;The (broadcasted) shape of the index array determines that of the output array.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The (broadcasted) shape of the index array determines that of the output array.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; coords.shape
@@ -230,9 +230,9 @@ array([[[ 0,  1,  2,  3,  4,  5],
 (3, 2, 6)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Fancy indexing is basically a way to avoid writing Python loops, but having numpy doing it for you with its efficient, lower-level internal loops.&lt;/p&gt;
+&lt;p&gt;Fancy indexing is basically a way to avoid writing Python loops, by having numpy do it internally for you with its more efficient, lower-level loops.&lt;/p&gt;
 
-&lt;p&gt;In this case, arr[coords] becomes the sampling the &lt;strong&gt;rows&lt;/strong&gt; rather than the elements. Conceptually:&lt;/p&gt;
+&lt;p&gt;In this case, arr[coords] is actually sampling the &lt;strong&gt;rows&lt;/strong&gt; rather than the elements. Conceptually, we get:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;array([[arr[0], arr[1]],
        [arr[3], arr[4]],
@@ -246,7 +246,7 @@ array([[[ 0,  1,  2,  3,  4,  5],
        [3rd row, 2nd row]])
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The correct way is to first obtain all the column and row indices, and then pass them both to arr for fancy indexing.&lt;/p&gt;
+&lt;p&gt;The correct way is to first obtain both the column and row indices as two lists (1D arrays), and then pass them to arr for fancy indexing.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; rows = coords[:,0]
 &amp;gt;&amp;gt;&amp;gt; cols = coords[:,1]
@@ -256,11 +256,11 @@ array([ 1, 22, 20])
 
 &lt;h2 id=&#34;numpy-unravel-index&#34;&gt;numpy.unravel_index&lt;/h2&gt;
 
-&lt;p&gt;Another approach would be accessing the multi-dimensional array as a 1D array.&lt;/p&gt;
+&lt;p&gt;Another approach would be to access the multi-dimensional array as a 1D array.&lt;/p&gt;
 
-&lt;p&gt;In C++, accessing an multi-dimensional array can be done as though it is a 1D array: &amp;ldquo;arr[col][row]&amp;rdquo; is equivalent to &amp;ldquo;arr[(row-1)*n_cols + col]&amp;ldquo;. This is because that array is allocated on a contiguous span of memory, which is 1D. &amp;ldquo;(row-1)*n_cols + col&amp;rdquo; is basically how &lt;em&gt;deep&lt;/em&gt; you&amp;rsquo;re into this span of memory.&lt;/p&gt;
+&lt;p&gt;In C++, accessing a multi-dimensional array can be done as though it were a 1D array: &amp;ldquo;arr[col][row]&amp;rdquo; is equivalent to &amp;ldquo;arr[(row-1)*n_cols + col]&amp;ldquo;. This is because that multi-dimensional array is allocated on a contiguous span of memory, which is 1D. &amp;ldquo;(row-1)*n_cols + col&amp;rdquo; is basically how &lt;em&gt;deep&lt;/em&gt; you&amp;rsquo;re into this span of memory.&lt;/p&gt;
 
-&lt;p&gt;The internal data representation of a Numpy array is conceptually the same. You can use &lt;em&gt;ravel()&lt;/em&gt; to obtain a 1D view of the array, and use &amp;ldquo;&lt;a href=&#34;https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.ravel_multi_index.html&#34; target=&#34;_blank&#34;&gt;ravel_multi_index()&lt;/a&gt;&amp;rdquo; to translate the indices into 1D.&lt;/p&gt;
+&lt;p&gt;The internal data representation of a Numpy array is conceptually the same. You can use &lt;em&gt;ravel()&lt;/em&gt; to obtain a 1D view of the array without copying, and use &amp;ldquo;&lt;a href=&#34;https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.ravel_multi_index.html&#34; target=&#34;_blank&#34;&gt;ravel_multi_index()&lt;/a&gt;&amp;rdquo; to translate the indices into 1D.&lt;/p&gt;
 
 &lt;p&gt;ravel_multi_index() and &lt;a href=&#34;https://docs.scipy.org/doc/numpy/reference/generated/numpy.unravel_index.html&#34; target=&#34;_blank&#34;&gt;numpy.unravel_index()&lt;/a&gt; are inverse operations. Their MATLAB equivalents are &lt;a href=&#34;https://www.mathworks.com/help/matlab/ref/sub2ind.html&#34; target=&#34;_blank&#34;&gt;sub2ind&lt;/a&gt; and &lt;a href=&#34;https://www.mathworks.com/help/matlab/ref/ind2sub.html&#34; target=&#34;_blank&#34;&gt;ind2sub&lt;/a&gt;.&lt;/p&gt;
 
@@ -270,7 +270,7 @@ array([ 1, 22, 20])
 
 &lt;h2 id=&#34;modify-multiple-elements-at-once&#34;&gt;Modify multiple elements at once&lt;/h2&gt;
 
-&lt;p&gt;It is worth noting that, using either fancy indexing method, you can not only read out the elements, but also modify them at once.&lt;/p&gt;
+&lt;p&gt;It is worth noting that, using either fancy indexing method, not only you can read out the elements, but also modify them at once.&lt;/p&gt;
 
 &lt;p&gt;This is particularly useful if you need to parse the discrete contour points into a 2D map like below.&lt;/p&gt;
 
