@@ -49,8 +49,8 @@ In this modality, the contours are saved as 2D polygons slice by slice under the
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zhangresearch.org/author/admin/</guid>
-      <description>I am a research fellow with the Department of Radiation Oncology at Mayo Clinic. Currently I am working on a 4D X-ray imaging improvement project for image-guided proton therapy (IGPT). I develop software to be clinically deployed for motion-managed radiotherapy delivery, and conduct research on computer vision-enabled tumor-tracking.
-Previously, I worked on the development of nanostructured polymer electrolytes for safer rechargeable lithium-ion batteries at Brookhaven National Laboratory (BNL). There, I investigated the molecular structure and local dynamics of nanoconfined polyelectrolytes, using synchrotron X-ray scattering methods.</description>
+      <description>I am a research fellow with the Department of Radiation Oncology at Mayo Clinic. Currently I am working on a 4D X-ray imaging improvement project for image-guided proton therapy (IGPT). I develop software to be clinically deployed for motion-managed radiotherapy delivery, and conduct research reliable tumor-tracking with computer vision / deep learning methods.
+Previously, I worked on the development of nanostructured polymer electrolytes for safer rechargeable lithium-ion batteries at Brookhaven National Laboratory (BNL).</description>
     </item>
     
   </channel>
