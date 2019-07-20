@@ -26,7 +26,7 @@ As a simple example, we are given a 5 x 6 array arr, and a list of the coordinat
     <item>
       <title>Parse DICOM RTSTRUCT (Radiotherapy Structure Set) into binary masks using Numpy</title>
       <link>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</link>
-      <pubDate>Sat, 09 Mar 2019 00:19:00 +0000</pubDate>
+      <pubDate>Sat, 09 Mar 2019 00:20:00 +0000</pubDate>
       
       <guid>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</guid>
       <description>DICOM-RTSTRUCT Contour Data Contours drawn for radiotherapy are saved as DICOM RT Structure Set (&amp;ldquo;RT&amp;rdquo; stands for radiotherapy.) in DICOM Standard, and usually as a single file. You can locate this file among CT or MRI data sets quite reliably, by traversing recursively through the directories and looking for MODALITY of &amp;ldquo;RTSTRUCT&amp;rdquo;.

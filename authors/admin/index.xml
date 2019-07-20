@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Wed, 29 May 2019 00:19:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 May 2019 00:23:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhangresearch.org/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</title>
       <link>https://zhangresearch.org/post/compile-vtk-8.2.0/</link>
-      <pubDate>Wed, 29 May 2019 00:19:00 +0000</pubDate>
+      <pubDate>Wed, 29 May 2019 00:23:00 +0000</pubDate>
       
       <guid>https://zhangresearch.org/post/compile-vtk-8.2.0/</guid>
       <description>The Visualization Toolkit (VTK) is the 3D engine behind many scientific visualization applications, such as MayaVi, the popular scientific data visualizer for Python. It is also the cornerstone of several advanced 3D-enabled biomedical applications, such as ParaView and 3D Slicer.
@@ -36,7 +36,7 @@ As a simple example, we are given a 5 x 6 array arr, and a list of the coordinat
     <item>
       <title>Parse DICOM RTSTRUCT (Radiotherapy Structure Set) into binary masks using Numpy</title>
       <link>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</link>
-      <pubDate>Sat, 09 Mar 2019 00:19:00 +0000</pubDate>
+      <pubDate>Sat, 09 Mar 2019 00:20:00 +0000</pubDate>
       
       <guid>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</guid>
       <description>DICOM-RTSTRUCT Contour Data Contours drawn for radiotherapy are saved as DICOM RT Structure Set (&amp;ldquo;RT&amp;rdquo; stands for radiotherapy.) in DICOM Standard, and usually as a single file. You can locate this file among CT or MRI data sets quite reliably, by traversing recursively through the directories and looking for MODALITY of &amp;ldquo;RTSTRUCT&amp;rdquo;.
@@ -49,7 +49,7 @@ In this modality, the contours are saved as 2D polygons slice by slice under the
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zhangresearch.org/author/admin/</guid>
-      <description>I am a research fellow with the Department of Radiation Oncology at Mayo Clinic. I am working on a 4D X-ray imaging improvement project for image-guided proton therapy (IGPT). To this end, my current work focuses on developing a software/hardware package to be clinically deployed for motion-managed radiotherapy delivery.
+      <description>I am a research fellow with the Department of Radiation Oncology at Mayo Clinic. Currently I am working on a 4D X-ray imaging improvement project for image-guided proton therapy (IGPT). I develop software to be clinically deployed for motion-managed radiotherapy delivery, and conduct research on computer vision-enabled tumor-tracking.
 Previously, I worked on the development of nanostructured polymer electrolytes for safer rechargeable lithium-ion batteries at Brookhaven National Laboratory (BNL). There, I investigated the molecular structure and local dynamics of nanoconfined polyelectrolytes, using synchrotron X-ray scattering methods.</description>
     </item>
     

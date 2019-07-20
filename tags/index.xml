@@ -1,96 +1,96 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Zheng Zhang</title>
+    <title>Zheng Zhang</title>
     <link>https://zhangresearch.org/tags/</link>
-    <description>Recent content in Tags on Zheng Zhang</description>
+    <description>Recent content on Zheng Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Wed, 29 May 2019 00:19:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 May 2019 00:23:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhangresearch.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>https://zhangresearch.org/tags/</link>
-      <pubDate>Wed, 29 May 2019 00:19:00 +0000</pubDate>
+      <title>Boosting polymer viscosity via nano-confinement</title>
+      <link>https://zhangresearch.org/publication/boosting-polymer-viscosity/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangresearch.org/tags/</guid>
+      <guid>https://zhangresearch.org/publication/boosting-polymer-viscosity/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>VTK</title>
-      <link>https://zhangresearch.org/tags/vtk/</link>
-      <pubDate>Wed, 29 May 2019 00:19:00 +0000</pubDate>
+      <title>Sub-10 nm Patterning with DNA Nanostructures: A Short Perspective</title>
+      <link>https://zhangresearch.org/publication/dna-patterning-perspective/</link>
+      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangresearch.org/tags/vtk/</guid>
+      <guid>https://zhangresearch.org/publication/dna-patterning-perspective/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>IGPT</title>
-      <link>https://zhangresearch.org/tags/igpt/</link>
-      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
+      <title>Healing X-ray scattering images</title>
+      <link>https://zhangresearch.org/publication/healing-x-ray-scattering-images/</link>
+      <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangresearch.org/tags/igpt/</guid>
+      <guid>https://zhangresearch.org/publication/healing-x-ray-scattering-images/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>IGRT</title>
-      <link>https://zhangresearch.org/tags/igrt/</link>
-      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
+      <title>Capillary rupture of suspended polymer concentric rings</title>
+      <link>https://zhangresearch.org/publication/concentric-rings/</link>
+      <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangresearch.org/tags/igrt/</guid>
+      <guid>https://zhangresearch.org/publication/concentric-rings/</guid>
+      <description>We present the first experimental study on the simultaneous capillary instability amongst viscous concentric rings suspended atop an immiscible medium. The rings ruptured upon annealing, with three types of phase correlation between neighboring rings. In the case of weak substrate confinement, the rings ruptured independently when they were sparsely distanced, but via an out-of-phase mode when packed closer. If the substrate confinement was strong, the rings would rupture via an in-phase mode, resulting in radially aligned droplets. The concentric ring geometry caused a competition between the phase correlation of neighboring rings and the kinetically favorable wavelength, yielding an intriguing, recursive surface pattern. This frustrated pattern formation behavior was accounted for by a scaling analysis.</description>
+    </item>
+    
+    <item>
+      <title>External normal pressure prevents preferential wetting of PS/PMMA blend thin films</title>
+      <link>https://zhangresearch.org/publication/external-normal-pressure/</link>
+      <pubDate>Tue, 05 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/external-normal-pressure/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>DICOM</title>
-      <link>https://zhangresearch.org/tags/dicom/</link>
-      <pubDate>Mon, 15 Apr 2019 00:19:00 +0000</pubDate>
+      <title>Morphing metal–polymer Janus particles</title>
+      <link>https://zhangresearch.org/publication/metal-polymer-janus-particles/</link>
+      <pubDate>Fri, 25 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangresearch.org/tags/dicom/</guid>
+      <guid>https://zhangresearch.org/publication/metal-polymer-janus-particles/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>numpy</title>
-      <link>https://zhangresearch.org/tags/numpy/</link>
-      <pubDate>Mon, 15 Apr 2019 00:19:00 +0000</pubDate>
+      <title>Carbon nanopatterns and nanoribbons from directly nanoimprinted polyacrylonitrile</title>
+      <link>https://zhangresearch.org/publication/carbon-nanopattern/</link>
+      <pubDate>Fri, 04 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangresearch.org/tags/numpy/</guid>
+      <guid>https://zhangresearch.org/publication/carbon-nanopattern/</guid>
+      <description> Fabrication Process   </description>
+    </item>
+    
+    <item>
+      <title>Influence of Substrate Confinement on the Phase-Correlation in the Capillary Breakup of Arrays of Patterned Polymer Stripes</title>
+      <link>https://zhangresearch.org/publication/influence-of-substrate-confinement/</link>
+      <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangresearch.org/publication/influence-of-substrate-confinement/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>X-ray scattering</title>
-      <link>https://zhangresearch.org/tags/x-ray-scattering/</link>
-      <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
+      <title>Instabilities of PS/PMMA Bilayer Patterns with a Corrugated Surface and Interface</title>
+      <link>https://zhangresearch.org/publication/instabilities-of-pspmma/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangresearch.org/tags/x-ray-scattering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>XPCS</title>
-      <link>https://zhangresearch.org/tags/xpcs/</link>
-      <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
-      
-      <guid>https://zhangresearch.org/tags/xpcs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nanoconfinement</title>
-      <link>https://zhangresearch.org/tags/nanoconfinement/</link>
-      <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
-      
-      <guid>https://zhangresearch.org/tags/nanoconfinement/</guid>
-      <description></description>
+      <guid>https://zhangresearch.org/publication/instabilities-of-pspmma/</guid>
+      <description>We study the patterns spontaneously formed by bilayer polymer films upon annealing. Specifically, polystyrene (PS) films were spin-cast on topographically patterned poly(methyl methacrylate) (PMMA) substrates and subsequently annealed at temperatures above the glass transition temperature of both polymers. The influence of the molecular weight and the volume of PS on the morphological evolution of the corrugated liquid–liquid interface was examined. By controlling the molecular weight and the spin-cast volume of the top layer, the kinetics of morphological evolution and the resulting patterns can be controlled.</description>
     </item>
     
   </channel>
