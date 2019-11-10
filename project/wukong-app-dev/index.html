@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.2.0">
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Source Themes Academic 4.5.0">
 
   
 
@@ -28,25 +28,13 @@
   
     
   
-  <meta name="description" content="As an essential component of our image-guided proton therapy (IGPT) practice, I am developing a clinical computer vision application (Code name: WuKong) for visual guidance and tumor tracking during motion-managed treatments, based on high speed acquisition and real time processing of fluoroscopic frames. Being fully DICOM-aware, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure for medical data transfer as well as HIPAA-compliant cloud storage, and provides a user-friendly graphical interface.">
+  <meta name="description" content="In order to facilitate better clinical workflow and provide added assurance during motion-managed proton therapy delivery, I am developing a clinical computer vision application (Code name: Wukong), based on high-speed acquisition and real-time processing of fluoroscopic frames. Built as a fully DICOM-aware utility, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure, both for treatment plan information communication and permanent data archival on a HIPAA-compliant cloud storage.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://zhangresearch.org/project/wukong-app-dev/">
 
   
 
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
   
   
@@ -59,10 +47,9 @@
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
     
@@ -73,13 +60,15 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
 
     
 
@@ -87,23 +76,28 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
   
-
-  <link rel="stylesheet" href="/styles.css">
-  
-
-  
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
   
 
   
-  <link rel="alternate" href="https://zhangresearch.org/index.xml" type="application/rss+xml" title="Zheng Zhang">
-  <link rel="feed" href="https://zhangresearch.org/index.xml" type="application/rss+xml" title="Zheng Zhang">
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
   
 
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
   <link rel="canonical" href="https://zhangresearch.org/project/wukong-app-dev/">
@@ -114,27 +108,90 @@
   
     
   
+  
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Zheng Zhang">
   <meta property="og:url" content="https://zhangresearch.org/project/wukong-app-dev/">
-  <meta property="og:title" content="IGPT Software Development | Zheng Zhang">
-  <meta property="og:description" content="As an essential component of our image-guided proton therapy (IGPT) practice, I am developing a clinical computer vision application (Code name: WuKong) for visual guidance and tumor tracking during motion-managed treatments, based on high speed acquisition and real time processing of fluoroscopic frames. Being fully DICOM-aware, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure for medical data transfer as well as HIPAA-compliant cloud storage, and provides a user-friendly graphical interface."><meta property="og:image" content="https://zhangresearch.org/project/wukong-app-dev/featured.png">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:title" content="Image-guidance Software Development | Zheng Zhang">
+  <meta property="og:description" content="In order to facilitate better clinical workflow and provide added assurance during motion-managed proton therapy delivery, I am developing a clinical computer vision application (Code name: Wukong), based on high-speed acquisition and real-time processing of fluoroscopic frames. Built as a fully DICOM-aware utility, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure, both for treatment plan information communication and permanent data archival on a HIPAA-compliant cloud storage."><meta property="og:image" content="https://zhangresearch.org/project/wukong-app-dev/featured.png">
+  <meta property="twitter:image" content="https://zhangresearch.org/project/wukong-app-dev/featured.png"><meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-05-15T00:00:00-05:00">
+    
+      <meta property="article:published_time" content="2019-05-15T00:00:00-05:00">
+    
+    <meta property="article:modified_time" content="2019-05-15T00:00:00-05:00">
   
-  <meta property="article:modified_time" content="2019-05-15T00:00:00-05:00">
+
   
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://zhangresearch.org/project/wukong-app-dev/"
+  },
+  "headline": "Image-guidance Software Development",
+  
+  "image": [
+    "https://zhangresearch.org/project/wukong-app-dev/featured.png"
+  ],
+  
+  "datePublished": "2019-05-15T00:00:00-05:00",
+  "dateModified": "2019-05-15T00:00:00-05:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Zheng Zhang"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zheng Zhang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://zhangresearch.org/img/icon.png"
+    }
+  },
+  "description": "In order to facilitate better clinical workflow and provide added assurance during motion-managed proton therapy delivery, I am developing a clinical computer vision application (Code name: Wukong), based on high-speed acquisition and real-time processing of fluoroscopic frames. Built as a fully DICOM-aware utility, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure, both for treatment plan information communication and permanent data archival on a HIPAA-compliant cloud storage."
+}
+</script>
 
   
 
   
 
-  <title>IGPT Software Development | Zheng Zhang</title>
+
+  
+
+
+  
+
+
+
+
+
+  <title>Image-guidance Software Development | Zheng Zhang</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
   <aside class="search-results" id="search">
   <div class="container">
     <section class="search-header">
@@ -151,7 +208,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
         
       </div>
 
@@ -167,7 +224,8 @@
 </aside>
 
 
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
@@ -195,12 +253,22 @@
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#about">
-            
-            <span>Home</span>
-            
-          </a>
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
         </li>
 
         
@@ -214,12 +282,22 @@
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#posts">
-            
-            <span>Posts</span>
-            
-          </a>
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
         </li>
 
         
@@ -233,12 +311,22 @@
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#projects">
-            
-            <span>Projects</span>
-            
-          </a>
+          <a class="nav-link " href="/#selected_publications"><span>Publications</span></a>
         </li>
 
         
@@ -252,12 +340,22 @@
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#selected_publications">
-            
-            <span>Publications</span>
-            
-          </a>
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
         </li>
 
         
@@ -271,31 +369,22 @@
           
         
 
-        <li class="nav-item">
-          <a class="nav-link" href="/#talks">
-            
-            <span>Talks</span>
-            
-          </a>
-        </li>
-
         
         
-
         
-
         
         
         
           
+          
+          
+            
+          
+          
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#contact">
-            
-            <span>Contact</span>
-            
-          </a>
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
         </li>
 
         
@@ -329,7 +418,7 @@
 </nav>
 
 
-<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+  <article class="article article-project">
 
   
 
@@ -350,17 +439,13 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">IGPT Software Development</h1>
+  <h1>Image-guidance Software Development</h1>
 
   
 
   
     
 
-
-
-<meta content="2019-05-15 00:00:00 -0500 CDT" itemprop="datePublished">
-<meta content="2019-05-15 00:00:00 -0500 CDT" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -373,7 +458,7 @@
     
       
     
-    <time>May 15, 2019</time>
+    May 15, 2019
   </span>
   
 
@@ -383,12 +468,9 @@
 
   
   
-
   
 
   
-    
-
   
 
 </div>
@@ -399,9 +481,6 @@
 
 
 
-
-
-  
 
 
 
@@ -418,49 +497,240 @@
 
   <div class="article-container">
 
-    <div class="article-style" itemprop="articleBody">
-      
+    <div class="article-style">
+      <p>In order to facilitate better clinical workflow and provide added assurance during motion-managed proton therapy delivery, I am developing a clinical computer vision application (Code name: Wukong), based on high-speed acquisition and real-time processing of fluoroscopic frames. Built as a fully DICOM-aware utility, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure, both for treatment plan information communication and permanent data archival on a HIPAA-compliant cloud storage.</p>
+
     </div>
 
     
+
+
+
 
 
 <div class="article-tags">
   
   <a class="badge badge-light" href="/tags/igpt/">IGPT</a>
   
-  <a class="badge badge-light" href="/tags/igrt/">IGRT</a>
-  
 </div>
 
 
 
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
     
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-    
-    
-
-    
-    
-    
-      <h2>Posts</h2>
+      
+      
       
         
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://zhangresearch.org/project/wukong-app-dev/&amp;text=Image-guidance%20Software%20Development" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://zhangresearch.org/project/wukong-app-dev/&amp;t=Image-guidance%20Software%20Development" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Image-guidance%20Software%20Development&amp;body=https://zhangresearch.org/project/wukong-app-dev/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://zhangresearch.org/project/wukong-app-dev/&amp;title=Image-guidance%20Software%20Development" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Image-guidance%20Software%20Development%20https://zhangresearch.org/project/wukong-app-dev/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://zhangresearch.org/project/wukong-app-dev/&amp;title=Image-guidance%20Software%20Development" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hub104af7c7a52216c07b1245a152719e3_270795_250x250_fill_lanczos_center_2.png" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://zhangresearch.org/">Zheng Zhang</a></h5>
+      <h6 class="card-subtitle">Research Fellow</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/zhengzhang89" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/0xzz" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/project/fpd-calibration/">Flat-panel Detector Calibration</a></li>
+      
+      <li><a href="/publication/conference-paper/wukong-spie/">A Windows GUI application for real-time image guidance during motion- managed proton beam therapy</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+        <h2>Publications</h2>
+        
           
+            
 
 
 
@@ -468,6 +738,8 @@
 
 
 
+
+  
   
 
 
@@ -477,16 +749,16 @@
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/post/compile-vtk-8.2.0/" itemprop="url">Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/conference-paper/wukong-spie/" >A Windows GUI application for real-time image guidance during motion- managed proton beam therapy</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
-      The Visualization Toolkit (VTK) is the 3D engine behind many scientific visualization applications, such as MayaVi, the popular …
+    <div class="article-style">
+      Respiratory motion-management is crucial for maintaining robustness of the delivered dose in radiotherapy. This is particularly …
     </div>
     
 
@@ -495,71 +767,56 @@
       
 
       
+      <div>
         
 
 
 
-<meta content="2019-05-29 00:23:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-05-29 00:23:00 &#43;0000 UTC" itemprop="dateModified">
-
-<div class="article-metadata">
-
   
-  
-  
-  
-  <div>
-    
+  <span><a href="/authors/admin/">Zheng Zhang</a></span>, <span><a href="/authors/chris-beltran/">Chris Beltran</a></span>, <span><a href="/authors/stephen-m.-corner/">Stephen M. Corner</a></span>, <span><a href="/authors/amanda-j.-deisher/">Amanda J. Deisher</a></span>, <span><a href="/authors/michael-g.-herman/">Michael G. Herman</a></span>, <span><a href="/authors/jon-j.-kruse/">Jon J. Kruse</a></span>, <span><a href="/authors/hok-seum-wan-chan-tseung/">Hok Seum Wan Chan Tseung</a></span>, <span><a href="/authors/erik-j.-tryggestad/">Erik J. Tryggestad</a></span>
 
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      
-        <a href="/authors/admin/">Zheng Zhang</a></span></span>
-  
-
-
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time>May 29, 2019</time>
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    6 min read
-  </span>
-  
-
-  
-  
-
-  
-
-  
-
-</div>
-
+      </div>
       
     </div>
 
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/wukong-app-dev/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+    </div>
     
 
   </div>
@@ -567,316 +824,131 @@
     
     
     
-    <a href="/post/compile-vtk-8.2.0/">
-      <img src="/post/compile-vtk-8.2.0/featured_huf6adf1c64fa0abaccfb5e716339719e1_15677_150x0_resize_lanczos_2.png" itemprop="image">
+    <a href="/publication/conference-paper/wukong-spie/" >
+      <img src="/publication/conference-paper/wukong-spie/featured_hu4f1a61a78d2e3be14cb6aa51cdb36fb4_97097_150x0_resize_lanczos_2.png" alt="">
     </a>
     
   </div>
 </div>
 
+          
         
       
+
+      
+      
+      
+        <h2>Talks</h2>
         
           
+            
 
 
 
-
-
-
-
-  
 
 
 
 
 
   
+  
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+
+
+
+
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/post/numpy-unravel-index/" itemprop="url">Modify multiple elements of a Numpy ndarray with ravel_multi_index</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/talk/2019ground_rounds/" >An in-house Windows GUI application for fluoroscopy-based 4D image guidance in proton beam therapy</a>
     </h3>
 
-    
-    <div class="article-style" itemprop="articleBody">
-      Indexing a multi-dimensional Numpy array Accessing a multi-dimensional Numpy array by indices is useful for many tasks, such as parsing …
-    </div>
     
 
     <div class="stream-meta article-metadata">
 
       
+      <div>
+        <span>
+          Sep 26, 2019 12:10 PM &mdash; 1:00 PM
+        </span>
+        
+        <span class="middot-divider"></span>
+        <span>Charlton Building SL 112, Mayo Clinic, Rochester, MN</span>
+        
+      </div>
+      
 
       
+      <div>
         
 
 
 
-<meta content="2019-04-15 00:19:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-04-15 00:19:00 &#43;0000 UTC" itemprop="dateModified">
-
-<div class="article-metadata">
-
   
-  
-  
-  
-  <div>
-    
+  <span><a href="/authors/admin/">Zheng Zhang</a></span>
 
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      
-        <a href="/authors/admin/">Zheng Zhang</a></span></span>
-  
-
-
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time>Apr 15, 2019</time>
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-
-  
-
-  
-
-</div>
-
+      </div>
       
     </div>
 
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/wukong-app-dev/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+    </div>
     
 
   </div>
   <div class="ml-3">
     
     
-    
-    <a href="/post/numpy-unravel-index/">
-      <img src="/post/numpy-unravel-index/featured_hu2a19ef0823b8dc1a97cb994dc2cbdd48_11408_150x0_resize_q100_lanczos.jpeg" itemprop="image">
-    </a>
-    
   </div>
 </div>
 
-        
-      
-        
           
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/post/parse-dicom-rtstruct-into-binary-masks/" itemprop="url">Parse DICOM RTSTRUCT (Radiotherapy Structure Set) into binary masks using Numpy</a>
-    </h3>
-
-    
-    <div class="article-style" itemprop="articleBody">
-      DICOM-RTSTRUCT Contour Data Contours drawn for radiotherapy are saved as DICOM RT Structure Set (&ldquo;RT&rdquo; stands for …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
         
-
-
-
-<meta content="2019-03-09 00:20:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-03-09 00:20:00 &#43;0000 UTC" itemprop="dateModified">
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      
-        <a href="/authors/admin/">Zheng Zhang</a></span></span>
-  
-
-
-
-  </div>
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time>Mar 9, 2019</time>
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    3 min read
-  </span>
-  
-
-  
-  
-
-  
-
-  
-
-</div>
-
       
     </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/post/parse-dicom-rtstruct-into-binary-masks/">
-      <img src="/post/parse-dicom-rtstruct-into-binary-masks/featured_hu60a2fa9603033db3828606e0746c7acf_15621_150x0_resize_lanczos_2.png" itemprop="image">
-    </a>
-    
-  </div>
-</div>
-
-        
-      
-    
-
-    
-    
-    
-
-    
-    
-    
-
   </div>
 </article>
 
-
-
-<div class="container">
-  <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    &copy; 2015-2019, Zheng Zhang, Ph.D. &middot; 
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-</div>
-
-
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
+      
 
     
     
@@ -884,15 +956,18 @@
     
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
         
       
 
@@ -902,9 +977,7 @@
 
     
     
-
-    
-    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
     
 
     
@@ -914,13 +987,13 @@
 
     
     
+    
+    
+    
+    
     <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'results': "results found",
-        'no_results': "No results found"
-      };
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
       const content_type = {
         'post': "Posts",
         'project': "Projects",
@@ -959,6 +1032,11 @@
 
     
     
+
+    
+    
+    
+    
     
     
     
@@ -969,8 +1047,68 @@
     
     
     
-    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
 
-  </body>
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2015–2019, Zheng Zhang &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
-

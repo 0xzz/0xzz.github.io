@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mark Kobrak | Zheng Zhang</title>
+    <link>https://zhangresearch.org/authors/mark-kobrak/</link>
+      <atom:link href="https://zhangresearch.org/authors/mark-kobrak/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mark Kobrak</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Sun, 08 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zhangresearch.org/img/icon.png</url>
+      <title>Mark Kobrak</title>
+      <link>https://zhangresearch.org/authors/mark-kobrak/</link>
+    </image>
+    
+    <item>
+      <title>Nanoscale viscosity of confined polyethylene oxide</title>
+      <link>https://zhangresearch.org/publication/journal-article/nanoscale-viscosity/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/nanoscale-viscosity/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Joseph Strzalka on Zheng Zhang</title>
+    <title>Joseph Strzalka | Zheng Zhang</title>
     <link>https://zhangresearch.org/authors/joseph-strzalka/</link>
-    <description>Recent content in Joseph Strzalka on Zheng Zhang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Wed, 01 May 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://zhangresearch.org/authors/joseph-strzalka/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://zhangresearch.org/authors/joseph-strzalka/index.xml" rel="self" type="application/rss+xml" />
+    <description>Joseph Strzalka</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Fri, 16 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zhangresearch.org/img/icon.png</url>
+      <title>Joseph Strzalka</title>
+      <link>https://zhangresearch.org/authors/joseph-strzalka/</link>
+    </image>
     
     <item>
-      <title>Nanoconfinement and salt complexing synergistically suppress crystallization in polyethylene oxide</title>
-      <link>https://zhangresearch.org/publication/nanoconfinement-and-salt/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/nanoconfinement-and-salt/</guid>
+      <title>Nanoconfinement and salt synergistically suppress crystallization in polyethylene oxide</title>
+      <link>https://zhangresearch.org/publication/journal-article/nanoconfinement-and-salt/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/nanoconfinement-and-salt/</guid>
       <description></description>
     </item>
     

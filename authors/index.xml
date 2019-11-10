@@ -1,31 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on Zheng Zhang</title>
+    <title>Authors | Zheng Zhang</title>
     <link>https://zhangresearch.org/authors/</link>
-    <description>Recent content in Authors on Zheng Zhang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Wed, 29 May 2019 00:23:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://zhangresearch.org/authors/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://zhangresearch.org/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zhangresearch.org/img/icon.png</url>
+      <title>Authors</title>
+      <link>https://zhangresearch.org/authors/</link>
+    </image>
     
     <item>
-      <title>admin</title>
+      <title></title>
       <link>https://zhangresearch.org/authors/admin/</link>
-      <pubDate>Wed, 29 May 2019 00:23:00 +0000</pubDate>
-      
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/admin/</guid>
+      <description>&lt;p&gt;I am a research fellow with the &lt;a href=&#34;https://www.mayoclinic.org/departments-centers/radiation-oncology/&#34; target=&#34;_blank&#34;&gt;Department of Radiation Oncology&lt;/a&gt; at &lt;a href=&#34;https://www.mayoclinic.org/&#34; target=&#34;_blank&#34;&gt;Mayo Clinic&lt;/a&gt;, Rochester, Minnesota. My current work focuses on improving motion management in our proton therapy practice with real-time fluoroscopic imaging. To this end, I develop in-house clinical software, and conduct research on reliable tumor-tracking with computer vision / deep learning methods.&lt;/p&gt;
+
+&lt;p&gt;Previously, I studied nanoconfined polymer electrolytes for safer rechargeable lithium-ion batteries at &lt;a href=&#34;https://www.bnl.gov/&#34; target=&#34;_blank&#34;&gt;Brookhaven National Laboratory&lt;/a&gt;, via synchrotron X-ray scattering experiments carried out at the &lt;a href=&#34;https://www.aps.anl.gov/&#34; target=&#34;_blank&#34;&gt;Advanced Photon Source&lt;/a&gt; and the &lt;a href=&#34;https://www.bnl.gov/ps/&#34; target=&#34;_blank&#34;&gt;National Synchrotron Light Source II&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I enjoy solving scientific/quantitative problems with programming. In particular, I am fluent in Python and familiar with its scientific eco-system (i.e. NumPy, SciPy, Matplotlib, LmFit, Mayavi, scikit-image etc.). I like readable, elegant NumPy vectorization solutions, but am also comfortable with extending Python via Numba or pybind11/C++ for numerical performance boosting. For larger coding projects, I use C#/.NET (LINQ is marvelous) and strive for robustness and maintainability through good software engineering principles.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Amanda J. Deisher</title>
+      <link>https://zhangresearch.org/authors/amanda-j.-deisher/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/authors/amanda-j.-deisher/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chris Beltran</title>
+      <link>https://zhangresearch.org/authors/chris-beltran/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/authors/chris-beltran/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Erik J. Tryggestad</title>
+      <link>https://zhangresearch.org/authors/erik-j.-tryggestad/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/authors/erik-j.-tryggestad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hok Seum Wan Chan Tseung</title>
+      <link>https://zhangresearch.org/authors/hok-seum-wan-chan-tseung/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/authors/hok-seum-wan-chan-tseung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jon J. Kruse</title>
+      <link>https://zhangresearch.org/authors/jon-j.-kruse/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/authors/jon-j.-kruse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Michael G. Herman</title>
+      <link>https://zhangresearch.org/authors/michael-g.-herman/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/authors/michael-g.-herman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stephen M. Corner</title>
+      <link>https://zhangresearch.org/authors/stephen-m.-corner/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/authors/stephen-m.-corner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Andrei Fluerasu</title>
       <link>https://zhangresearch.org/authors/andrei-fluerasu/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/andrei-fluerasu/</guid>
       <description></description>
     </item>
@@ -33,8 +92,7 @@
     <item>
       <title>Benjamin M. Ocko</title>
       <link>https://zhangresearch.org/authors/benjamin-m.-ocko/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/benjamin-m.-ocko/</guid>
       <description></description>
     </item>
@@ -42,8 +100,7 @@
     <item>
       <title>Chang-Hwan Choi</title>
       <link>https://zhangresearch.org/authors/chang-hwan-choi/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/chang-hwan-choi/</guid>
       <description></description>
     </item>
@@ -51,8 +108,7 @@
     <item>
       <title>Charles T. Black</title>
       <link>https://zhangresearch.org/authors/charles-t.-black/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/charles-t.-black/</guid>
       <description></description>
     </item>
@@ -60,26 +116,23 @@
     <item>
       <title>Frank T. Fisher</title>
       <link>https://zhangresearch.org/authors/frank-t.-fisher/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/frank-t.-fisher/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Joseph Strzalka</title>
-      <link>https://zhangresearch.org/authors/joseph-strzalka/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/authors/joseph-strzalka/</guid>
+      <title>Honghu Zhang</title>
+      <link>https://zhangresearch.org/authors/honghu-zhang/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/authors/honghu-zhang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Julien Lhermitte</title>
       <link>https://zhangresearch.org/authors/julien-lhermitte/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/julien-lhermitte/</guid>
       <description></description>
     </item>
@@ -87,8 +140,7 @@
     <item>
       <title>Junjun Ding</title>
       <link>https://zhangresearch.org/authors/junjun-ding/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/junjun-ding/</guid>
       <description></description>
     </item>
@@ -96,8 +148,7 @@
     <item>
       <title>Kevin G. Yager</title>
       <link>https://zhangresearch.org/authors/kevin-g.-yager/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/kevin-g.-yager/</guid>
       <description></description>
     </item>
@@ -105,17 +156,23 @@
     <item>
       <title>Lutz Wiegart</title>
       <link>https://zhangresearch.org/authors/lutz-wiegart/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/lutz-wiegart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mark Kobrak</title>
+      <link>https://zhangresearch.org/authors/mark-kobrak/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/authors/mark-kobrak/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ye Tian</title>
       <link>https://zhangresearch.org/authors/ye-tian/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/ye-tian/</guid>
       <description></description>
     </item>
@@ -123,8 +180,7 @@
     <item>
       <title>Yugang Zhang</title>
       <link>https://zhangresearch.org/authors/yugang-zhang/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/yugang-zhang/</guid>
       <description></description>
     </item>
@@ -132,9 +188,16 @@
     <item>
       <title>Zheng Zhang</title>
       <link>https://zhangresearch.org/authors/zheng-zhang/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/zheng-zhang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joseph Strzalka</title>
+      <link>https://zhangresearch.org/authors/joseph-strzalka/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/authors/joseph-strzalka/</guid>
       <description></description>
     </item>
     
@@ -142,7 +205,6 @@
       <title>Huan Hu</title>
       <link>https://zhangresearch.org/authors/huan-hu/</link>
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/huan-hu/</guid>
       <description></description>
     </item>
@@ -151,7 +213,6 @@
       <title>Ke Du</title>
       <link>https://zhangresearch.org/authors/ke-du/</link>
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/ke-du/</guid>
       <description></description>
     </item>
@@ -160,7 +221,6 @@
       <title>Myeongkee Park</title>
       <link>https://zhangresearch.org/authors/myeongkee-park/</link>
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/myeongkee-park/</guid>
       <description></description>
     </item>
@@ -169,7 +229,6 @@
       <title>Frank W. DelRio</title>
       <link>https://zhangresearch.org/authors/frank-w.-delrio/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/frank-w.-delrio/</guid>
       <description></description>
     </item>
@@ -178,7 +237,6 @@
       <title>Haiqing Lin</title>
       <link>https://zhangresearch.org/authors/haiqing-lin/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/haiqing-lin/</guid>
       <description></description>
     </item>
@@ -187,7 +245,6 @@
       <title>Jason P. Killgore</title>
       <link>https://zhangresearch.org/authors/jason-p.-killgore/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/jason-p.-killgore/</guid>
       <description></description>
     </item>
@@ -196,7 +253,6 @@
       <title>Justin M. Gorham</title>
       <link>https://zhangresearch.org/authors/justin-m.-gorham/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/justin-m.-gorham/</guid>
       <description></description>
     </item>
@@ -205,7 +261,6 @@
       <title>Lewis M. Cox</title>
       <link>https://zhangresearch.org/authors/lewis-m.-cox/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/lewis-m.-cox/</guid>
       <description></description>
     </item>
@@ -214,7 +269,6 @@
       <title>Maryam Omidvar</title>
       <link>https://zhangresearch.org/authors/maryam-omidvar/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/maryam-omidvar/</guid>
       <description></description>
     </item>
@@ -223,7 +277,6 @@
       <title>Mengyuan Wang</title>
       <link>https://zhangresearch.org/authors/mengyuan-wang/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/mengyuan-wang/</guid>
       <description></description>
     </item>
@@ -232,7 +285,6 @@
       <title>Yifu Ding</title>
       <link>https://zhangresearch.org/authors/yifu-ding/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/yifu-ding/</guid>
       <description></description>
     </item>
@@ -241,7 +293,6 @@
       <title>Dantong Yu</title>
       <link>https://zhangresearch.org/authors/dantong-yu/</link>
       <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/dantong-yu/</guid>
       <description></description>
     </item>
@@ -250,7 +301,6 @@
       <title>Jiliang Liu</title>
       <link>https://zhangresearch.org/authors/jiliang-liu/</link>
       <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/jiliang-liu/</guid>
       <description></description>
     </item>
@@ -259,7 +309,6 @@
       <title>G. C. Hilton</title>
       <link>https://zhangresearch.org/authors/g.-c.-hilton/</link>
       <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/g.-c.-hilton/</guid>
       <description></description>
     </item>
@@ -268,7 +317,6 @@
       <title>Ronggui Yang</title>
       <link>https://zhangresearch.org/authors/ronggui-yang/</link>
       <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/ronggui-yang/</guid>
       <description></description>
     </item>
@@ -277,7 +325,6 @@
       <title>Zhen Wang</title>
       <link>https://zhangresearch.org/authors/zhen-wang/</link>
       <pubDate>Tue, 05 Aug 2014 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/zhen-wang/</guid>
       <description></description>
     </item>
@@ -286,7 +333,6 @@
       <title>Donna C. Hurley</title>
       <link>https://zhangresearch.org/authors/donna-c.-hurley/</link>
       <pubDate>Fri, 25 Oct 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/donna-c.-hurley/</guid>
       <description></description>
     </item>
@@ -295,7 +341,6 @@
       <title>Jianliang Xiao</title>
       <link>https://zhangresearch.org/authors/jianliang-xiao/</link>
       <pubDate>Fri, 25 Oct 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/jianliang-xiao/</guid>
       <description></description>
     </item>
@@ -304,7 +349,6 @@
       <title>Zhengwei Li</title>
       <link>https://zhangresearch.org/authors/zhengwei-li/</link>
       <pubDate>Fri, 25 Oct 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/zhengwei-li/</guid>
       <description></description>
     </item>
@@ -313,7 +357,6 @@
       <title>Daniela Molina Piper</title>
       <link>https://zhangresearch.org/authors/daniela-molina-piper/</link>
       <pubDate>Fri, 04 Oct 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/daniela-molina-piper/</guid>
       <description></description>
     </item>
@@ -322,7 +365,6 @@
       <title>Kyu Hwan Oh</title>
       <link>https://zhangresearch.org/authors/kyu-hwan-oh/</link>
       <pubDate>Fri, 04 Oct 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/kyu-hwan-oh/</guid>
       <description></description>
     </item>
@@ -331,7 +373,6 @@
       <title>Se-Hee Lee</title>
       <link>https://zhangresearch.org/authors/se-hee-lee/</link>
       <pubDate>Fri, 04 Oct 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/se-hee-lee/</guid>
       <description></description>
     </item>
@@ -340,7 +381,6 @@
       <title>Seoung-Bum Son</title>
       <link>https://zhangresearch.org/authors/seoung-bum-son/</link>
       <pubDate>Fri, 04 Oct 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/seoung-bum-son/</guid>
       <description></description>
     </item>
@@ -349,7 +389,6 @@
       <title>Seul Cham Kim</title>
       <link>https://zhangresearch.org/authors/seul-cham-kim/</link>
       <pubDate>Fri, 04 Oct 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/seul-cham-kim/</guid>
       <description></description>
     </item>
@@ -358,7 +397,6 @@
       <title>Liang Wang</title>
       <link>https://zhangresearch.org/authors/liang-wang/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/liang-wang/</guid>
       <description></description>
     </item>
@@ -367,7 +405,6 @@
       <title>Dae Up Ahn</title>
       <link>https://zhangresearch.org/authors/dae-up-ahn/</link>
       <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/dae-up-ahn/</guid>
       <description></description>
     </item>
@@ -376,7 +413,6 @@
       <title>Changpin Chen</title>
       <link>https://zhangresearch.org/authors/changpin-chen/</link>
       <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/changpin-chen/</guid>
       <description></description>
     </item>
@@ -385,7 +421,6 @@
       <title>Jiechang Hou</title>
       <link>https://zhangresearch.org/authors/jiechang-hou/</link>
       <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/jiechang-hou/</guid>
       <description></description>
     </item>
@@ -394,7 +429,6 @@
       <title>Lixin Chen</title>
       <link>https://zhangresearch.org/authors/lixin-chen/</link>
       <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/lixin-chen/</guid>
       <description></description>
     </item>
@@ -403,7 +437,6 @@
       <title>Qidong Wang</title>
       <link>https://zhangresearch.org/authors/qidong-wang/</link>
       <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/qidong-wang/</guid>
       <description></description>
     </item>
@@ -412,7 +445,6 @@
       <title>Xiulin Fan</title>
       <link>https://zhangresearch.org/authors/xiulin-fan/</link>
       <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/xiulin-fan/</guid>
       <description></description>
     </item>
@@ -421,7 +453,6 @@
       <title>Xuezhang Xiao</title>
       <link>https://zhangresearch.org/authors/xuezhang-xiao/</link>
       <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/xuezhang-xiao/</guid>
       <description></description>
     </item>
@@ -430,7 +461,6 @@
       <title>Yuanbo Liu</title>
       <link>https://zhangresearch.org/authors/yuanbo-liu/</link>
       <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/yuanbo-liu/</guid>
       <description></description>
     </item>
@@ -439,7 +469,6 @@
       <title>Zhe Wu</title>
       <link>https://zhangresearch.org/authors/zhe-wu/</link>
       <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/authors/zhe-wu/</guid>
       <description></description>
     </item>

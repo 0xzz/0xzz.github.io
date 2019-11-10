@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.2.0">
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Source Themes Academic 4.5.0">
 
   
 
@@ -38,18 +37,6 @@
 
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
   
   
   <meta name="theme-color" content="#2962ff">
@@ -60,10 +47,9 @@
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
     
@@ -74,13 +60,15 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
 
     
 
@@ -88,23 +76,30 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
   
-
-  <link rel="stylesheet" href="/styles.css">
-  
-
-  
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
   
 
   
-  <link rel="alternate" href="https://zhangresearch.org/index.xml" type="application/rss+xml" title="Zheng Zhang">
-  <link rel="feed" href="https://zhangresearch.org/index.xml" type="application/rss+xml" title="Zheng Zhang">
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
   
 
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
+
+
+
+  
+
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Zheng Zhang">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
   <link rel="canonical" href="https://zhangresearch.org/">
@@ -116,25 +111,52 @@
     
     
   
+  
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Zheng Zhang">
   <meta property="og:url" content="https://zhangresearch.org/">
   <meta property="og:title" content="Zheng Zhang">
-  <meta property="og:description" content="Research Fellow"><meta property="og:image" content="https://zhangresearch.org/img/icon-192.png">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Research Fellow"><meta property="og:image" content="https://zhangresearch.org/img/icon.png">
+  <meta property="twitter:image" content="https://zhangresearch.org/img/icon.png"><meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2019-05-29T00:23:00&#43;00:00">
-  
-
+    <meta property="og:updated_time" content="2020-02-17T00:00:00&#43;00:00">
   
 
   
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://zhangresearch.org/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://zhangresearch.org/"
+}
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
 
   <title>Zheng Zhang</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+
   <aside class="search-results" id="search">
   <div class="container">
     <section class="search-header">
@@ -151,7 +173,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
         
       </div>
 
@@ -167,7 +189,8 @@
 </aside>
 
 
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
@@ -195,12 +218,22 @@
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#about" data-target="#about">
-            
-            <span>Home</span>
-            
-          </a>
+          <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
         </li>
 
         
@@ -214,12 +247,22 @@
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#posts" data-target="#posts">
-            
-            <span>Posts</span>
-            
-          </a>
+          <a class="nav-link " href="/#posts" data-target="#posts"><span>Posts</span></a>
         </li>
 
         
@@ -233,12 +276,22 @@
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#projects" data-target="#projects">
-            
-            <span>Projects</span>
-            
-          </a>
+          <a class="nav-link " href="/#selected_publications" data-target="#selected_publications"><span>Publications</span></a>
         </li>
 
         
@@ -252,12 +305,22 @@
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#selected_publications" data-target="#selected_publications">
-            
-            <span>Publications</span>
-            
-          </a>
+          <a class="nav-link " href="/#talks" data-target="#talks"><span>Talks</span></a>
         </li>
 
         
@@ -271,31 +334,22 @@
           
         
 
-        <li class="nav-item">
-          <a class="nav-link" href="/#talks" data-target="#talks">
-            
-            <span>Talks</span>
-            
-          </a>
-        </li>
-
         
         
-
         
-
         
         
         
           
+          
+          
+            
+          
+          
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#contact" data-target="#contact">
-            
-            <span>Contact</span>
-            
-          </a>
+          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
         </li>
 
         
@@ -329,8 +383,19 @@
 </nav>
 
 
+  
 
-<span id="homepage" class="d-none"></span>
+
+
+
+
+
+
+
+
+
+
+<span class="js-widget-page d-none"></span>
 
 
 
@@ -366,7 +431,14 @@
 
   
   
-  <section id="about" class="home-section wg-about   " >
+  
+  
+  
+
+  
+  
+
+  <section id="about" class="home-section wg-about   "  >
     <div class="container">
       
 
@@ -383,29 +455,27 @@
 
 
 
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
+<div class="row">
   <div class="col-12 col-lg-4">
     <div id="profile">
 
       
       
-      <img class="portrait" src="/author/admin/avatar_hub104af7c7a52216c07b1245a152719e3_270795_250x250_fill_lanczos_center_2.png" itemprop="image" alt="Avatar">
+      <img class="portrait" src="/authors/admin/avatar_hub104af7c7a52216c07b1245a152719e3_270795_250x250_fill_lanczos_center_2.png" alt="Avatar">
       
 
       <div class="portrait-title">
-        <h2 itemprop="name">Zheng Zhang</h2>
-        <h3 itemprop="jobTitle">Research Fellow</h3>
+        <h2>Zheng Zhang</h2>
+        <h3>Research Fellow</h3>
 
         
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <a href="https://www.mayoclinic.org/departments-centers/radiation-oncology/" target="_blank" itemprop="url" rel="noopener">
-          <span itemprop="name">Mayo Clinic Radiation Oncology</span>
+        <h3>
+          <a href="https://www.mayoclinic.org/departments-centers/radiation-oncology/" target="_blank" rel="noopener">
+          <span>Mayo Clinic Radiation Oncology</span>
           </a>
         </h3>
         
       </div>
-
-      <link itemprop="url" href="">
 
       <ul class="network-icon" aria-hidden="true">
         
@@ -421,7 +491,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="/#contact" >
+          <a href="/#contact" >
             <i class="fas fa-envelope big-icon"></i>
           </a>
         </li>
@@ -438,7 +508,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://www.linkedin.com/in/zhengzhang89" target="_blank" rel="noopener">
+          <a href="https://www.linkedin.com/in/zhengzhang89" target="_blank" rel="noopener">
             <i class="fab fa-linkedin big-icon"></i>
           </a>
         </li>
@@ -455,7 +525,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://github.com/0xzz" target="_blank" rel="noopener">
+          <a href="https://github.com/0xzz" target="_blank" rel="noopener">
             <i class="fab fa-github big-icon"></i>
           </a>
         </li>
@@ -464,16 +534,16 @@
 
     </div>
   </div>
-  <div class="col-12 col-lg-8" itemprop="description">
+  <div class="col-12 col-lg-8">
 
     
     <h1>Nice to meet you!</h1>
 
-    <p>I am a research fellow with the <a href="https://www.mayoclinic.org/departments-centers/radiation-oncology/" target="_blank">Department of Radiation Oncology</a> at <a href="https://www.mayoclinic.org/" target="_blank">Mayo Clinic</a>, currently working on a 4D X-ray imaging improvement project for image-guided proton therapy (IGPT). I develop clinically deployable software for motion-managed radiotherapy delivery, and conduct research on reliable tumor-tracking with computer vision / deep learning methods.</p>
+    <p>I am a research fellow with the <a href="https://www.mayoclinic.org/departments-centers/radiation-oncology/" target="_blank">Department of Radiation Oncology</a> at <a href="https://www.mayoclinic.org/" target="_blank">Mayo Clinic</a>, Rochester, Minnesota. My current work focuses on improving motion management in our proton therapy practice with real-time fluoroscopic imaging. To this end, I develop in-house clinical software, and conduct research on reliable tumor-tracking with computer vision / deep learning methods.</p>
 
-<p>Previously, I studied nanoconfined polymer electrolytes for safer rechargeable lithium-ion batteries at <a href="https://www.bnl.gov/" target="_blank">Brookhaven National Laboratory (BNL)</a>, using synchrotron X-ray scattering experiments carried out at the <a href="https://www.aps.anl.gov/" target="_blank">Advanced Photon Source</a> and the <a href="https://www.bnl.gov/ps/" target="_blank">National Synchrotron Light Source II</a>.</p>
+<p>Previously, I studied nanoconfined polymer electrolytes for safer rechargeable lithium-ion batteries at <a href="https://www.bnl.gov/" target="_blank">Brookhaven National Laboratory</a>, via synchrotron X-ray scattering experiments carried out at the <a href="https://www.aps.anl.gov/" target="_blank">Advanced Photon Source</a> and the <a href="https://www.bnl.gov/ps/" target="_blank">National Synchrotron Light Source II</a>.</p>
 
-<p>I enjoy solving scientific/quantitative problems with programming. In particular, I am fluent in Python, the SciPy stack and other associated scientific modules (Numpy, SciPy, Matplotlib, Lmfit, Mayavi, Scikit-image etc.). I like readable, elegant Numpy vectorization solutions, but am also comfortable with extending Python via Cython, Numba or pybind11/C++ for numerical performance boost. For larger coding projects, I use C#/.NET (LINQ is marvelous) and strive for robustness and maintainability through good software engineering principles.</p>
+<p>I enjoy solving scientific/quantitative problems with programming. In particular, I am fluent in Python and familiar with its scientific eco-system (i.e. NumPy, SciPy, Matplotlib, LmFit, Mayavi, scikit-image etc.). I like readable, elegant NumPy vectorization solutions, but am also comfortable with extending Python via Numba or pybind11/C++ for numerical performance boosting. For larger coding projects, I use C#/.NET (LINQ is marvelous) and strive for robustness and maintainability through good software engineering principles.</p>
 
 
     <div class="row">
@@ -484,8 +554,6 @@
         <ul class="ul-interests">
           
           <li>Image-guided radiotherapy</li>
-          
-          <li>Radiosurgery</li>
           
           <li>Respiratory motion management</li>
           
@@ -503,7 +571,7 @@
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">CAMPEP Accredited Certificate Program in Medical Physics, 2018 - Present</p>
+              <p class="course">CAMPEP-accredited Certificate Program in Medical Physics, 2018–Present</p>
               <p class="institution">Mayo Clinic</p>
             </div>
           </li>
@@ -512,7 +580,7 @@
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
               <p class="course">Ph.D. in Mechanical Engineering, 2015</p>
-              <p class="institution">University of Colorado at Boulder</p>
+              <p class="institution">University of Colorado Boulder</p>
             </div>
           </li>
           
@@ -534,7 +602,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -559,7 +626,251 @@
 
   
   
-  <section id="posts" class="home-section wg-pages   " >
+  
+  
+  
+
+  
+  
+
+  <section id="projects" class="home-section wg-portfolio   "  >
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<div class="margin-auto">
+
+  <div class="center-text">
+    <h1 class="mt-0">Projects</h1>
+    
+  </div>
+  <div>
+
+
+    
+
+    
+
+      
+
+      
+      
+      
+      
+        
+      
+
+      <span class="d-none default-project-filter">*</span>
+
+      
+      
+      <div class="project-toolbar">
+        <div class="project-filters">
+          <div class="btn-toolbar">
+            <div class="btn-group flex-wrap">
+              
+                
+                
+                
+                  
+                
+                <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-IGPT" class="btn btn-primary btn-lg">Clinical Software</a>
+              
+                
+                
+                
+                <a href="#" data-filter=".js-id-X-ray-scattering" class="btn btn-primary btn-lg">Synchrotron Experiment</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+
+    <div class="isotope projects-container js-layout-masonry ">
+      
+
+        
+        
+        
+
+        
+          
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<div class="project-card project-item isotope-item js-id-IGPT">
+  <div class="card">
+    
+    
+    <a href="/project/wukong-app-dev/"  class="card-image hover-overlay">
+      <img src="/project/wukong-app-dev/featured_hu614afb9bc4abfe51f14a1292850e6835_1683505_550x0_resize_q90_lanczos_2.png" alt="" class="img-responsive">
+    </a>
+    
+    <div class="card-text">
+      <h4><a href="/project/wukong-app-dev/" >Image-guidance Software Development</a></h4>
+      
+      <div class="article-style">
+        <p>In order to facilitate better clinical workflow and provide added assurance during motion-managed proton therapy delivery, I am …</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+        
+
+      
+
+        
+        
+        
+
+        
+          
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<div class="project-card project-item isotope-item js-id-IGPT">
+  <div class="card">
+    
+    
+    <a href="/project/fpd-calibration/"  class="card-image hover-overlay">
+      <img src="/project/fpd-calibration/featured_huce127ef033bf772c6efaf9a31bde0ae9_79012_550x0_resize_q90_lanczos_2.png" alt="" class="img-responsive">
+    </a>
+    
+    <div class="card-text">
+      <h4><a href="/project/fpd-calibration/" >Flat-panel Detector Calibration</a></h4>
+      
+      <div class="article-style">
+        <p>Accurate delivery of radiotherapy dose is predicated upon careful motion management. This is particularly true for spot-scanned proton …</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+        
+
+      
+
+        
+        
+        
+
+        
+          
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<div class="project-card project-item isotope-item js-id-nanoconfinement js-id-X-ray-scattering">
+  <div class="card">
+    
+    
+    <a href="/project/nanoconfined-polymer-electrolytes/"  class="card-image hover-overlay">
+      <img src="/project/nanoconfined-polymer-electrolytes/featured_hua6890565b6fd1949ccdb2d3c0acee9c5_163842_550x0_resize_q90_lanczos_2.png" alt="" class="img-responsive">
+    </a>
+    
+    <div class="card-text">
+      <h4><a href="/project/nanoconfined-polymer-electrolytes/" >Nanoconfined polymer electrolytes</a></h4>
+      
+      <div class="article-style">
+        <p>We probe the nanoscale viscosity and molecular structure of confined polymer electrolytes (SPE) inside rigid nanovolumes, using X-ray …</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+        
+
+      
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="posts" class="home-section wg-pages   "  >
     <div class="container">
       
 
@@ -622,7 +933,6 @@
 
 
 
-  
 
 
 
@@ -631,15 +941,15 @@
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/post/compile-vtk-8.2.0/" itemprop="url">Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/post/compile-vtk-8.2.0/" >Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       The Visualization Toolkit (VTK) is the 3D engine behind many scientific visualization applications, such as MayaVi, the popular …
     </div>
     
@@ -652,10 +962,6 @@
         
 
 
-
-<meta content="2019-05-29 00:23:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-05-29 00:23:00 &#43;0000 UTC" itemprop="dateModified">
-
 <div class="article-metadata">
 
   
@@ -667,17 +973,8 @@
 
 
 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      
-        <a href="/authors/admin/">Zheng Zhang</a></span></span>
   
-
-
+  <span><a href="/authors/admin/">Zheng Zhang</a></span>
 
   </div>
   
@@ -689,7 +986,7 @@
     
       
     
-    <time>May 29, 2019</time>
+    May 29, 2019
   </span>
   
 
@@ -704,9 +1001,9 @@
 
   
   
-
   
 
+  
   
 
 </div>
@@ -721,8 +1018,8 @@
     
     
     
-    <a href="/post/compile-vtk-8.2.0/">
-      <img src="/post/compile-vtk-8.2.0/featured_huf6adf1c64fa0abaccfb5e716339719e1_15677_150x0_resize_lanczos_2.png" itemprop="image">
+    <a href="/post/compile-vtk-8.2.0/" >
+      <img src="/post/compile-vtk-8.2.0/featured_huf6adf1c64fa0abaccfb5e716339719e1_15677_150x0_resize_lanczos_2.png" alt="">
     </a>
     
   </div>
@@ -739,7 +1036,6 @@
 
 
 
-  
 
 
 
@@ -748,15 +1044,15 @@
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/post/numpy-unravel-index/" itemprop="url">Modify multiple elements of a Numpy ndarray with ravel_multi_index</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/post/numpy-unravel-index/" >Modify multiple elements of a Numpy ndarray with ravel_multi_index</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Indexing a multi-dimensional Numpy array Accessing a multi-dimensional Numpy array by indices is useful for many tasks, such as parsing …
     </div>
     
@@ -769,10 +1065,6 @@
         
 
 
-
-<meta content="2019-04-15 00:19:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-04-15 00:19:00 &#43;0000 UTC" itemprop="dateModified">
-
 <div class="article-metadata">
 
   
@@ -784,17 +1076,8 @@
 
 
 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      
-        <a href="/authors/admin/">Zheng Zhang</a></span></span>
   
-
-
+  <span><a href="/authors/admin/">Zheng Zhang</a></span>
 
   </div>
   
@@ -806,7 +1089,7 @@
     
       
     
-    <time>Apr 15, 2019</time>
+    Apr 15, 2019
   </span>
   
 
@@ -821,9 +1104,9 @@
 
   
   
-
   
 
+  
   
 
 </div>
@@ -838,8 +1121,8 @@
     
     
     
-    <a href="/post/numpy-unravel-index/">
-      <img src="/post/numpy-unravel-index/featured_hu2a19ef0823b8dc1a97cb994dc2cbdd48_11408_150x0_resize_q100_lanczos.jpeg" itemprop="image">
+    <a href="/post/numpy-unravel-index/" >
+      <img src="/post/numpy-unravel-index/featured_hu2a19ef0823b8dc1a97cb994dc2cbdd48_11408_150x0_resize_q90_lanczos.jpeg" alt="">
     </a>
     
   </div>
@@ -856,7 +1139,6 @@
 
 
 
-  
 
 
 
@@ -865,15 +1147,15 @@
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/post/parse-dicom-rtstruct-into-binary-masks/" itemprop="url">Parse DICOM RTSTRUCT (Radiotherapy Structure Set) into binary masks using Numpy</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/post/parse-dicom-rtstruct-into-binary-masks/" >Parse DICOM RTSTRUCT (Radiotherapy Structure Set) into binary masks using Numpy</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       DICOM-RTSTRUCT Contour Data Contours drawn for radiotherapy are saved as DICOM RT Structure Set (&ldquo;RT&rdquo; stands for …
     </div>
     
@@ -886,10 +1168,6 @@
         
 
 
-
-<meta content="2019-03-09 00:20:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-03-09 00:20:00 &#43;0000 UTC" itemprop="dateModified">
-
 <div class="article-metadata">
 
   
@@ -901,17 +1179,8 @@
 
 
 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      
-        <a href="/authors/admin/">Zheng Zhang</a></span></span>
   
-
-
+  <span><a href="/authors/admin/">Zheng Zhang</a></span>
 
   </div>
   
@@ -923,7 +1192,7 @@
     
       
     
-    <time>Mar 9, 2019</time>
+    Mar 9, 2019
   </span>
   
 
@@ -938,9 +1207,9 @@
 
   
   
-
   
 
+  
   
 
 </div>
@@ -955,8 +1224,8 @@
     
     
     
-    <a href="/post/parse-dicom-rtstruct-into-binary-masks/">
-      <img src="/post/parse-dicom-rtstruct-into-binary-masks/featured_hu60a2fa9603033db3828606e0746c7acf_15621_150x0_resize_lanczos_2.png" itemprop="image">
+    <a href="/post/parse-dicom-rtstruct-into-binary-masks/" >
+      <img src="/post/parse-dicom-rtstruct-into-binary-masks/featured_hu60a2fa9603033db3828606e0746c7acf_15621_150x0_resize_lanczos_2.png" alt="">
     </a>
     
   </div>
@@ -972,7 +1241,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -997,163 +1265,14 @@
 
   
   
-  <section id="projects" class="home-section wg-portfolio   " >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-<div class="margin-auto">
-
-  <div class="center-text">
-    <h1 class="mt-0">Projects</h1>
-    
-  </div>
-  <div>
-
-
-    
-
-    
-
-    <div class="isotope projects-container js-layout-masonry ">
-      
-        
-        
-        
-        
-          
-
-
-
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-IGPT js-id-IGRT">
-  <div class="card">
-    
-    
-    <a href="/project/wukong-app-dev/"  class="card-image hover-overlay">
-      <img src="/project/wukong-app-dev/featured_hu0b74ae1845e5163a484e33f80e72e061_800966_550x0_resize_q90_lanczos_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="/project/wukong-app-dev/" >IGPT Software Development</a></h4>
-      <div class="card-desription">
-        <p>As an essential component of our image-guided proton therapy (IGPT) practice, I am developing a clinical computer vision application (Code name: WuKong) for visual guidance and tumor tracking during motion-managed treatments, based on high speed acquisition and real time processing of fluoroscopic frames. Being fully DICOM-aware, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure for medical data transfer as well as HIPAA-compliant cloud storage, and provides a user-friendly graphical interface.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-        
-      
-        
-        
-        
-        
-          
-
-
-
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-IGRT js-id-IGPT">
-  <div class="card">
-    
-    
-    <a href="/project/fpd-calibration/"  class="card-image hover-overlay">
-      <img src="/project/fpd-calibration/featured_huce127ef033bf772c6efaf9a31bde0ae9_79012_550x0_resize_q90_lanczos_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="/project/fpd-calibration/" >Flat-panel Detector (FPD) Calibration</a></h4>
-      <div class="card-desription">
-        <p>Correct delivery of proton treatment is predicated upon accurate spatial calibration. While the in-room position of imaging X-ray sources and flat-panel detectors are engineered to a given specification, their actual positions may deviate from the specification by small errors. This project delivers an iterative algorithmic calibration routine to correct such errors, i.e. translation, rotation and non-affine distortions. It may also be used as an independent QA test of vendor&rsquo;s calibrations.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-        
-      
-        
-        
-        
-        
-          
-
-
-
-
-
-
-
-
-<div class="project-card project-item isotope-item js-id-nanoconfinement js-id-X-ray-scattering js-id-XPCS">
-  <div class="card">
-    
-    
-    <a href="/project/nanoconfined-polymer-electrolytes/"  class="card-image hover-overlay">
-      <img src="/project/nanoconfined-polymer-electrolytes/featured_hua6890565b6fd1949ccdb2d3c0acee9c5_163842_550x0_resize_q90_lanczos_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="/project/nanoconfined-polymer-electrolytes/" >Nanoconfined polymer electrolytes</a></h4>
-      <div class="card-desription">
-        <p>We fill solid polymer electrolytes (SPE) into rigid nanovolumes, and characterize their dynamics and structure using X-ray photon correlation spectroscopy (XPCS) and grazing incidence X-ray scattering (GIWAXS), respectively.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-        
-      
-    </div>
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
   
   
   
 
   
   
-  <section id="selected_publications" class="home-section wg-featured   " >
+
+  <section id="selected_publications" class="home-section wg-featured   "  >
     <div class="container">
       
 
@@ -1198,26 +1317,234 @@
 
 
 
+
   
-  
-  
-
-
-
-
-
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+
+
+
+  
+
+
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/concentric-rings/" itemprop="url">Capillary rupture of suspended polymer concentric rings</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/conference-paper/wukong-spie/" >A Windows GUI application for real-time image guidance during motion- managed proton beam therapy</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
+      Respiratory motion-management is crucial for maintaining robustness of the delivered dose in radiotherapy. This is particularly …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+
+
+  
+  <span><a href="/authors/admin/">Zheng Zhang</a></span>, <span><a href="/authors/chris-beltran/">Chris Beltran</a></span>, <span><a href="/authors/stephen-m.-corner/">Stephen M. Corner</a></span>, <span><a href="/authors/amanda-j.-deisher/">Amanda J. Deisher</a></span>, <span><a href="/authors/michael-g.-herman/">Michael G. Herman</a></span>, <span><a href="/authors/jon-j.-kruse/">Jon J. Kruse</a></span>, <span><a href="/authors/hok-seum-wan-chan-tseung/">Hok Seum Wan Chan Tseung</a></span>, <span><a href="/authors/erik-j.-tryggestad/">Erik J. Tryggestad</a></span>
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/wukong-app-dev/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/conference-paper/wukong-spie/" >
+      <img src="/publication/conference-paper/wukong-spie/featured_hu4f1a61a78d2e3be14cb6aa51cdb36fb4_97097_150x0_resize_lanczos_2.png" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/journal-article/nanoscale-viscosity/" >Nanoscale viscosity of confined polyethylene oxide</a>
+    </h3>
+
+    
+    <div class="article-style">
+      Complex fluids near interfaces or confined within nanoscale volumes can exhibit substantial shifts in physical properties compared to …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+
+
+  
+  <span><a href="/authors/zheng-zhang/">Zheng Zhang</a></span>, <span><a href="/authors/junjun-ding/">Junjun Ding</a></span>, <span><a href="/authors/benjamin-m.-ocko/">Benjamin M. Ocko</a></span>, <span><a href="/authors/andrei-fluerasu/">Andrei Fluerasu</a></span>, <span><a href="/authors/lutz-wiegart/">Lutz Wiegart</a></span>, <span><a href="/authors/yugang-zhang/">Yugang Zhang</a></span>, <span><a href="/authors/mark-kobrak/">Mark Kobrak</a></span>, <span><a href="/authors/ye-tian/">Ye Tian</a></span>, <span><a href="/authors/honghu-zhang/">Honghu Zhang</a></span>, <span><a href="/authors/julien-lhermitte/">Julien Lhermitte</a></span>, <span><a href="/authors/chang-hwan-choi/">Chang-Hwan Choi</a></span>, <span><a href="/authors/frank-t.-fisher/">Frank T. Fisher</a></span>, <span><a href="/authors/kevin-g.-yager/">Kevin G. Yager</a></span>, <span><a href="/authors/charles-t.-black/">Charles T. Black</a></span>
+
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/nanoconfined-polymer-electrolytes/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/journal-article/nanoscale-viscosity/" >
+      <img src="/publication/journal-article/nanoscale-viscosity/featured_hu44175b6db3225b1b427e270094c90790_611704_150x0_resize_q90_lanczos.jpg" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/journal-article/concentric-rings/" >Capillary rupture of suspended polymer concentric rings</a>
+    </h3>
+
+    
+    <div class="article-style">
       We present the first experimental study on the simultaneous capillary instability amongst viscous concentric rings suspended atop an …
     </div>
     
@@ -1227,42 +1554,13 @@
       
 
       
-      <div itemprop="author">
+      <div>
         
 
 
 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Zheng Zhang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">G. C. Hilton</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Ronggui Yang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Yifu Ding</a></span></span>
   
-
-
+  <span><a href="/authors/zheng-zhang/">Zheng Zhang</a></span>, <span><a href="/authors/g.-c.-hilton/">G. C. Hilton</a></span>, <span><a href="/authors/ronggui-yang/">Ronggui Yang</a></span>, <span><a href="/authors/yifu-ding/">Yifu Ding</a></span>
 
       </div>
       
@@ -1332,414 +1630,8 @@
     
     
     
-    <a href="/publication/concentric-rings/">
-      <img src="/publication/concentric-rings/featured_hu067a835c69563516086f57cd4a33547f_175316_150x0_resize_q100_lanczos.jpg" itemprop="image">
-    </a>
-    
-  </div>
-</div>
-
-      
-    
-      
-        
-
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/external-normal-pressure/" itemprop="url">External normal pressure prevents preferential wetting of PS/PMMA blend thin films</a>
-    </h3>
-
-    
-    <div class="article-style" itemprop="articleBody">
-      Substrate wetting of the component(s) of thin polymer blend films strongly dictates their phase evolution during thermal annealing. In …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div itemprop="author">
-        
-
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Zheng Zhang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Zhen Wang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Yifu Ding</a></span></span>
-  
-
-
-
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1016/j.polymer.2014.06.023" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/publication/external-normal-pressure/">
-      <img src="/publication/external-normal-pressure/featured_hu3f2ff3b8a5ad012ad580948d58f4caf8_17625_150x0_resize_lanczos_2.png" itemprop="image">
-    </a>
-    
-  </div>
-</div>
-
-      
-    
-      
-        
-
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/carbon-nanopattern/" itemprop="url">Carbon nanopatterns and nanoribbons from directly nanoimprinted polyacrylonitrile</a>
-    </h3>
-
-    
-    <div class="article-style" itemprop="articleBody">
-      We present the fabrication of lithographically defined carbon patterns and nanoribbons using a common carbon precursor, …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div itemprop="author">
-        
-
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Zheng Zhang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Daniela Molina Piper</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Seoung-Bum Son</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Seul Cham Kim</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Kyu Hwan Oh</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Se-Hee Lee</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Yifu Ding</a></span></span>
-  
-
-
-
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="//doi.org/10.1016/j.polymer.2013.07.076" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/publication/carbon-nanopattern/">
-      <img src="/publication/carbon-nanopattern/featured_hu66afc66b4e96eb6e886fa1782c6c5268_358863_150x0_resize_q100_lanczos.jpg" itemprop="image">
-    </a>
-    
-  </div>
-</div>
-
-      
-    
-      
-        
-
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/instabilities-of-pspmma/" itemprop="url">Instabilities of PS/PMMA Bilayer Patterns with a Corrugated Surface and Interface</a>
-    </h3>
-
-    
-    <div class="article-style" itemprop="articleBody">
-      We study the patterns spontaneously formed by bilayer polymer films upon annealing. Specifically, polystyrene (PS) films were spin-cast …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div itemprop="author">
-        
-
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Zheng Zhang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Dae Up Ahn</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Yifu Ding</a></span></span>
-  
-
-
-
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="//pubs.acs.org/doi/abs/10.1021/ma2026836" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/publication/instabilities-of-pspmma/">
-      <img src="/publication/instabilities-of-pspmma/featured_hu0cd43bba3e525ba3e13c367e4c254060_366640_150x0_resize_lanczos_2.png" itemprop="image">
+    <a href="/publication/journal-article/concentric-rings/" >
+      <img src="/publication/journal-article/concentric-rings/featured_hu067a835c69563516086f57cd4a33547f_175316_150x0_resize_q90_lanczos.jpg" alt="">
     </a>
     
   </div>
@@ -1753,7 +1645,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -1778,7 +1669,14 @@
 
   
   
-  <section id="publications" class="home-section wg-pages   " >
+  
+  
+  
+
+  
+  
+
+  <section id="publications" class="home-section wg-pages   "  >
     <div class="container">
       
 
@@ -1824,12 +1722,18 @@
 
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent Publications</h1>
+    <h1>All Publications</h1>
     
   </div>
   <div class="col-12 col-lg-8">
 
-    
+    <!-- <div class="alert alert-note">
+  <div>
+    Quickly discover relevant content by <a href="https://zhangresearch.org/publication/" target="_blank">filtering publications</a>.
+  </div>
+</div>
+ -->
+
 
     
       
@@ -1842,110 +1746,104 @@
 
 
 
-  
+
+
   
   
 
 
-<div class="view-list-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+<div class="view-list-item">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <a href="/publication/boosting-polymer-viscosity/" itemprop="url"><span itemprop="name">Boosting polymer viscosity via nano-confinement</span></a>
+  <a href="/publication/conference-paper/wukong-spie/" >A Windows GUI application for real-time image guidance during motion- managed proton beam therapy</a>
 
   
 
   
-  <div class="article-metadata" itemprop="author">
+  <div class="article-metadata">
     
 
 
 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
+  
+  <span><a href="/authors/admin/">Zheng Zhang</a></span>, <span><a href="/authors/chris-beltran/">Chris Beltran</a></span>, <span><a href="/authors/stephen-m.-corner/">Stephen M. Corner</a></span>, <span><a href="/authors/amanda-j.-deisher/">Amanda J. Deisher</a></span>, <span><a href="/authors/michael-g.-herman/">Michael G. Herman</a></span>, <span><a href="/authors/jon-j.-kruse/">Jon J. Kruse</a></span>, <span><a href="/authors/hok-seum-wan-chan-tseung/">Hok Seum Wan Chan Tseung</a></span>, <span><a href="/authors/erik-j.-tryggestad/">Erik J. Tryggestad</a></span>
 
-      
-      
-      <a href="">Zheng Zhang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
+  </div>
+  
 
-      
-      
-      <a href="">Junjun Ding</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
+  
+  <div class="btn-links">
+    
 
-      
-      
-      <a href="">Benjamin M. Ocko</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
 
-      
-      
-      <a href="">Andrei Fluerasu</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
 
-      
-      
-      <a href="">Lutz Wiegart</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
 
-      
-      
-      <a href="">Yugang Zhang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
 
-      
-      
-      <a href="">Julien Lhermitte</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
 
-      
-      
-      <a href="">Ye Tian</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
 
-      
-      
-      <a href="">Chang-Hwan Choi</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
 
-      
-      
-      <a href="">Frank T. Fisher</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Kevin G. Yager</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Charles T. Black</a></span></span>
   
 
 
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/wukong-app-dev/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="view-list-item">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <a href="/publication/journal-article/nanoscale-viscosity/" >Nanoscale viscosity of confined polyethylene oxide</a>
+
+  
+
+  
+  <div class="article-metadata">
+    
+
+
+
+  
+  <span><a href="/authors/zheng-zhang/">Zheng Zhang</a></span>, <span><a href="/authors/junjun-ding/">Junjun Ding</a></span>, <span><a href="/authors/benjamin-m.-ocko/">Benjamin M. Ocko</a></span>, <span><a href="/authors/andrei-fluerasu/">Andrei Fluerasu</a></span>, <span><a href="/authors/lutz-wiegart/">Lutz Wiegart</a></span>, <span><a href="/authors/yugang-zhang/">Yugang Zhang</a></span>, <span><a href="/authors/mark-kobrak/">Mark Kobrak</a></span>, <span><a href="/authors/ye-tian/">Ye Tian</a></span>, <span><a href="/authors/honghu-zhang/">Honghu Zhang</a></span>, <span><a href="/authors/julien-lhermitte/">Julien Lhermitte</a></span>, <span><a href="/authors/chang-hwan-choi/">Chang-Hwan Choi</a></span>, <span><a href="/authors/frank-t.-fisher/">Frank T. Fisher</a></span>, <span><a href="/authors/kevin-g.-yager/">Kevin G. Yager</a></span>, <span><a href="/authors/charles-t.-black/">Charles T. Black</a></span>
 
   </div>
   
@@ -2004,89 +1902,26 @@
 
 
 
-  
+
+
   
   
 
 
-<div class="view-list-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+<div class="view-list-item">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <a href="/publication/nanoconfinement-and-salt/" itemprop="url"><span itemprop="name">Nanoconfinement and salt complexing synergistically suppress crystallization in polyethylene oxide</span></a>
+  <a href="/publication/journal-article/nanoconfinement-and-salt/" >Nanoconfinement and salt synergistically suppress crystallization in polyethylene oxide</a>
 
   
 
   
-  <div class="article-metadata" itemprop="author">
+  <div class="article-metadata">
     
 
 
 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Zheng Zhang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Junjun Ding</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Benjamin M. Ocko</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Julien Lhermitte</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Joseph Strzalka</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Chang-Hwan Choi</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Frank T. Fisher</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Kevin G. Yager</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Charles T. Black</a></span></span>
   
-
-
+  <span><a href="/authors/zheng-zhang/">Zheng Zhang</a></span>, <span><a href="/authors/junjun-ding/">Junjun Ding</a></span>, <span><a href="/authors/benjamin-m.-ocko/">Benjamin M. Ocko</a></span>, <span><a href="/authors/julien-lhermitte/">Julien Lhermitte</a></span>, <span><a href="/authors/joseph-strzalka/">Joseph Strzalka</a></span>, <span><a href="/authors/chang-hwan-choi/">Chang-Hwan Choi</a></span>, <span><a href="/authors/frank-t.-fisher/">Frank T. Fisher</a></span>, <span><a href="/authors/kevin-g.-yager/">Kevin G. Yager</a></span>, <span><a href="/authors/charles-t.-black/">Charles T. Black</a></span>
 
   </div>
   
@@ -2145,61 +1980,26 @@
 
 
 
-  
+
+
   
   
 
 
-<div class="view-list-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+<div class="view-list-item">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <a href="/publication/dna-patterning-perspective/" itemprop="url"><span itemprop="name">Sub-10 nm Patterning with DNA Nanostructures: A Short Perspective</span></a>
+  <a href="/publication/journal-article/dna-patterning-perspective/" >Sub-10 nm Patterning with DNA Nanostructures: A Short Perspective</a>
 
   
 
   
-  <div class="article-metadata" itemprop="author">
+  <div class="article-metadata">
     
 
 
 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Ke Du</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Myeongkee Park</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Junjun Ding</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Huan Hu</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Zheng Zhang</a></span></span>
   
-
-
+  <span><a href="/authors/ke-du/">Ke Du</a></span>, <span><a href="/authors/myeongkee-park/">Myeongkee Park</a></span>, <span><a href="/authors/junjun-ding/">Junjun Ding</a></span>, <span><a href="/authors/huan-hu/">Huan Hu</a></span>, <span><a href="/authors/zheng-zhang/">Zheng Zhang</a></span>
 
   </div>
   
@@ -2258,89 +2058,26 @@
 
 
 
-  
+
+
   
   
 
 
-<div class="view-list-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+<div class="view-list-item">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <a href="/publication/pdms-skin-infiltration-polymerization/" itemprop="url"><span itemprop="name">Formation of a Crack-Free, Hybrid Skin Layer with Tunable Surface Topography and Improved Gas Permeation Selectivity on Elastomers Using Gel–Liquid Infiltration Polymerization</span></a>
+  <a href="/publication/journal-article/pdms-skin-infiltration-polymerization/" >Formation of a Crack-Free, Hybrid Skin Layer with Tunable Surface Topography and Improved Gas Permeation Selectivity on Elastomers Using Gel–Liquid Infiltration Polymerization</a>
 
   
 
   
-  <div class="article-metadata" itemprop="author">
+  <div class="article-metadata">
     
 
 
 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Mengyuan Wang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Justin M. Gorham</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Jason P. Killgore</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Maryam Omidvar</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Haiqing Lin</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Frank W. DelRio</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Lewis M. Cox</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Zheng Zhang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Yifu Ding</a></span></span>
   
-
-
+  <span><a href="/authors/mengyuan-wang/">Mengyuan Wang</a></span>, <span><a href="/authors/justin-m.-gorham/">Justin M. Gorham</a></span>, <span><a href="/authors/jason-p.-killgore/">Jason P. Killgore</a></span>, <span><a href="/authors/maryam-omidvar/">Maryam Omidvar</a></span>, <span><a href="/authors/haiqing-lin/">Haiqing Lin</a></span>, <span><a href="/authors/frank-w.-delrio/">Frank W. DelRio</a></span>, <span><a href="/authors/lewis-m.-cox/">Lewis M. Cox</a></span>, <span><a href="/authors/zheng-zhang/">Zheng Zhang</a></span>, <span><a href="/authors/yifu-ding/">Yifu Ding</a></span>
 
   </div>
   
@@ -2389,126 +2126,6 @@
 
       
     
-      
-        
-
-
-
-
-
-
-
-
-  
-  
-  
-
-
-<div class="view-list-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  <a href="/publication/healing-x-ray-scattering-images/" itemprop="url"><span itemprop="name">Healing X-ray scattering images</span></a>
-
-  
-
-  
-  <div class="article-metadata" itemprop="author">
-    
-
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Jiliang Liu</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Julien Lhermitte</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Ye Tian</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Zheng Zhang</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Dantong Yu</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Kevin G. Yager</a></span></span>
-  
-
-
-
-  </div>
-  
-
-  
-  <div class="btn-links">
-    
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="//doi.org/10.1107/S2052252517006212" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-  
-
-</div>
-
-      
-    
 
     
     <div class="see-all">
@@ -2524,7 +2141,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -2549,7 +2165,14 @@
 
   
   
-  <section id="talks" class="home-section wg-pages   " >
+  
+  
+  
+
+  
+  
+
+  <section id="talks" class="home-section wg-pages   "  >
     <div class="container">
       
 
@@ -2612,51 +2235,48 @@
 
 
 
+
   
-  
-  
-
-
-
-
-
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+
+
+
+
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/talk/2018grc/" itemprop="url">Nanoconfined Polymer Electrolytes for Rechargeable Thin Film Lithium-ion Batteries</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/talk/2019ground_rounds/" >An in-house Windows GUI application for fluoroscopy-based 4D image guidance in proton beam therapy</a>
     </h3>
 
-    
-    <div class="article-style" itemprop="articleBody">
-      Liquid solutions of lithium salts are widely used as the electrolytes for rechargeable lithium-ion batteries. A long-proposed …
-    </div>
     
 
     <div class="stream-meta article-metadata">
 
       
       <div>
-        <span itemprop="startDate">
-          
-          Feb 28, 2018
-          
-            4:00 PM
-            
-            &mdash; 6:00 PM
-            
-          
+        <span>
+          Sep 26, 2019 12:10 PM &mdash; 1:00 PM
         </span>
         
         <span class="middot-divider"></span>
-        <span itemprop="location">Ventura, CA, USA</span>
+        <span>Charlton Building SL 112, Mayo Clinic, Rochester, MN</span>
         
       </div>
       
 
+      
+      <div>
+        
+
+
+
+  
+  <span><a href="/authors/admin/">Zheng Zhang</a></span>
+
+      </div>
       
     </div>
 
@@ -2682,7 +2302,9 @@
 
 
   
-    
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/project/wukong-app-dev/">
+    Project
+  </a>
   
 
 
@@ -2702,24 +2324,12 @@
   <div class="ml-3">
     
     
-    
-    <a href="/talk/2018grc/">
-      <img src="/talk/2018grc/featured_hua6890565b6fd1949ccdb2d3c0acee9c5_163842_150x0_resize_lanczos_2.png" itemprop="image">
-    </a>
-    
   </div>
 </div>
 
       
     
 
-    
-    <div class="see-all">
-      <a href="/talk/">
-        See all talks
-        <i class="fas fa-angle-right"></i>
-      </a>
-    </div>
     
 
   </div>
@@ -2727,7 +2337,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -2752,9 +2361,129 @@
 
   
   
-  <section id="contact" class="home-section wg-contact   " >
+  
+  
+  
+
+  
+  
+
+  <section id="tags" class="home-section wg-tag-cloud   "  >
     <div class="container">
       
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Popular Topics</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+      
+      
+      
+      
+      
+
+      <div class="tag-cloud">
+        
+          
+          
+          
+          <a href="/tags/dicom/" style="font-size:2rem">DICOM</a>
+        
+          
+          
+          
+          <a href="/tags/igpt/" style="font-size:2.7604512509375025rem">IGPT</a>
+        
+          
+          
+          
+          <a href="/tags/nanoconfinement/" style="font-size:0.7rem">nanoconfinement</a>
+        
+          
+          
+          
+          <a href="/tags/numpy/" style="font-size:2rem">numpy</a>
+        
+          
+          
+          
+          <a href="/tags/" style="font-size:4.820902501875007rem">Tags</a>
+        
+          
+          
+          
+          <a href="/tags/vtk/" style="font-size:0.7rem">VTK</a>
+        
+          
+          
+          
+          <a href="/tags/x-ray-scattering/" style="font-size:0.7rem">X-ray scattering</a>
+        
+      </div>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="contact" class="home-section wg-contact   "  >
+    <div class="container">
+      
+
 
 
 
@@ -2769,25 +2498,32 @@
 
     
 
-    <ul class="fa-ul" itemscope>
+    <ul class="fa-ul">
 
       
       <li>
         <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-        <span id="person-email" itemprop="email"><a href="mailto:z%20%28at%29%20zhangresearch.org">z (at) zhangresearch.org</a></span>
+        <span id="person-email"><a href="mailto:z%20%28at%29%20zhangresearch.org">z (at) zhangresearch.org</a></span>
       </li>
       
 
       
 
       
-      <li>
-        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address" itemprop="address">Jacobson Building LO-216<br>
-             Mayo Clinic<br>
-             200 First St. SW<br>
-             Rochester, MN 55905</span>
-      </li>
+      
+        
+        
+        
+        
+        
+        
+        
+        <li>
+          <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+          <span id="person-address">Jacobson Building LO-216, 200 First St. SW, Rochester, MN, 55905, United States</span>
+        </li>
+      
+
       
 
       
@@ -2800,67 +2536,26 @@
     </ul>
 
     
+    <div class="d-none">
+      <input id="map-provider" value="2">
+      <input id="map-lat" value="44.024945">
+      <input id="map-lng" value="-92.465251">
+      <input id="map-dir" value="Jacobson Building LO-216, 200 First St. SW, Rochester, MN, 55905, United States">
+      <input id="map-zoom" value="16">
+      <input id="map-api-key" value="">
+    </div>
+    <div id="map"></div>
+    
 
   </div>
 </div>
 
     </div>
   </section>
-  
 
 
-<div class="container">
-  <footer class="site-footer">
-  
 
-  <p class="powered-by">
-    &copy; 2015-2019, Zheng Zhang, Ph.D. &middot; 
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-</div>
-
-
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
+      
 
     
     
@@ -2868,15 +2563,18 @@
     
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
         
       
 
@@ -2886,9 +2584,7 @@
 
     
     
-
-    
-    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
     
 
     
@@ -2898,13 +2594,13 @@
 
     
     
+    
+    
+    
+    
     <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'results': "results found",
-        'no_results': "No results found"
-      };
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
       const content_type = {
         'post': "Posts",
         'project': "Projects",
@@ -2943,6 +2639,11 @@
 
     
     
+
+    
+    
+    
+    
     
     
     
@@ -2953,9 +2654,68 @@
     
     
     
-    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
 
-  </body>
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2015–2019, Zheng Zhang &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
-
-

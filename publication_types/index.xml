@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publication_types on Zheng Zhang</title>
+    <title>Publication_types | Zheng Zhang</title>
     <link>https://zhangresearch.org/publication_types/</link>
-    <description>Recent content in Publication_types on Zheng Zhang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Wed, 01 May 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://zhangresearch.org/publication_types/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://zhangresearch.org/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publication_types</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zhangresearch.org/img/icon.png</url>
+      <title>Publication_types</title>
+      <link>https://zhangresearch.org/publication_types/</link>
+    </image>
     
     <item>
-      <title>3</title>
-      <link>https://zhangresearch.org/publication_types/3/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication_types/3/</guid>
+      <title>1</title>
+      <link>https://zhangresearch.org/publication_types/1/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication_types/1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2</title>
       <link>https://zhangresearch.org/publication_types/2/</link>
-      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/publication_types/2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3</title>
+      <link>https://zhangresearch.org/publication_types/3/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication_types/3/</guid>
       <description></description>
     </item>
     

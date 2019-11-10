@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Justin M. Gorham on Zheng Zhang</title>
+    <title>Justin M. Gorham | Zheng Zhang</title>
     <link>https://zhangresearch.org/authors/justin-m.-gorham/</link>
-    <description>Recent content in Justin M. Gorham on Zheng Zhang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Mon, 31 Jul 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://zhangresearch.org/authors/justin-m.-gorham/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://zhangresearch.org/authors/justin-m.-gorham/index.xml" rel="self" type="application/rss+xml" />
+    <description>Justin M. Gorham</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Mon, 31 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zhangresearch.org/img/icon.png</url>
+      <title>Justin M. Gorham</title>
+      <link>https://zhangresearch.org/authors/justin-m.-gorham/</link>
+    </image>
     
     <item>
       <title>Formation of a Crack-Free, Hybrid Skin Layer with Tunable Surface Topography and Improved Gas Permeation Selectivity on Elastomers Using Gel–Liquid Infiltration Polymerization</title>
-      <link>https://zhangresearch.org/publication/pdms-skin-infiltration-polymerization/</link>
+      <link>https://zhangresearch.org/publication/journal-article/pdms-skin-infiltration-polymerization/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/pdms-skin-infiltration-polymerization/</guid>
+      <guid>https://zhangresearch.org/publication/journal-article/pdms-skin-infiltration-polymerization/</guid>
       <description></description>
     </item>
     

@@ -1,612 +1,484 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/tags/</loc>
-      <lastmod>2019-05-29T00:23:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/</loc>
-      <lastmod>2019-05-29T00:23:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/post/compile-vtk-8.2.0/</loc>
-      <lastmod>2019-05-29T00:23:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/post/</loc>
-      <lastmod>2019-05-29T00:23:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/tags/</loc>
-      <lastmod>2019-05-29T00:23:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/tags/vtk/</loc>
-      <lastmod>2019-05-29T00:23:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/</loc>
-      <lastmod>2019-05-29T00:23:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/admin/</loc>
-      <lastmod>2019-05-29T00:23:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/tags/igpt/</loc>
-      <lastmod>2019-05-15T00:00:00-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/project/wukong-app-dev/</loc>
-      <lastmod>2019-05-15T00:00:00-05:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/tags/igrt/</loc>
-      <lastmod>2019-05-15T00:00:00-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/project/</loc>
-      <lastmod>2019-05-15T00:00:00-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication_types/3/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/andrei-fluerasu/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/benjamin-m.-ocko/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/boosting-polymer-viscosity/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/chang-hwan-choi/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/charles-t.-black/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/frank-t.-fisher/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/joseph-strzalka/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/julien-lhermitte/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/junjun-ding/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/kevin-g.-yager/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/lutz-wiegart/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/nanoconfinement-and-salt/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication_types/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/ye-tian/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/yugang-zhang/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/zheng-zhang/</loc>
-      <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/tags/dicom/</loc>
-      <lastmod>2019-04-15T00:19:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/post/numpy-unravel-index/</loc>
-      <lastmod>2019-04-15T00:19:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/tags/numpy/</loc>
-      <lastmod>2019-04-15T00:19:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</loc>
-      <lastmod>2019-03-09T00:20:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/project/fpd-calibration/</loc>
-      <lastmod>2019-03-01T00:00:00-06:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/talk/2018grc/</loc>
-      <lastmod>2018-02-28T16:00:00-06:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/talk/</loc>
-      <lastmod>2018-02-28T16:00:00-06:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</loc>
-      <lastmod>2018-02-25T00:00:00-06:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/tags/x-ray-scattering/</loc>
-      <lastmod>2018-02-25T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/tags/xpcs/</loc>
-      <lastmod>2018-02-25T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/tags/nanoconfinement/</loc>
-      <lastmod>2018-02-25T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication_types/2/</loc>
-      <lastmod>2017-09-04T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/huan-hu/</loc>
-      <lastmod>2017-09-04T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/ke-du/</loc>
-      <lastmod>2017-09-04T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/myeongkee-park/</loc>
-      <lastmod>2017-09-04T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/dna-patterning-perspective/</loc>
-      <lastmod>2017-09-04T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/pdms-skin-infiltration-polymerization/</loc>
-      <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/frank-w.-delrio/</loc>
-      <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/haiqing-lin/</loc>
-      <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/jason-p.-killgore/</loc>
-      <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/justin-m.-gorham/</loc>
-      <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/lewis-m.-cox/</loc>
-      <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/maryam-omidvar/</loc>
-      <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/mengyuan-wang/</loc>
-      <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/yifu-ding/</loc>
-      <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/dantong-yu/</loc>
-      <lastmod>2017-04-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/healing-x-ray-scattering-images/</loc>
-      <lastmod>2017-04-24T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/jiliang-liu/</loc>
-      <lastmod>2017-04-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/talk/2017acs/</loc>
-      <lastmod>2017-04-03T14:50:00-05:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/concentric-rings/</loc>
-      <lastmod>2015-08-12T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/g.-c.-hilton/</loc>
-      <lastmod>2015-08-12T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/ronggui-yang/</loc>
-      <lastmod>2015-08-12T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/external-normal-pressure/</loc>
-      <lastmod>2014-08-05T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/zhen-wang/</loc>
-      <lastmod>2014-08-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/donna-c.-hurley/</loc>
-      <lastmod>2013-10-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/jianliang-xiao/</loc>
-      <lastmod>2013-10-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/metal-polymer-janus-particles/</loc>
-      <lastmod>2013-10-25T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/zhengwei-li/</loc>
-      <lastmod>2013-10-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/carbon-nanopattern/</loc>
-      <lastmod>2013-10-04T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/daniela-molina-piper/</loc>
-      <lastmod>2013-10-04T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/kyu-hwan-oh/</loc>
-      <lastmod>2013-10-04T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/se-hee-lee/</loc>
-      <lastmod>2013-10-04T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/seoung-bum-son/</loc>
-      <lastmod>2013-10-04T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/seul-cham-kim/</loc>
-      <lastmod>2013-10-04T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/liang-wang/</loc>
-      <lastmod>2013-03-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/photocrosslinking-induced-phase-separation/</loc>
-      <lastmod>2013-03-19T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/influence-of-substrate-confinement/</loc>
-      <lastmod>2013-02-08T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/dae-up-ahn/</loc>
-      <lastmod>2012-02-15T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/instabilities-of-pspmma/</loc>
-      <lastmod>2012-02-15T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/changpin-chen/</loc>
-      <lastmod>2009-07-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/jiechang-hou/</loc>
-      <lastmod>2009-07-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/lixin-chen/</loc>
-      <lastmod>2009-07-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/qidong-wang/</loc>
-      <lastmod>2009-07-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/publication/reversible-hydrogen-storage/</loc>
-      <lastmod>2009-07-22T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/xiulin-fan/</loc>
-      <lastmod>2009-07-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/xuezhang-xiao/</loc>
-      <lastmod>2009-07-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/yuanbo-liu/</loc>
-      <lastmod>2009-07-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/authors/zhe-wu/</loc>
-      <lastmod>2009-07-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/author/admin/</loc>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/author/</loc>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-    
-      <loc>https://zhangresearch.org/categories/</loc>
-      <priority>0</priority>
-    </url>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/admin/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication_types/1/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/conference-paper/wukong-spie/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/amanda-j.-deisher/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/chris-beltran/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/erik-j.-tryggestad/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/hok-seum-wan-chan-tseung/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/tags/igpt/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/jon-j.-kruse/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/michael-g.-herman/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication_types/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/stephen-m.-corner/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/tags/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/talk/2019ground_rounds/</loc>
+    <lastmod>2019-09-26T12:10:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/talk/</loc>
+    <lastmod>2019-09-26T12:10:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication_types/2/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/andrei-fluerasu/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/benjamin-m.-ocko/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/chang-hwan-choi/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/charles-t.-black/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/frank-t.-fisher/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/honghu-zhang/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/julien-lhermitte/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/junjun-ding/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/kevin-g.-yager/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/lutz-wiegart/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/mark-kobrak/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/nanoscale-viscosity/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/ye-tian/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/yugang-zhang/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/zheng-zhang/</loc>
+    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication_types/3/</loc>
+    <lastmod>2019-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/joseph-strzalka/</loc>
+    <lastmod>2019-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/nanoconfinement-and-salt/</loc>
+    <lastmod>2019-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/post/compile-vtk-8.2.0/</loc>
+    <lastmod>2019-05-29T00:23:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/post/</loc>
+    <lastmod>2019-05-29T00:23:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/tags/vtk/</loc>
+    <lastmod>2019-05-29T00:23:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/project/wukong-app-dev/</loc>
+    <lastmod>2019-05-15T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/project/</loc>
+    <lastmod>2019-05-15T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/tags/dicom/</loc>
+    <lastmod>2019-04-15T00:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/post/numpy-unravel-index/</loc>
+    <lastmod>2019-04-15T00:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/tags/numpy/</loc>
+    <lastmod>2019-04-15T00:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</loc>
+    <lastmod>2019-03-09T00:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/project/fpd-calibration/</loc>
+    <lastmod>2019-03-01T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</loc>
+    <lastmod>2018-02-25T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/tags/nanoconfinement/</loc>
+    <lastmod>2018-02-25T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/tags/x-ray-scattering/</loc>
+    <lastmod>2018-02-25T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/huan-hu/</loc>
+    <lastmod>2017-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/ke-du/</loc>
+    <lastmod>2017-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/myeongkee-park/</loc>
+    <lastmod>2017-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/dna-patterning-perspective/</loc>
+    <lastmod>2017-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/pdms-skin-infiltration-polymerization/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/frank-w.-delrio/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/haiqing-lin/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/jason-p.-killgore/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/justin-m.-gorham/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/lewis-m.-cox/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/maryam-omidvar/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/mengyuan-wang/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/yifu-ding/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/dantong-yu/</loc>
+    <lastmod>2017-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/healing-x-ray-scattering-images/</loc>
+    <lastmod>2017-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/jiliang-liu/</loc>
+    <lastmod>2017-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/concentric-rings/</loc>
+    <lastmod>2015-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/g.-c.-hilton/</loc>
+    <lastmod>2015-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/ronggui-yang/</loc>
+    <lastmod>2015-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/external-normal-pressure/</loc>
+    <lastmod>2014-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/zhen-wang/</loc>
+    <lastmod>2014-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/donna-c.-hurley/</loc>
+    <lastmod>2013-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/jianliang-xiao/</loc>
+    <lastmod>2013-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/metal-polymer-janus-particles/</loc>
+    <lastmod>2013-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/zhengwei-li/</loc>
+    <lastmod>2013-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/carbon-nanopattern/</loc>
+    <lastmod>2013-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/daniela-molina-piper/</loc>
+    <lastmod>2013-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/kyu-hwan-oh/</loc>
+    <lastmod>2013-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/se-hee-lee/</loc>
+    <lastmod>2013-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/seoung-bum-son/</loc>
+    <lastmod>2013-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/seul-cham-kim/</loc>
+    <lastmod>2013-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/liang-wang/</loc>
+    <lastmod>2013-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/photocrosslinking-induced-phase-separation/</loc>
+    <lastmod>2013-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/influence-of-substrate-confinement/</loc>
+    <lastmod>2013-02-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/dae-up-ahn/</loc>
+    <lastmod>2012-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/instabilities-of-pspmma/</loc>
+    <lastmod>2012-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/changpin-chen/</loc>
+    <lastmod>2009-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/jiechang-hou/</loc>
+    <lastmod>2009-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/lixin-chen/</loc>
+    <lastmod>2009-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/qidong-wang/</loc>
+    <lastmod>2009-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/publication/journal-article/reversible-hydrogen-storage/</loc>
+    <lastmod>2009-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/xiulin-fan/</loc>
+    <lastmod>2009-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/xuezhang-xiao/</loc>
+    <lastmod>2009-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/yuanbo-liu/</loc>
+    <lastmod>2009-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/authors/zhe-wu/</loc>
+    <lastmod>2009-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangresearch.org/categories/</loc>
+  </url>
   
 </urlset>

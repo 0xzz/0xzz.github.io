@@ -1,41 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Junjun Ding on Zheng Zhang</title>
+    <title>Junjun Ding | Zheng Zhang</title>
     <link>https://zhangresearch.org/authors/junjun-ding/</link>
-    <description>Recent content in Junjun Ding on Zheng Zhang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Wed, 01 May 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://zhangresearch.org/authors/junjun-ding/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://zhangresearch.org/authors/junjun-ding/index.xml" rel="self" type="application/rss+xml" />
+    <description>Junjun Ding</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Sun, 08 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zhangresearch.org/img/icon.png</url>
+      <title>Junjun Ding</title>
+      <link>https://zhangresearch.org/authors/junjun-ding/</link>
+    </image>
     
     <item>
-      <title>Boosting polymer viscosity via nano-confinement</title>
-      <link>https://zhangresearch.org/publication/boosting-polymer-viscosity/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/boosting-polymer-viscosity/</guid>
+      <title>Nanoscale viscosity of confined polyethylene oxide</title>
+      <link>https://zhangresearch.org/publication/journal-article/nanoscale-viscosity/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/nanoscale-viscosity/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Nanoconfinement and salt complexing synergistically suppress crystallization in polyethylene oxide</title>
-      <link>https://zhangresearch.org/publication/nanoconfinement-and-salt/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/nanoconfinement-and-salt/</guid>
+      <title>Nanoconfinement and salt synergistically suppress crystallization in polyethylene oxide</title>
+      <link>https://zhangresearch.org/publication/journal-article/nanoconfinement-and-salt/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/nanoconfinement-and-salt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sub-10 nm Patterning with DNA Nanostructures: A Short Perspective</title>
-      <link>https://zhangresearch.org/publication/dna-patterning-perspective/</link>
+      <link>https://zhangresearch.org/publication/journal-article/dna-patterning-perspective/</link>
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/dna-patterning-perspective/</guid>
+      <guid>https://zhangresearch.org/publication/journal-article/dna-patterning-perspective/</guid>
       <description></description>
     </item>
     

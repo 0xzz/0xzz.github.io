@@ -1,19 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zheng Zhang on Zheng Zhang</title>
+    <title>Zheng Zhang</title>
     <link>https://zhangresearch.org/</link>
-    <description>Recent content in Zheng Zhang on Zheng Zhang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Wed, 29 May 2019 00:23:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+      <atom:link href="https://zhangresearch.org/index.xml" rel="self" type="application/rss+xml" />
+    <description>Zheng Zhang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zhangresearch.org/img/icon.png</url>
+      <title>Zheng Zhang</title>
+      <link>https://zhangresearch.org/</link>
+    </image>
+    
+    <item>
+      <title>A Windows GUI application for real-time image guidance during motion- managed proton beam therapy</title>
+      <link>https://zhangresearch.org/publication/conference-paper/wukong-spie/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/conference-paper/wukong-spie/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+
+&lt;!-- Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An in-house Windows GUI application for fluoroscopy-based 4D image guidance in proton beam therapy</title>
+      <link>https://zhangresearch.org/talk/2019ground_rounds/</link>
+      <pubDate>Thu, 26 Sep 2019 12:10:00 -0500</pubDate>
+      <guid>https://zhangresearch.org/talk/2019ground_rounds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nanoscale viscosity of confined polyethylene oxide</title>
+      <link>https://zhangresearch.org/publication/journal-article/nanoscale-viscosity/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/nanoscale-viscosity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nanoconfinement and salt synergistically suppress crystallization in polyethylene oxide</title>
+      <link>https://zhangresearch.org/publication/journal-article/nanoconfinement-and-salt/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/nanoconfinement-and-salt/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</title>
       <link>https://zhangresearch.org/post/compile-vtk-8.2.0/</link>
       <pubDate>Wed, 29 May 2019 00:23:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/post/compile-vtk-8.2.0/</guid>
       <description>
 
@@ -51,9 +100,8 @@
 &lt;li&gt;&lt;p&gt;CMake&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; choco install cmake
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 
-&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://visualstudio.microsoft.com/downloads/&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and install Visual Studio. This is for the Microsoft Visual C++ compilers, so be sure to select them during installation.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;VTK source code&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
@@ -92,27 +140,27 @@
 &lt;p&gt;For building these extra parts, you will need additional packages:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;For building documentation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For building documentation&lt;/p&gt;
 
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.doxygen.nl/download.html&#34; target=&#34;_blank&#34;&gt;Doxygen&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Perl&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;Perl&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;  &amp;gt; choco install strawberryperl
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; choco install strawberryperl
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Graphviz. This package contains the dot executable required by Doxygen.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; choco install graphviz
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For building testing&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Graphviz. This package contains the dot executable required by Doxygen.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;  &amp;gt; choco install graphviz
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;For building testing&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;VTKData and VTKLargeData&lt;/a&gt;. These are data and baseline images for VTK regression testing and other VTK examples. In principle, these two data sets should have been put together. They are separated into two batches because of long cvs checkout times. If you wish to test on VTKLargeData, you will need to check the &lt;strong&gt;VTK_USE_LARGE_DATA&lt;/strong&gt; variable in CMake.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;VTKData and VTKLargeData&lt;/a&gt;. These are data and baseline images for VTK regression testing and other VTK examples. In principle, these two data sets should have been put together. They are separated into two batches because of long cvs checkout times. If you wish to test on VTKLargeData, you will need to check the &lt;strong&gt;VTK_USE_LARGE_DATA&lt;/strong&gt; variable in CMake.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;vtkdata&#34;&gt;VTKData&lt;/h3&gt;
@@ -138,43 +186,23 @@ The net result is that a VTK build tree has test data files that are actually sy
 &lt;img src=&#34;https://zhangresearch.org/img/compile-vtk-8.2.0/building.png&#34; alt=&#34;building&#34; /&gt;
 This may take a while. The compiled DLLs will be located in &amp;ldquo;C:\toolchain\VTK\VTK-8.2.0-bld\bin\RelWithDebInfo\&amp;ldquo;.&lt;/p&gt;
 
-&lt;p&gt;Build the &lt;strong&gt;INSTALL&lt;/strong&gt; project. This installs VTK into the directory as set in the &lt;strong&gt;CMAKE_INSTALL_PREFIX&lt;/strong&gt; CMake variable.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Build the &lt;strong&gt;INSTALL&lt;/strong&gt; project. This installs VTK into the directory as set in the &lt;strong&gt;CMAKE_INSTALL_PREFIX&lt;/strong&gt; CMake variable.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>IGPT Software Development</title>
+      <title>Image-guidance Software Development</title>
       <link>https://zhangresearch.org/project/wukong-app-dev/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
-      
       <guid>https://zhangresearch.org/project/wukong-app-dev/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Boosting polymer viscosity via nano-confinement</title>
-      <link>https://zhangresearch.org/publication/boosting-polymer-viscosity/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/boosting-polymer-viscosity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nanoconfinement and salt complexing synergistically suppress crystallization in polyethylene oxide</title>
-      <link>https://zhangresearch.org/publication/nanoconfinement-and-salt/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/nanoconfinement-and-salt/</guid>
-      <description></description>
+      <description>&lt;p&gt;In order to facilitate better clinical workflow and provide added assurance during motion-managed proton therapy delivery, I am developing a clinical computer vision application (Code name: Wukong), based on high-speed acquisition and real-time processing of fluoroscopic frames. Built as a fully DICOM-aware utility, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure, both for treatment plan information communication and permanent data archival on a HIPAA-compliant cloud storage.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Modify multiple elements of a Numpy ndarray with ravel_multi_index</title>
       <link>https://zhangresearch.org/post/numpy-unravel-index/</link>
       <pubDate>Mon, 15 Apr 2019 00:19:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/post/numpy-unravel-index/</guid>
       <description>
 
@@ -309,7 +337,6 @@ array([[False,  True, False, False, False, False],
       <title>Parse DICOM RTSTRUCT (Radiotherapy Structure Set) into binary masks using Numpy</title>
       <link>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</link>
       <pubDate>Sat, 09 Mar 2019 00:20:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</guid>
       <description>
 
@@ -400,76 +427,54 @@ mask[fill_row_coords, fill_col_coords] = True
     </item>
     
     <item>
-      <title>Flat-panel Detector (FPD) Calibration</title>
+      <title>Flat-panel Detector Calibration</title>
       <link>https://zhangresearch.org/project/fpd-calibration/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 -0600</pubDate>
-      
       <guid>https://zhangresearch.org/project/fpd-calibration/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/project-fpd-calibration/header.png&#34; alt=&#34;Schematic 3D-2D calibration routine&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Accurate delivery of radiotherapy dose is predicated upon careful motion management. This is particularly true for spot-scanned proton therapy. Our proton therapy vendor developed a stereoscopic kV X-ray image-guidance platform for this purpose. While it is engineered to a given specification, the actual positions of the components (e.g. flat-panel detectors) may contain small errors. This project delivers an iterative algorithmic calibration routine to correct such errors, i.e. translation, rotation and non-affine distortions. The main motivation behind this routine is to enable high-fidelity perspective overlays of RT structure sets in our in-house clinical software. It may also be used as an independent QA of vendor&amp;rsquo;s own calibrations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/project-fpd-calibration/header.png&#34; alt=&#34;Schematic 3D-2D calibration routine&#34; /&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Nanoconfined Polymer Electrolytes for Rechargeable Thin Film Lithium-ion Batteries</title>
-      <link>https://zhangresearch.org/talk/2018grc/</link>
-      <pubDate>Wed, 28 Feb 2018 16:00:00 -0600</pubDate>
-      
-      <guid>https://zhangresearch.org/talk/2018grc/</guid>
-      <description></description>
     </item>
     
     <item>
       <title>Nanoconfined polymer electrolytes</title>
       <link>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</link>
       <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
-      
       <guid>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</guid>
-      <description>&lt;p&gt;This project probes the physical properties of polymeric materials when confined within nanometer-scale volumes. We used grazing-incidence X-ray photon correlation spectroscopy to establish that the nanoscale viscosity of a polymer melt, as probed by gold nanoparticle tracers, is substantially boosted under nanoconfinement. Our experiments have taken advantage of recent instrumental improvements at the CHX X-ray beamline at the National Synchrotron Light Source II to increase the signal-to-noise, and extend the range of accessible timescales.&lt;/p&gt;
+      <description>&lt;p&gt;We probe the nanoscale viscosity and molecular structure of confined polymer electrolytes (SPE) inside rigid nanovolumes, using X-ray photon correlation spectroscopy (XPCS) and grazing incidence X-ray scattering (GIWAXS), respectively. We show that gold nanoparticle as Brownian swimmers can be used to probe the nanoscale viscosity of a confined polymer melt, and that the effective viscosity is substantially different than in bulk. Our experiments take advantage of recent instrumental improvements at the Coheren Hard X-ray Scattering Beamline (CHX) at the National Synchrotron Light Source II (NSLS-II), which have yielded improved coherence, and extended beam stability.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Sub-10 nm Patterning with DNA Nanostructures: A Short Perspective</title>
-      <link>https://zhangresearch.org/publication/dna-patterning-perspective/</link>
+      <link>https://zhangresearch.org/publication/journal-article/dna-patterning-perspective/</link>
       <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/dna-patterning-perspective/</guid>
+      <guid>https://zhangresearch.org/publication/journal-article/dna-patterning-perspective/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Formation of a Crack-Free, Hybrid Skin Layer with Tunable Surface Topography and Improved Gas Permeation Selectivity on Elastomers Using Gel–Liquid Infiltration Polymerization</title>
-      <link>https://zhangresearch.org/publication/pdms-skin-infiltration-polymerization/</link>
+      <link>https://zhangresearch.org/publication/journal-article/pdms-skin-infiltration-polymerization/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/pdms-skin-infiltration-polymerization/</guid>
+      <guid>https://zhangresearch.org/publication/journal-article/pdms-skin-infiltration-polymerization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Healing X-ray scattering images</title>
-      <link>https://zhangresearch.org/publication/healing-x-ray-scattering-images/</link>
+      <link>https://zhangresearch.org/publication/journal-article/healing-x-ray-scattering-images/</link>
       <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/healing-x-ray-scattering-images/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nanoconfined Polymer Electrolytes for Rechargeable Thin Film Lithium-ion Batteries</title>
-      <link>https://zhangresearch.org/talk/2017acs/</link>
-      <pubDate>Mon, 03 Apr 2017 14:50:00 -0500</pubDate>
-      
-      <guid>https://zhangresearch.org/talk/2017acs/</guid>
+      <guid>https://zhangresearch.org/publication/journal-article/healing-x-ray-scattering-images/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Capillary rupture of suspended polymer concentric rings</title>
-      <link>https://zhangresearch.org/publication/concentric-rings/</link>
+      <link>https://zhangresearch.org/publication/journal-article/concentric-rings/</link>
       <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/concentric-rings/</guid>
+      <guid>https://zhangresearch.org/publication/journal-article/concentric-rings/</guid>
       <description>&lt;p&gt;This article was featured on the back cover of Soft Matter, 2015, 11.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/concentric-rings/cover.png&#34; alt=&#34;Cover Feature&#34; /&gt;&lt;/p&gt;
@@ -478,10 +483,66 @@ mask[fill_row_coords, fill_col_coords] = True
     
     <item>
       <title>External normal pressure prevents preferential wetting of PS/PMMA blend thin films</title>
-      <link>https://zhangresearch.org/publication/external-normal-pressure/</link>
+      <link>https://zhangresearch.org/publication/journal-article/external-normal-pressure/</link>
       <pubDate>Tue, 05 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/external-normal-pressure/</guid>
+      <guid>https://zhangresearch.org/publication/journal-article/external-normal-pressure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Morphing metal–polymer Janus particles</title>
+      <link>https://zhangresearch.org/publication/journal-article/metal-polymer-janus-particles/</link>
+      <pubDate>Fri, 25 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/metal-polymer-janus-particles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Carbon nanopatterns and nanoribbons from directly nanoimprinted polyacrylonitrile</title>
+      <link>https://zhangresearch.org/publication/journal-article/carbon-nanopattern/</link>
+      <pubDate>Fri, 04 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/carbon-nanopattern/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Fabrication Process
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/carbon-nanopattern/fab-large.png&#34; alt=&#34;Fabrication Process&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Photocrosslinking-induced phase separation in evaporative solvents: formation of skin layers and microspheres</title>
+      <link>https://zhangresearch.org/publication/journal-article/photocrosslinking-induced-phase-separation/</link>
+      <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/photocrosslinking-induced-phase-separation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Influence of Substrate Confinement on the Phase-Correlation in the Capillary Breakup of Arrays of Patterned Polymer Stripes</title>
+      <link>https://zhangresearch.org/publication/journal-article/influence-of-substrate-confinement/</link>
+      <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/influence-of-substrate-confinement/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/influence-of-substrate-confinement/toc.png&#34; alt=&#34;TOC&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Instabilities of PS/PMMA Bilayer Patterns with a Corrugated Surface and Interface</title>
+      <link>https://zhangresearch.org/publication/journal-article/instabilities-of-pspmma/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/instabilities-of-pspmma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reversible hydrogen storage behaviors and microstructure of TiC-doped sodium aluminum hydride</title>
+      <link>https://zhangresearch.org/publication/journal-article/reversible-hydrogen-storage/</link>
+      <pubDate>Wed, 22 Jul 2009 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/journal-article/reversible-hydrogen-storage/</guid>
       <description></description>
     </item>
     

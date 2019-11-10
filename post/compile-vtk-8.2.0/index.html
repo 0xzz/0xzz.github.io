@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.2.0">
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Source Themes Academic 4.5.0">
 
   
 
@@ -38,18 +38,6 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
   
   
   <meta name="theme-color" content="#2962ff">
@@ -60,10 +48,9 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
     
@@ -74,13 +61,15 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
 
     
 
@@ -88,23 +77,28 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
   
-
-  <link rel="stylesheet" href="/styles.css">
-  
-
-  
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
   
 
   
-  <link rel="alternate" href="https://zhangresearch.org/index.xml" type="application/rss+xml" title="Zheng Zhang">
-  <link rel="feed" href="https://zhangresearch.org/index.xml" type="application/rss+xml" title="Zheng Zhang">
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
   
 
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
   <link rel="canonical" href="https://zhangresearch.org/post/compile-vtk-8.2.0/">
@@ -115,6 +109,7 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
   
     
   
+  
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Zheng Zhang">
@@ -122,21 +117,85 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
   <meta property="og:title" content="Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10 | Zheng Zhang">
   <meta property="og:description" content="The Visualization Toolkit (VTK) is the 3D engine behind many scientific visualization applications, such as MayaVi, the popular scientific data visualizer for Python. It is also the cornerstone of several advanced 3D-enabled biomedical applications, such as ParaView and 3D Slicer.
 Perhaps lesser known, VTK provides a built-in high performance DICOM parser, because of its deep roots within the biomedical community. For my own clinical project, I have recently started learning and using VTK."><meta property="og:image" content="https://zhangresearch.org/post/compile-vtk-8.2.0/featured.png">
-  <meta property="og:locale" content="en-us">
+  <meta property="twitter:image" content="https://zhangresearch.org/post/compile-vtk-8.2.0/featured.png"><meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-05-29T00:23:00&#43;00:00">
-  
-  <meta property="article:modified_time" content="2019-05-29T00:23:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2019-05-29T00:23:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-05-29T00:23:00&#43;00:00">
   
 
   
 
+
+    
+
+
+
+
+
+
   
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://zhangresearch.org/post/compile-vtk-8.2.0/"
+  },
+  "headline": "Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10",
+  
+  "image": [
+    "https://zhangresearch.org/post/compile-vtk-8.2.0/featured.png"
+  ],
+  
+  "datePublished": "2019-05-29T00:23:00Z",
+  "dateModified": "2019-05-29T00:23:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Zheng Zhang"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zheng Zhang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://zhangresearch.org/img/icon.png"
+    }
+  },
+  "description": "The Visualization Toolkit (VTK) is the 3D engine behind many scientific visualization applications, such as MayaVi, the popular scientific data visualizer for Python. It is also the cornerstone of several advanced 3D-enabled biomedical applications, such as ParaView and 3D Slicer.\nPerhaps lesser known, VTK provides a built-in high performance DICOM parser, because of its deep roots within the biomedical community. For my own clinical project, I have recently started learning and using VTK."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
 
   <title>Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10 | Zheng Zhang</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
   <aside class="search-results" id="search">
   <div class="container">
     <section class="search-header">
@@ -153,7 +212,7 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
         
       </div>
 
@@ -169,7 +228,8 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 </aside>
 
 
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
@@ -197,12 +257,22 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#about">
-            
-            <span>Home</span>
-            
-          </a>
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
         </li>
 
         
@@ -216,12 +286,22 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#posts">
-            
-            <span>Posts</span>
-            
-          </a>
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
         </li>
 
         
@@ -235,12 +315,22 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#projects">
-            
-            <span>Projects</span>
-            
-          </a>
+          <a class="nav-link " href="/#selected_publications"><span>Publications</span></a>
         </li>
 
         
@@ -254,12 +344,22 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
           
         
 
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link" href="/#selected_publications">
-            
-            <span>Publications</span>
-            
-          </a>
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
         </li>
 
         
@@ -273,31 +373,22 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
           
         
 
-        <li class="nav-item">
-          <a class="nav-link" href="/#talks">
-            
-            <span>Talks</span>
-            
-          </a>
-        </li>
-
         
         
-
         
-
         
         
         
           
+          
+          
+            
+          
+          
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#contact">
-            
-            <span>Contact</span>
-            
-          </a>
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
         </li>
 
         
@@ -331,7 +422,7 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 </nav>
 
 
-<article class="article" itemscope itemtype="http://schema.org/Article">
+  <article class="article">
 
   
 
@@ -352,17 +443,13 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</h1>
+  <h1>Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</h1>
 
   
 
   
     
 
-
-
-<meta content="2019-05-29 00:23:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-05-29 00:23:00 &#43;0000 UTC" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -375,17 +462,8 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 
 
 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      
-        <a href="/authors/admin/">Zheng Zhang</a></span></span>
   
-
-
+  <span><a href="/authors/admin/">Zheng Zhang</a></span>
 
   </div>
   
@@ -397,7 +475,7 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
     
       
     
-    <time>May 29, 2019</time>
+    May 29, 2019
   </span>
   
 
@@ -412,12 +490,9 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 
   
   
-
   
 
   
-    
-
   
 
 </div>
@@ -430,59 +505,11 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 
 
 
-  
 
 
 
 
 
-
-
-
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="/project/wukong-app-dev/">
-    Project
-  </a>
-  
-
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="/project/fpd-calibration/">
-    Project
-  </a>
-  
-
-
-
-
-
-
-
-
-
-
-
-</div>
 
 
   
@@ -492,7 +519,7 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 
   <div class="article-container">
 
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       
 
 <p><a href="https://vtk.org/" target="_blank">The Visualization Toolkit (VTK)</a> is the 3D engine behind many scientific visualization applications, such as <a href="https://docs.enthought.com/mayavi/mayavi/" target="_blank">MayaVi</a>, the popular scientific data visualizer for Python. It is also the cornerstone of several advanced 3D-enabled biomedical applications, such as <a href="https://www.paraview.org/" target="_blank">ParaView</a> and <a href="https://www.slicer.org/" target="_blank">3D Slicer</a>.</p>
@@ -529,9 +556,8 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 <li><p>CMake</p>
 
 <pre><code class="language-console">&gt; choco install cmake
-</code></pre>
+</code></pre></li>
 
-<ul>
 <li><p><a href="https://visualstudio.microsoft.com/downloads/" target="_blank">Download</a> and install Visual Studio. This is for the Microsoft Visual C++ compilers, so be sure to select them during installation.</p></li>
 
 <li><p><a href="https://vtk.org/download/" target="_blank">VTK source code</a></p></li>
@@ -570,27 +596,27 @@ Perhaps lesser known, VTK provides a built-in high performance DICOM parser, bec
 <p>For building these extra parts, you will need additional packages:</p>
 
 <ul>
-<li><p>For building documentation</p></li>
+<li><p>For building documentation</p>
 
+<ul>
 <li><p><a href="http://www.doxygen.nl/download.html" target="_blank">Doxygen</a></p></li>
 
-<li><p>Perl</p></li>
-</ul>
+<li><p>Perl</p>
 
-<pre><code class="language-console">  &gt; choco install strawberryperl
-</code></pre>
+<pre><code class="language-console">&gt; choco install strawberryperl
+</code></pre></li>
+
+<li><p>Graphviz. This package contains the dot executable required by Doxygen.</p>
+
+<pre><code class="language-console">&gt; choco install graphviz
+</code></pre></li>
+</ul></li>
+
+<li><p>For building testing</p>
 
 <ul>
-<li>Graphviz. This package contains the dot executable required by Doxygen.</li>
-</ul>
-
-<pre><code class="language-console">  &gt; choco install graphviz
-</code></pre>
-
-<ul>
-<li><p>For building testing</p></li>
-
-<li><p><a href="https://vtk.org/download/" target="_blank">VTKData and VTKLargeData</a>. These are data and baseline images for VTK regression testing and other VTK examples. In principle, these two data sets should have been put together. They are separated into two batches because of long cvs checkout times. If you wish to test on VTKLargeData, you will need to check the <strong>VTK_USE_LARGE_DATA</strong> variable in CMake.</p></li>
+<li><a href="https://vtk.org/download/" target="_blank">VTKData and VTKLargeData</a>. These are data and baseline images for VTK regression testing and other VTK examples. In principle, these two data sets should have been put together. They are separated into two batches because of long cvs checkout times. If you wish to test on VTKLargeData, you will need to check the <strong>VTK_USE_LARGE_DATA</strong> variable in CMake.</li>
+</ul></li>
 </ul>
 
 <h3 id="vtkdata">VTKData</h3>
@@ -616,12 +642,14 @@ The net result is that a VTK build tree has test data files that are actually sy
 <img src="/img/compile-vtk-8.2.0/building.png" alt="building" />
 This may take a while. The compiled DLLs will be located in &ldquo;C:\toolchain\VTK\VTK-8.2.0-bld\bin\RelWithDebInfo\&ldquo;.</p>
 
-<p>Build the <strong>INSTALL</strong> project. This installs VTK into the directory as set in the <strong>CMAKE_INSTALL_PREFIX</strong> CMake variable.</p></li>
-</ul>
+<p>Build the <strong>INSTALL</strong> project. This installs VTK into the directory as set in the <strong>CMAKE_INSTALL_PREFIX</strong> CMake variable.</p>
 
     </div>
 
     
+
+
+
 
 
 <div class="article-tags">
@@ -632,183 +660,203 @@ This may take a while. The compiled DLLs will be located in &ldquo;C:\toolchain\
 
 
 
-
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
     
-      
-
-
-
-
-
-
-  
-  
-    
-  
-  
-
-
-
-
-
-
-
-<div class="media author-card" itemscope itemtype="http://schema.org/Person">
-  
-  
-  <img class="portrait mr-3" src="/author/admin/avatar_hub104af7c7a52216c07b1245a152719e3_270795_250x250_fill_lanczos_center_2.png" itemprop="image" alt="Avatar">
-  
-
-  <div class="media-body">
-    <h5 class="card-title" itemprop="name"><a href="/authors/admin">Zheng Zhang</a></h5>
-    <h6 class="card-subtitle">Research Fellow</h6>
-    
-    <ul class="network-icon" aria-hidden="true">
-      
       
       
       
         
       
       
-      
-      
-      
-        
       
       <li>
-        <a itemprop="sameAs" href="/#contact" >
+        <a href="https://twitter.com/intent/tweet?url=https://zhangresearch.org/post/compile-vtk-8.2.0/&amp;text=Compile%20VTK%208.2.0%20with%20Visual%20Studio%202019%20under%20Windows%2010" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://zhangresearch.org/post/compile-vtk-8.2.0/&amp;t=Compile%20VTK%208.2.0%20with%20Visual%20Studio%202019%20under%20Windows%2010" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Compile%20VTK%208.2.0%20with%20Visual%20Studio%202019%20under%20Windows%2010&amp;body=https://zhangresearch.org/post/compile-vtk-8.2.0/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
-      
-      
-      
-      
-        
-      
-      
+    
       
       
       
         
+      
+      
       
       <li>
-        <a itemprop="sameAs" href="https://www.linkedin.com/in/zhengzhang89" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/shareArticle?url=https://zhangresearch.org/post/compile-vtk-8.2.0/&amp;title=Compile%20VTK%208.2.0%20with%20Visual%20Studio%202019%20under%20Windows%2010" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
-      
-      
-      
-      
-        
-      
-      
+    
       
       
       
         
+      
+      
       
       <li>
-        <a itemprop="sameAs" href="https://github.com/0xzz" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i>
+        <a href="https://web.whatsapp.com/send?text=Compile%20VTK%208.2.0%20with%20Visual%20Studio%202019%20under%20Windows%2010%20https://zhangresearch.org/post/compile-vtk-8.2.0/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
         </a>
       </li>
+    
       
-    </ul>
-  </div>
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://zhangresearch.org/post/compile-vtk-8.2.0/&amp;title=Compile%20VTK%208.2.0%20with%20Visual%20Studio%202019%20under%20Windows%2010" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
 </div>
 
 
 
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
       
-      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hub104af7c7a52216c07b1245a152719e3_270795_250x250_fill_lanczos_center_2.png" alt="Avatar">
     
 
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://zhangresearch.org/">Zheng Zhang</a></h5>
+      <h6 class="card-subtitle">Research Fellow</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
     
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/zhengzhang89" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/0xzz" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
 
-    
-<section id="comments">
-  <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "zhangresearch" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
 
 
 
   </div>
 </article>
 
-<div class="container">
-  <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    &copy; 2015-2019, Zheng Zhang, Ph.D. &middot; 
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-</div>
-
-
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
+      
 
     
     
@@ -816,15 +864,18 @@ This may take a while. The compiled DLLs will be located in &ldquo;C:\toolchain\
     
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
         
       
 
@@ -834,9 +885,7 @@ This may take a while. The compiled DLLs will be located in &ldquo;C:\toolchain\
 
     
     
-
-    
-    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
     
 
     
@@ -846,13 +895,13 @@ This may take a while. The compiled DLLs will be located in &ldquo;C:\toolchain\
 
     
     
+    
+    
+    
+    
     <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'results': "results found",
-        'no_results': "No results found"
-      };
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
       const content_type = {
         'post': "Posts",
         'project': "Projects",
@@ -891,6 +940,11 @@ This may take a while. The compiled DLLs will be located in &ldquo;C:\toolchain\
 
     
     
+
+    
+    
+    
+    
     
     
     
@@ -901,8 +955,68 @@ This may take a while. The compiled DLLs will be located in &ldquo;C:\toolchain\
     
     
     
-    <script src="/js/academic.min.9c79bd36ad5b530cf8825d78d951c339.js"></script>
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
 
-  </body>
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2015–2019, Zheng Zhang &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
-

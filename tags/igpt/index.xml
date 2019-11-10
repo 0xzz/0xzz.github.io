@@ -1,33 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>IGPT on Zheng Zhang</title>
+    <title>IGPT | Zheng Zhang</title>
     <link>https://zhangresearch.org/tags/igpt/</link>
-    <description>Recent content in IGPT on Zheng Zhang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Wed, 15 May 2019 00:00:00 -0500</lastBuildDate>
-    
-	<atom:link href="https://zhangresearch.org/tags/igpt/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://zhangresearch.org/tags/igpt/index.xml" rel="self" type="application/rss+xml" />
+    <description>IGPT</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zhangresearch.org/img/icon.png</url>
+      <title>IGPT</title>
+      <link>https://zhangresearch.org/tags/igpt/</link>
+    </image>
     
     <item>
-      <title>IGPT Software Development</title>
-      <link>https://zhangresearch.org/project/wukong-app-dev/</link>
-      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://zhangresearch.org/project/wukong-app-dev/</guid>
-      <description>As an essential component of our image-guided proton therapy (IGPT) practice, I am developing a clinical computer vision application (Code name: WuKong) for visual guidance and tumor tracking during motion-managed treatments, based on high speed acquisition and real time processing of fluoroscopic frames. Being fully DICOM-aware, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure for medical data transfer as well as HIPAA-compliant cloud storage, and provides a user-friendly graphical interface.</description>
+      <title>A Windows GUI application for real-time image guidance during motion- managed proton beam therapy</title>
+      <link>https://zhangresearch.org/publication/conference-paper/wukong-spie/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/publication/conference-paper/wukong-spie/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+
+&lt;!-- Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/). --&gt;
+</description>
     </item>
     
     <item>
-      <title>Flat-panel Detector (FPD) Calibration</title>
+      <title>Image-guidance Software Development</title>
+      <link>https://zhangresearch.org/project/wukong-app-dev/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
+      <guid>https://zhangresearch.org/project/wukong-app-dev/</guid>
+      <description>&lt;p&gt;In order to facilitate better clinical workflow and provide added assurance during motion-managed proton therapy delivery, I am developing a clinical computer vision application (Code name: Wukong), based on high-speed acquisition and real-time processing of fluoroscopic frames. Built as a fully DICOM-aware utility, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure, both for treatment plan information communication and permanent data archival on a HIPAA-compliant cloud storage.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Flat-panel Detector Calibration</title>
       <link>https://zhangresearch.org/project/fpd-calibration/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 -0600</pubDate>
-      
       <guid>https://zhangresearch.org/project/fpd-calibration/</guid>
-      <description>Correct delivery of proton treatment is predicated upon accurate spatial calibration. While the in-room position of imaging X-ray sources and flat-panel detectors are engineered to a given specification, their actual positions may deviate from the specification by small errors. This project delivers an iterative algorithmic calibration routine to correct such errors, i.e. translation, rotation and non-affine distortions. It may also be used as an independent QA test of vendor&amp;rsquo;s calibrations.</description>
+      <description>&lt;p&gt;Accurate delivery of radiotherapy dose is predicated upon careful motion management. This is particularly true for spot-scanned proton therapy. Our proton therapy vendor developed a stereoscopic kV X-ray image-guidance platform for this purpose. While it is engineered to a given specification, the actual positions of the components (e.g. flat-panel detectors) may contain small errors. This project delivers an iterative algorithmic calibration routine to correct such errors, i.e. translation, rotation and non-affine distortions. The main motivation behind this routine is to enable high-fidelity perspective overlays of RT structure sets in our in-house clinical software. It may also be used as an independent QA of vendor&amp;rsquo;s own calibrations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/project-fpd-calibration/header.png&#34; alt=&#34;Schematic 3D-2D calibration routine&#34; /&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

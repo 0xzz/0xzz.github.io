@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Liang Wang on Zheng Zhang</title>
+    <title>Liang Wang | Zheng Zhang</title>
     <link>https://zhangresearch.org/authors/liang-wang/</link>
-    <description>Recent content in Liang Wang on Zheng Zhang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Tue, 19 Mar 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://zhangresearch.org/authors/liang-wang/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://zhangresearch.org/authors/liang-wang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Liang Wang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Tue, 19 Mar 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zhangresearch.org/img/icon.png</url>
+      <title>Liang Wang</title>
+      <link>https://zhangresearch.org/authors/liang-wang/</link>
+    </image>
     
     <item>
       <title>Photocrosslinking-induced phase separation in evaporative solvents: formation of skin layers and microspheres</title>
-      <link>https://zhangresearch.org/publication/photocrosslinking-induced-phase-separation/</link>
+      <link>https://zhangresearch.org/publication/journal-article/photocrosslinking-induced-phase-separation/</link>
       <pubDate>Tue, 19 Mar 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/photocrosslinking-induced-phase-separation/</guid>
+      <guid>https://zhangresearch.org/publication/journal-article/photocrosslinking-induced-phase-separation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Influence of Substrate Confinement on the Phase-Correlation in the Capillary Breakup of Arrays of Patterned Polymer Stripes</title>
-      <link>https://zhangresearch.org/publication/influence-of-substrate-confinement/</link>
+      <link>https://zhangresearch.org/publication/journal-article/influence-of-substrate-confinement/</link>
       <pubDate>Fri, 08 Feb 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/publication/influence-of-substrate-confinement/</guid>
-      <description></description>
+      <guid>https://zhangresearch.org/publication/journal-article/influence-of-substrate-confinement/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/influence-of-substrate-confinement/toc.png&#34; alt=&#34;TOC&#34; /&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

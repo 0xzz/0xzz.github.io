@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Zheng Zhang</title>
+    <title>Tags | Zheng Zhang</title>
     <link>https://zhangresearch.org/tags/</link>
-    <description>Recent content in Tags on Zheng Zhang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Wed, 29 May 2019 00:23:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://zhangresearch.org/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://zhangresearch.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://zhangresearch.org/img/icon.png</url>
+      <title>Tags</title>
+      <link>https://zhangresearch.org/tags/</link>
+    </image>
     
     <item>
-      <title></title>
-      <link>https://zhangresearch.org/tags/</link>
-      <pubDate>Wed, 29 May 2019 00:23:00 +0000</pubDate>
-      
-      <guid>https://zhangresearch.org/tags/</guid>
+      <title>IGPT</title>
+      <link>https://zhangresearch.org/tags/igpt/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/tags/igpt/</guid>
       <description></description>
     </item>
     
@@ -25,26 +24,7 @@
       <title>VTK</title>
       <link>https://zhangresearch.org/tags/vtk/</link>
       <pubDate>Wed, 29 May 2019 00:23:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/tags/vtk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IGPT</title>
-      <link>https://zhangresearch.org/tags/igpt/</link>
-      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://zhangresearch.org/tags/igpt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IGRT</title>
-      <link>https://zhangresearch.org/tags/igrt/</link>
-      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://zhangresearch.org/tags/igrt/</guid>
       <description></description>
     </item>
     
@@ -52,7 +32,6 @@
       <title>DICOM</title>
       <link>https://zhangresearch.org/tags/dicom/</link>
       <pubDate>Mon, 15 Apr 2019 00:19:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/tags/dicom/</guid>
       <description></description>
     </item>
@@ -61,26 +40,7 @@
       <title>numpy</title>
       <link>https://zhangresearch.org/tags/numpy/</link>
       <pubDate>Mon, 15 Apr 2019 00:19:00 +0000</pubDate>
-      
       <guid>https://zhangresearch.org/tags/numpy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>X-ray scattering</title>
-      <link>https://zhangresearch.org/tags/x-ray-scattering/</link>
-      <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
-      
-      <guid>https://zhangresearch.org/tags/x-ray-scattering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>XPCS</title>
-      <link>https://zhangresearch.org/tags/xpcs/</link>
-      <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
-      
-      <guid>https://zhangresearch.org/tags/xpcs/</guid>
       <description></description>
     </item>
     
@@ -88,8 +48,15 @@
       <title>nanoconfinement</title>
       <link>https://zhangresearch.org/tags/nanoconfinement/</link>
       <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
-      
       <guid>https://zhangresearch.org/tags/nanoconfinement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>X-ray scattering</title>
+      <link>https://zhangresearch.org/tags/x-ray-scattering/</link>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
+      <guid>https://zhangresearch.org/tags/x-ray-scattering/</guid>
       <description></description>
     </item>
     

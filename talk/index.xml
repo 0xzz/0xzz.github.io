@@ -1,32 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent &amp; Upcoming Talks on Zheng Zhang</title>
+    <title>Recent &amp; Upcoming Talks | Zheng Zhang</title>
     <link>https://zhangresearch.org/talk/</link>
-    <description>Recent content in Recent &amp; Upcoming Talks on Zheng Zhang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2015-{year}, Zheng Zhang, Ph.D.</copyright>
-    <lastBuildDate>Wed, 28 Feb 2018 16:00:00 -0600</lastBuildDate>
-    
-	<atom:link href="https://zhangresearch.org/talk/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Nanoconfined Polymer Electrolytes for Rechargeable Thin Film Lithium-ion Batteries</title>
-      <link>https://zhangresearch.org/talk/2018grc/</link>
-      <pubDate>Wed, 28 Feb 2018 16:00:00 -0600</pubDate>
-      
-      <guid>https://zhangresearch.org/talk/2018grc/</guid>
-      <description></description>
-    </item>
+      <atom:link href="https://zhangresearch.org/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Thu, 26 Sep 2019 12:10:00 -0500</lastBuildDate>
+    <image>
+      <url>https://zhangresearch.org/img/icon.png</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://zhangresearch.org/talk/</link>
+    </image>
     
     <item>
-      <title>Nanoconfined Polymer Electrolytes for Rechargeable Thin Film Lithium-ion Batteries</title>
-      <link>https://zhangresearch.org/talk/2017acs/</link>
-      <pubDate>Mon, 03 Apr 2017 14:50:00 -0500</pubDate>
-      
-      <guid>https://zhangresearch.org/talk/2017acs/</guid>
+      <title>An in-house Windows GUI application for fluoroscopy-based 4D image guidance in proton beam therapy</title>
+      <link>https://zhangresearch.org/talk/2019ground_rounds/</link>
+      <pubDate>Thu, 26 Sep 2019 12:10:00 -0500</pubDate>
+      <guid>https://zhangresearch.org/talk/2019ground_rounds/</guid>
       <description></description>
     </item>
     
