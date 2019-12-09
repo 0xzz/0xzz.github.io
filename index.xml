@@ -36,6 +36,14 @@
     </item>
     
     <item>
+      <title>Real-time image guidance for proton therapy with stereoscopic kV x-ray fluoroscopy</title>
+      <link>https://zhangresearch.org/talk/2019therapists_ce/</link>
+      <pubDate>Wed, 11 Dec 2019 12:00:00 -0600</pubDate>
+      <guid>https://zhangresearch.org/talk/2019therapists_ce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>An in-house Windows GUI application for fluoroscopy-based 4D image guidance in proton beam therapy</title>
       <link>https://zhangresearch.org/talk/2019ground_rounds/</link>
       <pubDate>Thu, 26 Sep 2019 12:10:00 -0500</pubDate>
@@ -442,7 +450,7 @@ mask[fill_row_coords, fill_col_coords] = True
       <link>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</link>
       <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
       <guid>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</guid>
-      <description>&lt;p&gt;We probe the nanoscale viscosity and molecular structure of confined polymer electrolytes (SPE) inside rigid nanovolumes, using X-ray photon correlation spectroscopy (XPCS) and grazing incidence X-ray scattering (GIWAXS), respectively. We show that gold nanoparticle as Brownian swimmers can be used to probe the nanoscale viscosity of a confined polymer melt, and that the effective viscosity is substantially different than in bulk. Our experiments take advantage of recent instrumental improvements at the Coheren Hard X-ray Scattering Beamline (CHX) at the National Synchrotron Light Source II (NSLS-II), which have yielded improved coherence, and extended beam stability.&lt;/p&gt;
+      <description>&lt;p&gt;We probe the nanoscale viscosity and molecular structure of confined polymer electrolytes inside rigid nanovolumes, using X-ray photon correlation spectroscopy (XPCS) and grazing incidence X-ray scattering (GIWAXS), respectively. We show that gold nanoparticle as Brownian swimmers can be used to probe the nanoscale viscosity of a confined polymer melt, and that the effective viscosity is substantially different than in bulk. Our experiments take advantage of recent instrumental improvements at the Coheren Hard X-ray Scattering Beamline (CHX) at the National Synchrotron Light Source II (NSLS-II), which have yielded improved coherence, and extended beam stability.&lt;/p&gt;
 </description>
     </item>
     
