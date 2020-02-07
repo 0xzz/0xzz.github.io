@@ -5,7 +5,7 @@
     <link>https://zhangresearch.org/</link>
       <atom:link href="https://zhangresearch.org/index.xml" rel="self" type="application/rss+xml" />
     <description>Zheng Zhang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2020, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zhangresearch.org/img/icon.png</url>
       <title>Zheng Zhang</title>
@@ -33,6 +33,14 @@
 
 &lt;!-- Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/). --&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Real-time image guidance for proton therapy with stereoscopic kV x-ray fluoroscopy</title>
+      <link>https://zhangresearch.org/talk/2019therapists_ce/</link>
+      <pubDate>Wed, 11 Dec 2019 12:00:00 -0600</pubDate>
+      <guid>https://zhangresearch.org/talk/2019therapists_ce/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -442,7 +450,7 @@ mask[fill_row_coords, fill_col_coords] = True
       <link>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</link>
       <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
       <guid>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</guid>
-      <description>&lt;p&gt;We probe the nanoscale viscosity and molecular structure of confined polymer electrolytes (SPE) inside rigid nanovolumes, using X-ray photon correlation spectroscopy (XPCS) and grazing incidence X-ray scattering (GIWAXS), respectively. We show that gold nanoparticle as Brownian swimmers can be used to probe the nanoscale viscosity of a confined polymer melt, and that the effective viscosity is substantially different than in bulk. Our experiments take advantage of recent instrumental improvements at the Coheren Hard X-ray Scattering Beamline (CHX) at the National Synchrotron Light Source II (NSLS-II), which have yielded improved coherence, and extended beam stability.&lt;/p&gt;
+      <description>&lt;p&gt;We probe the nanoscale viscosity and molecular structure of confined polymer electrolytes inside rigid nanovolumes, using X-ray photon correlation spectroscopy (XPCS) and grazing incidence X-ray scattering (GIWAXS), respectively. We show that gold nanoparticle as Brownian swimmers can be used to probe the nanoscale viscosity of a confined polymer melt, and that the effective viscosity is substantially different than in bulk. Our experiments take advantage of recent instrumental improvements at the Coheren Hard X-ray Scattering Beamline (CHX) at the National Synchrotron Light Source II (NSLS-II), which have yielded improved coherence, and extended beam stability.&lt;/p&gt;
 </description>
     </item>
     
