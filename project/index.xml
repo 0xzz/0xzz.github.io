@@ -5,7 +5,7 @@
     <link>https://zhangresearch.org/project/</link>
       <atom:link href="https://zhangresearch.org/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2020, Zheng Zhang</copyright><lastBuildDate>Wed, 15 May 2019 00:00:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2020, Zheng Zhang</copyright><lastBuildDate>Wed, 15 May 2019 00:00:00 -0400</lastBuildDate>
     <image>
       <url>https://zhangresearch.org/img/icon.png</url>
       <title>Projects</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Image-guidance Software Development</title>
       <link>https://zhangresearch.org/project/wukong-app-dev/</link>
-      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 15 May 2019 00:00:00 -0400</pubDate>
       <guid>https://zhangresearch.org/project/wukong-app-dev/</guid>
       <description>&lt;p&gt;In order to facilitate better clinical workflow and provide added assurance during motion-managed proton therapy delivery, I am developing a clinical computer vision application (Code name: Wukong), based on high-speed acquisition and real-time processing of fluoroscopic frames. Built as a fully DICOM-aware utility, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure, both for treatment plan information communication and permanent data archival on a HIPAA-compliant cloud storage.&lt;/p&gt;
 </description>
@@ -24,7 +24,7 @@
     <item>
       <title>Flat-panel Detector Calibration</title>
       <link>https://zhangresearch.org/project/fpd-calibration/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 -0600</pubDate>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
       <guid>https://zhangresearch.org/project/fpd-calibration/</guid>
       <description>&lt;p&gt;Accurate delivery of radiotherapy dose is predicated upon careful motion management. This is particularly true for spot-scanned proton therapy. Our proton therapy vendor developed a stereoscopic kV X-ray image-guidance platform for this purpose. While it is engineered to a given specification, the actual positions of the components (e.g. flat-panel detectors) may contain small errors. This project delivers an iterative algorithmic calibration routine to correct such errors, i.e. translation, rotation and non-affine distortions. The main motivation behind this routine is to enable high-fidelity perspective overlays of RT structure sets in our in-house clinical software. It may also be used as an independent QA of vendor&amp;rsquo;s own calibrations.&lt;/p&gt;
 
@@ -35,7 +35,7 @@
     <item>
       <title>Nanoconfined polymer electrolytes</title>
       <link>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</link>
-      <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 -0500</pubDate>
       <guid>https://zhangresearch.org/project/nanoconfined-polymer-electrolytes/</guid>
       <description>&lt;p&gt;We probe the nanoscale viscosity and molecular structure of confined polymer electrolytes inside rigid nanovolumes, using X-ray photon correlation spectroscopy (XPCS) and grazing incidence X-ray scattering (GIWAXS), respectively. We show that gold nanoparticle as Brownian swimmers can be used to probe the nanoscale viscosity of a confined polymer melt, and that the effective viscosity is substantially different than in bulk. Our experiments take advantage of recent instrumental improvements at the Coheren Hard X-ray Scattering Beamline (CHX) at the National Synchrotron Light Source II (NSLS-II), which have yielded improved coherence, and extended beam stability.&lt;/p&gt;
 </description>

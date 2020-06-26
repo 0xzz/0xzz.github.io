@@ -38,7 +38,7 @@
     <item>
       <title>Image-guidance Software Development</title>
       <link>https://zhangresearch.org/project/wukong-app-dev/</link>
-      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 15 May 2019 00:00:00 -0400</pubDate>
       <guid>https://zhangresearch.org/project/wukong-app-dev/</guid>
       <description>&lt;p&gt;In order to facilitate better clinical workflow and provide added assurance during motion-managed proton therapy delivery, I am developing a clinical computer vision application (Code name: Wukong), based on high-speed acquisition and real-time processing of fluoroscopic frames. Built as a fully DICOM-aware utility, this .NET/C# Windows desktop application is integrated into existing treatment planning infrastructure, both for treatment plan information communication and permanent data archival on a HIPAA-compliant cloud storage.&lt;/p&gt;
 </description>
@@ -47,7 +47,7 @@
     <item>
       <title>Flat-panel Detector Calibration</title>
       <link>https://zhangresearch.org/project/fpd-calibration/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 -0600</pubDate>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
       <guid>https://zhangresearch.org/project/fpd-calibration/</guid>
       <description>&lt;p&gt;Accurate delivery of radiotherapy dose is predicated upon careful motion management. This is particularly true for spot-scanned proton therapy. Our proton therapy vendor developed a stereoscopic kV X-ray image-guidance platform for this purpose. While it is engineered to a given specification, the actual positions of the components (e.g. flat-panel detectors) may contain small errors. This project delivers an iterative algorithmic calibration routine to correct such errors, i.e. translation, rotation and non-affine distortions. The main motivation behind this routine is to enable high-fidelity perspective overlays of RT structure sets in our in-house clinical software. It may also be used as an independent QA of vendor&amp;rsquo;s own calibrations.&lt;/p&gt;
 
