@@ -36,6 +36,22 @@
     </item>
     
     <item>
+      <title>Automated data backup to HIPAA-compliant institutional network share using robocopy</title>
+      <link>https://zhangresearch.org/post/powershell-backup-script/</link>
+      <pubDate>Sat, 12 Oct 2019 00:19:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/post/powershell-backup-script/</guid>
+      <description>&lt;p&gt;Protecting patient information is of utmost importance to a hospital, not only because of regulatory mandate, but also because it is the right thing to do. For this reason, consumer grade cloud storage (e.g. Dropbox, OneDrive etc.) is typically not allowed on a hospital network-connected device. Business solutions such as Office 365 SharePoint, OneDrive for Business etc. sometimes may only be authorized to store non-patient business files, depending on institutional policy.&lt;/p&gt;
+
+&lt;p&gt;In such cases, robocopy to the provisioned account-specific domain home on the intranet makes a lot of sense. I store the command line below in a .ps1 PowerShell script, and create a task in &lt;strong&gt;Task Scheduler&lt;/strong&gt; to be run every midnight.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;ROBOCOPY C:\Workspace \\INTRANET\UserHome\Backup\Workspace /DCOPY:DA /MT /MIR /FFT /Z /XA:SH /R:0 /TEE /XJD
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This script only update new or updated files to the network share.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Nanoscale viscosity of confined polyethylene oxide</title>
       <link>https://zhangresearch.org/publication/journal-article/nanoscale-viscosity/</link>
       <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
@@ -49,6 +65,364 @@
       <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/publication/journal-article/nanoconfinement-and-salt/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Compile VTK 8.2.0 with Visual Studio 2019</title>
+      <link>https://zhangresearch.org/post/compile-vtk-8.2.0/</link>
+      <pubDate>Wed, 29 May 2019 00:23:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/post/compile-vtk-8.2.0/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://vtk.org/&#34; target=&#34;_blank&#34;&gt;The Visualization Toolkit (VTK)&lt;/a&gt; is the 3D engine behind many scientific visualization applications, such as &lt;a href=&#34;https://docs.enthought.com/mayavi/mayavi/&#34; target=&#34;_blank&#34;&gt;MayaVi&lt;/a&gt;, the popular scientific data visualizer for Python. It is also the cornerstone of several advanced 3D-enabled biomedical applications, such as &lt;a href=&#34;https://www.paraview.org/&#34; target=&#34;_blank&#34;&gt;ParaView&lt;/a&gt; and &lt;a href=&#34;https://www.slicer.org/&#34; target=&#34;_blank&#34;&gt;3D Slicer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Perhaps lesser known, VTK provides a built-in &lt;a href=&#34;https://pyscience.wordpress.com/2014/09/08/dicom-in-python-importing-medical-image-data-into-numpy-with-pydicom-and-vtk/&#34; target=&#34;_blank&#34;&gt;high performance DICOM parser&lt;/a&gt;, because of its deep roots within the biomedical community. For my own clinical project, I have recently started learning and using VTK. I found its learning curve to be somewhat steep for a beginner, mostly due to the scarcity of up-to-date tutorials. These are my notes on compiling VTK 8.2.0 from source under Windows 10 after trial-and-error and copious amount of googling, for future reference; I hope they can help you save some time, if you happen to be in the same shoes.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-obtain-vtk&#34;&gt;How to obtain VTK?&lt;/h2&gt;
+
+&lt;p&gt;VTK is written in C++. The easiest approach that I found to obtain pre-compiled binaries is through PyPI. &lt;a href=&#34;http://prabhuramachandran.blogspot.com/2018/01/vtk-810-wheels-for-all-platforms-on-pypi.html&#34; target=&#34;_blank&#34;&gt;VTK wheels for all major platforms are available&lt;/a&gt;. On Windows, pip downloads pre-compiled DLLs into the &amp;ldquo;site-packages\vtk&amp;rdquo; directory of your Python distribution.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; pip install vtk
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can call methods within these DLLs through the Python bindings.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import vtk
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The Python bindings expose the VTK function signatures, but there are no equivalent C/C++ header files in this PIP-installed VTK directory. To build against VTK using C++, it&amp;rsquo;s better to compile directly from source code, which is available at &lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;vtk.org&lt;/a&gt; under BSD license.&lt;/p&gt;
+
+&lt;h2 id=&#34;where-to-find-the-most-up-to-date-compiling-building-guide&#34;&gt;Where to find the most up-to-date compiling/building guide?&lt;/h2&gt;
+
+&lt;p&gt;VTK is under active development by &lt;a href=&#34;https://www.kitware.com/&#34; target=&#34;_blank&#34;&gt;Kitware, Inc&lt;/a&gt;. This means that if you google &amp;ldquo;compile vtk&amp;rdquo; like I did, you will likely end up with obsolete tutorials. In fact, by the time you saw this blog post, it has probably become outdated in many ways.&lt;/p&gt;
+
+&lt;p&gt;I found that the best guide for building the latest release is directly hosted on VTK&amp;rsquo;s development GitLab repository: &lt;a href=&#34;https://gitlab.kitware.com/vtk/vtk/blob/master/Documentation/dev/build_windows_vs.md&#34; target=&#34;_blank&#34;&gt;build_windows_vs.md&lt;/a&gt;. I assume this document gets the maintainers&amp;rsquo; first attention whenever something is changed between releases.&lt;/p&gt;
+
+&lt;p&gt;In addition, the &lt;a href=&#34;https://vtk.org/Wiki/VTK&#34; target=&#34;_blank&#34;&gt;VTK Wiki&lt;/a&gt; contains lots of useful information. There is also the &lt;a href=&#34;http://www.vtk.org/mailing-lists/&#34; target=&#34;_blank&#34;&gt;VTK Mailing List&lt;/a&gt; if you&amp;rsquo;d like to reach out to the VTK community directly.&lt;/p&gt;
+
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://chocolatey.org/install&#34; target=&#34;_blank&#34;&gt;Chocolatey&lt;/a&gt; to help manage packages.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CMake&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; choco install cmake
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://visualstudio.microsoft.com/downloads/&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and install Visual Studio. This is for the Microsoft Visual C++ compilers, so be sure to select them during installation.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;VTK source code&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;generate-visual-studio-project-using-cmake&#34;&gt;Generate Visual Studio project using CMake&lt;/h2&gt;
+
+&lt;p&gt;I put all of my dev tools under the same directory (C:\toolchain). Extract VTK code source to &amp;ldquo;C:/toolchain/VTK/VTK-8.2.0-src&amp;rdquo;. Set the &amp;ldquo;Where to build the binaries&amp;rdquo; blank to &amp;ldquo;C:/toolchain/VTK/VTK-8.2.0-bld&amp;rdquo;. It is preferable to put the build directory &lt;em&gt;outside&lt;/em&gt; the source directory.&lt;/p&gt;
+
+&lt;p&gt;Click &amp;ldquo;Configure&amp;rdquo; to have CMake sort out the compilation variables. CMake will first prompt you to choose the generator.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/compile-vtk-8.2.0/generator.png&#34; alt=&#34;generator&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;compilation-variables&#34;&gt;Compilation variables&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;CMAKE_INSTALL_PREFIX&lt;/strong&gt;: This is rather important, as it sets the installation path of your compiled binaries. I changed the default path to a non-privileged location (C:/toolchain/VTK/VTK-8.2.0) so as to avoid dealing with permissions. While it is okay not to &amp;ldquo;install&amp;rdquo; VTK after building it - you can simply reference the build directory - the installation process extracts the &amp;ldquo;essence&amp;rdquo; of the built VTK files (.h, .lib, .dll, etc.) into an independent directory, and modifies the system environment variables for your convenience.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;BUILD_SHARED_LIBS&lt;/strong&gt;: Check to build DLLs. Otherwise, only static libraries (.lib) will be generated.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;CMAKE_CXX_MP_FLAG&lt;/strong&gt;: Check to support multi-core processors.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;BUILD_TESTING&lt;/strong&gt;: Check to build testing cases.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;BUILD_EXAMPLES&lt;/strong&gt;: Check to build examples.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;BUILD_DOCUMENTATION&lt;/strong&gt;: Check to build documentation.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If you are building VTK for use with Java, Python, MFC or Qt, you will need to check relevant compilation variables. I do not need those, so I skipped them.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;BUILD_DOCUMENTATION is not really necessary, because it&amp;rsquo;s available for &lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;download&lt;/a&gt; (vtkDocHtml). It takes a long time to build the documentation and needs extra dev packages to support the compilation. I was mainly curious to see if there are any differences between my build vs the downloaded one.&lt;/p&gt;
+
+&lt;p&gt;Several tutorials that I read recommend unchecking BUILD_TESTING, BUILD_EXAMPLES to save compilation time, because these examples tend to take even more time to compile than the core part of the VTK library. I figured that sample codes can be tremendously helpful for a beginner, so I decided to build them anyway.&lt;/p&gt;
+
+&lt;p&gt;For building these extra parts, you will need additional packages:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;For building documentation&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.doxygen.nl/download.html&#34; target=&#34;_blank&#34;&gt;Doxygen&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Perl&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; choco install strawberryperl
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Graphviz. This package contains the dot executable required by Doxygen.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-console&#34;&gt;&amp;gt; choco install graphviz
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For building testing&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://vtk.org/download/&#34; target=&#34;_blank&#34;&gt;VTKData and VTKLargeData&lt;/a&gt;. These are data and baseline images for VTK regression testing and other VTK examples. In principle, these two data sets should have been put together. They are separated into two batches because of long cvs checkout times. If you wish to test on VTKLargeData, you will need to check the &lt;strong&gt;VTK_USE_LARGE_DATA&lt;/strong&gt; variable in CMake.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vtkdata&#34;&gt;VTKData&lt;/h3&gt;
+
+&lt;p&gt;Older tutorials instructed me to set the &lt;strong&gt;VTK_DATA_ROOT&lt;/strong&gt; for building examples. This variable is nowhere to be found in the current release. As it turns out, the VTK maintainers made some changes to the structure of the test data. You will now only need to extract the &amp;ldquo;.ExternalData&amp;rdquo; folder directly into the source directory (C:/toolchain/VTK/VTK-8.2.0-src/.ExternalData) and CMake will automatically download everything.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;On Tuesday, September 12, 2017 9:32 AM, &lt;a href=&#34;https://vtk.org/pipermail/vtkusers/2017-September/099670.html&#34; target=&#34;_blank&#34;&gt;David E DeMarle &lt;dave.demarle at kitware.com&gt; wrote&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;We changed the structure of regression test data in 6.1 to allow developers to make proposed changes to code and data concurrently and ensure that the continuous integration test machines do not fail when they run new tests on old data.
+The net result is that a VTK build tree has test data files that are actually symbolic links to the md5 files which live elsewhere. You can generally open and use the symbolic links exactly as you would a normal data file. If you turn on testing in your build, cmake will try to download each one of the files. Alternatively you can untar the source and data packages for a release in the same directory and the default build setup will use them and avoid downloading anything else.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;compiling&#34;&gt;Compiling&lt;/h2&gt;
+
+&lt;p&gt;Click &amp;ldquo;Configure&amp;rdquo; every time you change any variables. It may take a few times. Correct all errors and make sure there are no reds, as seen below:
+&lt;img src=&#34;https://zhangresearch.org/img/compile-vtk-8.2.0/cmake-variables.png&#34; alt=&#34;cmake-variables&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then click &amp;ldquo;Generate&amp;rdquo; to create the Visual Studio solution file, and then click &amp;ldquo;Open Project&amp;rdquo;. This will launch Visual Studio. Set the Build Configuration to &amp;ldquo;RelWithDebInfo&amp;rdquo;.
+&lt;img src=&#34;https://zhangresearch.org/img/compile-vtk-8.2.0/build-configuration.png&#34; alt=&#34;build-configuration&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Build (&amp;ldquo;Build &amp;ndash;&amp;gt; Build Solution&amp;rdquo;) the &lt;strong&gt;ALL_BUILD&lt;/strong&gt; project first, which is the default when Visual Studio is launched.
+&lt;img src=&#34;https://zhangresearch.org/img/compile-vtk-8.2.0/building.png&#34; alt=&#34;building&#34; /&gt;
+This may take a while. The compiled DLLs will be located in &amp;ldquo;C:\toolchain\VTK\VTK-8.2.0-bld\bin\RelWithDebInfo\&amp;ldquo;.&lt;/p&gt;
+
+&lt;p&gt;Build the &lt;strong&gt;INSTALL&lt;/strong&gt; project. This installs VTK into the directory as set in the &lt;strong&gt;CMAKE_INSTALL_PREFIX&lt;/strong&gt; CMake variable.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modify multiple elements of a Numpy ndarray with ravel_multi_index</title>
+      <link>https://zhangresearch.org/post/numpy-unravel-index/</link>
+      <pubDate>Mon, 15 Apr 2019 00:19:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/post/numpy-unravel-index/</guid>
+      <description>
+
+&lt;h2 id=&#34;indexing-a-multi-dimensional-numpy-array&#34;&gt;Indexing a multi-dimensional Numpy array&lt;/h2&gt;
+
+&lt;p&gt;Accessing a multi-dimensional Numpy array by indices is useful for many tasks, such as &lt;a href=&#34;parse-dicom-rtstruct-into-binary-masks&#34; target=&#34;_blank&#34;&gt;parsing the contours in a DICOM-RTSTRUCT file&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As a simple example, we are given a 5 x 6 array &lt;em&gt;arr&lt;/em&gt;, and a list of the coordinates of 3 points &lt;em&gt;coords&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; import numpy as np
+&amp;gt;&amp;gt;&amp;gt; arr = np.arange(30).reshape(5,6)
+&amp;gt;&amp;gt;&amp;gt; coords = np.array([[0, 1], [3, 4], [3, 2]])
+&amp;gt;&amp;gt;&amp;gt; arr
+array([[ 0,  1,  2,  3,  4,  5],
+       [ 6,  7,  8,  9, 10, 11],
+       [12, 13, 14, 15, 16, 17],
+       [18, 19, 20, 21, 22, 23],
+       [24, 25, 26, 27, 28, 29]])       
+&amp;gt;&amp;gt;&amp;gt; coords
+array([[0, 1],
+       [3, 4],
+       [3, 2]])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To obtain the values of the targeted pixels as a list [arr[0,1], arr[3,4], arr[3,2]], that is [1, 22, 20], it is tempting to write &amp;ldquo;arr[coords]&amp;ldquo;. But this is incorrect.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; arr[coords]
+array([[[ 0,  1,  2,  3,  4,  5],
+        [ 6,  7,  8,  9, 10, 11]],
+
+       [[18, 19, 20, 21, 22, 23],
+        [24, 25, 26, 27, 28, 29]],
+
+       [[18, 19, 20, 21, 22, 23],
+        [12, 13, 14, 15, 16, 17]]])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Using a list of indices like this is correct in MATLAB, but not in Numpy. Why?&lt;/p&gt;
+
+&lt;h2 id=&#34;fancy-indexing&#34;&gt;Fancy indexing&lt;/h2&gt;
+
+&lt;p&gt;Passing an &lt;em&gt;array&lt;/em&gt; of indices to access multiple elements at once is referred to as &lt;a href=&#34;https://jakevdp.github.io/PythonDataScienceHandbook/02.07-fancy-indexing.html&#34; target=&#34;_blank&#34;&gt;Fancy Indexing&lt;/a&gt; in Numpy.&lt;/p&gt;
+
+&lt;p&gt;The most important rule to remember is that:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;The (broadcasted) shape of the index array determines that of the output array.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; coords.shape
+(3, 2)
+&amp;gt;&amp;gt;&amp;gt; arr[coords].shape
+(3, 2, 6)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Fancy indexing is basically a way to avoid writing Python loops, by having numpy do it internally for you with its more efficient, lower-level loops.&lt;/p&gt;
+
+&lt;p&gt;In this case, arr[coords] is actually sampling the &lt;strong&gt;rows&lt;/strong&gt; rather than the elements. Conceptually, we get:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;array([[arr[0], arr[1]],
+       [arr[3], arr[4]],
+       [arr[3], arr[2]]])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;array([[0th row, 1st row],
+       [3rd row, 4th row],
+       [3rd row, 2nd row]])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The correct way is to first obtain both the column and row indices as two lists (1D arrays), and then pass them to arr for fancy indexing.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; rows = coords[:,0]
+&amp;gt;&amp;gt;&amp;gt; cols = coords[:,1]
+&amp;gt;&amp;gt;&amp;gt; arr[rows, cols]
+array([ 1, 22, 20])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;numpy-unravel-index&#34;&gt;numpy.unravel_index&lt;/h2&gt;
+
+&lt;p&gt;Another approach would be to access the multi-dimensional array as a 1D array.&lt;/p&gt;
+
+&lt;p&gt;In C++, accessing a multi-dimensional array can be done as though it were a 1D array: &amp;ldquo;arr[col][row]&amp;rdquo; is equivalent to &amp;ldquo;arr[(row-1)*n_cols + col]&amp;ldquo;. This is because that multi-dimensional array is allocated on a contiguous span of memory, which is 1D. &amp;ldquo;(row-1)*n_cols + col&amp;rdquo; is basically how &lt;em&gt;deep&lt;/em&gt; you&amp;rsquo;re into this span of memory.&lt;/p&gt;
+
+&lt;p&gt;The internal data representation of a Numpy array is conceptually the same. You can use &lt;em&gt;ravel()&lt;/em&gt; to obtain a 1D view of the array without copying, and use &amp;ldquo;&lt;a href=&#34;https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.ravel_multi_index.html&#34; target=&#34;_blank&#34;&gt;ravel_multi_index()&lt;/a&gt;&amp;rdquo; to translate the indices into 1D.&lt;/p&gt;
+
+&lt;p&gt;ravel_multi_index() and &lt;a href=&#34;https://docs.scipy.org/doc/numpy/reference/generated/numpy.unravel_index.html&#34; target=&#34;_blank&#34;&gt;numpy.unravel_index()&lt;/a&gt; are inverse operations. Their MATLAB equivalents are &lt;a href=&#34;https://www.mathworks.com/help/matlab/ref/sub2ind.html&#34; target=&#34;_blank&#34;&gt;sub2ind&lt;/a&gt; and &lt;a href=&#34;https://www.mathworks.com/help/matlab/ref/ind2sub.html&#34; target=&#34;_blank&#34;&gt;ind2sub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; arr.ravel()[np.ravel_multi_index(coords.T, arr.shape)]
+array([ 1, 22, 20])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;modify-multiple-elements-at-once&#34;&gt;Modify multiple elements at once&lt;/h2&gt;
+
+&lt;p&gt;It is worth noting that, using either fancy indexing method, not only you can read out the elements, but also modify them at once.&lt;/p&gt;
+
+&lt;p&gt;This is particularly useful if you need to parse the discrete contour points into a 2D map like below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/numpy-unravel-index/contour.png&#34; alt=&#34;contour&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; img = np.zeros((5,6)).astype(bool)
+&amp;gt;&amp;gt;&amp;gt; img
+array([[False, False, False, False, False, False],
+       [False, False, False, False, False, False],
+       [False, False, False, False, False, False],
+       [False, False, False, False, False, False],
+       [False, False, False, False, False, False]])
+&amp;gt;&amp;gt;&amp;gt; img[rows, cols] = True
+&amp;gt;&amp;gt;&amp;gt; img
+array([[False,  True, False, False, False, False],
+       [False, False, False, False, False, False],
+       [False, False, False, False, False, False],
+       [False, False,  True, False,  True, False],
+       [False, False, False, False, False, False]])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt; img.ravel()[np.ravel_multi_index(coords.T, img.shape)] = True
+&amp;gt;&amp;gt;&amp;gt; img
+array([[False,  True, False, False, False, False],
+       [False, False, False, False, False, False],
+       [False, False, False, False, False, False],
+       [False, False,  True, False,  True, False],
+       [False, False, False, False, False, False]])
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Parse DICOM RTSTRUCT (Radiotherapy Structure Set) into binary masks using Numpy</title>
+      <link>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</link>
+      <pubDate>Sat, 09 Mar 2019 00:20:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/post/parse-dicom-rtstruct-into-binary-masks/</guid>
+      <description>
+
+&lt;h2 id=&#34;dicom-rtstruct-contour-data&#34;&gt;DICOM-RTSTRUCT Contour Data&lt;/h2&gt;
+
+&lt;p&gt;Contours drawn for radiotherapy are saved as &lt;a href=&#34;http://dicom.nema.org/dicom/2013/output/chtml/part03/sect_A.19.html&#34; target=&#34;_blank&#34;&gt;DICOM RT Structure Set&lt;/a&gt; (&amp;ldquo;RT&amp;rdquo; stands for radiotherapy.) in DICOM Standard, and usually as a single file. You can locate this file among CT or MRI data sets quite reliably, by traversing recursively through the directories and looking for MODALITY of &amp;ldquo;RTSTRUCT&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;In this modality, the contours are saved as 2D polygons slice by slice under the &lt;a href=&#34;http://dicom.nema.org/MEDICAL/dicom/2017b/output/chtml/part03/sect_C.8.8.6.html&#34; target=&#34;_blank&#34;&gt;Contour Data (3006,0050)&lt;/a&gt; tag, which species the data format as:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Sequence of (x,y,z) triplets defining a contour in the patient based coordinate system described in &lt;a href=&#34;http://dicom.nema.org/MEDICAL/dicom/2017b/output/chtml/part03/sect_C.7.6.2.html#sect_C.7.6.2.1.1&#34; target=&#34;_blank&#34;&gt;Section C.7.6.2.1.1 (mm)&lt;/a&gt;. See &lt;a href=&#34;http://dicom.nema.org/MEDICAL/dicom/2017b/output/chtml/part03/sect_C.8.8.6.html#sect_C.8.8.6.1&#34; target=&#34;_blank&#34;&gt;Section C.8.8.6.1&lt;/a&gt; and &lt;a href=&#34;http://dicom.nema.org/MEDICAL/dicom/2017b/output/chtml/part03/sect_C.8.8.6.3.html&#34; target=&#34;_blank&#34;&gt;Section C.8.8.6.3&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In other words, the perimeter of a sliced contour is specified by a sequence of discrete points.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;[x0, y0, z0, x1, y1, z1, x2, y2, z2, ... xn, yn, zn]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This can be reshaped to (n+1)*3, representing n+1 points along this perimeter.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+pixelCoords = np.array([[x0, y0, z0],
+                        [x1, y1, z1],
+                        [x2, y2, z2], 
+                        ...
+                        [xn, yn, zn],
+                        ])
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For example, the image below is a CT slice of a &lt;a href=&#34;https://github.com/SlicerRt/SlicerRtData/tree/master/eclipse-8.1.20-phantom-prostate&#34; target=&#34;_blank&#34;&gt;prostate phantom&lt;/a&gt; overlaid with these discrete points.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/parse-dicom-rtstruct-into-binary-masks/overlay.png&#34; alt=&#34;overlay&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;contours-as-discrete-points&#34;&gt;Contours as discrete points&lt;/h2&gt;
+
+&lt;p&gt;To generate a 2D representation of these discrete points, you will need to first convert the Contour Data from real word units (mm) to Pixel Coordinates (integers).&lt;/p&gt;
+
+&lt;p&gt;I usually first generate an all-false boolean 2D array&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+arr = np.zeros(shape).astype(bool)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then change those Contour Data pixels to True using fancy indexing.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;cols = pixelCoords[:,0]
+rows = pixelCoords[:,1]
+arr[cols, rows] = True # Note the order of indices (cols before rows)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Another approach would be using &lt;em&gt;&lt;a href=&#34;https://docs.scipy.org/doc/numpy/reference/generated/numpy.unravel_index.html&#34; target=&#34;_blank&#34;&gt;numpy.unravel_index&lt;/a&gt;&lt;/em&gt;. I describe this method in better details in a &lt;a href=&#34;../numpy-unravel-index&#34;&gt;separate post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;contours-as-binary-mask&#34;&gt;Contours as binary mask&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/parse-dicom-rtstruct-into-binary-masks/mask.png&#34; alt=&#34;mask&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Binary masks as shown above can be useful for things like pixel-wise semantic segmentation in deep learning. To create these masks, you might attempt to treat these points as a &lt;a href=&#34;https://en.wikipedia.org/wiki/Point_cloud&#34; target=&#34;_blank&#34;&gt;point cloud&lt;/a&gt;, and calculate their &lt;a href=&#34;https://en.wikipedia.org/wiki/Alpha_shape&#34; target=&#34;_blank&#34;&gt;alpha shape&lt;/a&gt;. For concaved shapes, finding the correct parameter to draw the correct envelope can be &lt;a href=&#34;http://blog.thehumangeo.com/2014/05/12/drawing-boundaries-in-python/&#34; target=&#34;_blank&#34;&gt;tricky&lt;/a&gt;. In a field that focuses as much on reducing errors and uncertainties as Radiation Oncology, this method is simply not generic/robust enough.&lt;/p&gt;
+
+&lt;p&gt;Luckily, the DICOM-RT file exported by treatment planning systems preserve the &amp;ldquo;connectivity&amp;rdquo; between the points, that is, they are saved consecutively either clockwise or counter-clockwise.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/parse-dicom-rtstruct-into-binary-masks/clockwise.png&#34; alt=&#34;clockwise&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It turns out that the easiest approach to fill this contour is simply draw a filled polygon and cast that into a boolean 2D array.&lt;/p&gt;
+
+&lt;p&gt;You can do this with OpenCV:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import cv2
+arr = np.zeros(shape)
+poly = pixelCoords[:,:2]
+cv2.fillPoly(img=arr, pts=[poly], color=1)
+mask = img.astype(bool)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or with Scikit-image:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from skimage import draw
+vertex_col_coords = pixelCoords[:, 0]
+vertex_row_coords = pixelCoords[:, 1]
+
+fill_row_coords, fill_col_coords = draw.polygon(vertex_row_coords, vertex_col_coords, shape)
+mask = np.zeros(shape, dtype=np.bool)
+mask[fill_row_coords, fill_col_coords] = True
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zhangresearch.org/img/parse-dicom-rtstruct-into-binary-masks/filled-polygon.png&#34; alt=&#34;filled-polygon&#34; /&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
