@@ -5,7 +5,7 @@
     <link>https://zhangresearch.org/tags/vtk/</link>
       <atom:link href="https://zhangresearch.org/tags/vtk/index.xml" rel="self" type="application/rss+xml" />
     <description>VTK</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Wed, 29 May 2019 00:23:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2020, Zheng Zhang</copyright><lastBuildDate>Wed, 29 May 2019 00:23:00 +0000</lastBuildDate>
     <image>
       <url>https://zhangresearch.org/img/icon.png</url>
       <title>VTK</title>
@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</title>
+      <title>Compile VTK 8.2.0 with Visual Studio 2019</title>
       <link>https://zhangresearch.org/post/compile-vtk-8.2.0/</link>
       <pubDate>Wed, 29 May 2019 00:23:00 +0000</pubDate>
       <guid>https://zhangresearch.org/post/compile-vtk-8.2.0/</guid>

@@ -5,25 +5,12 @@
     <link>https://zhangresearch.org/authors/</link>
       <atom:link href="https://zhangresearch.org/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2020, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zhangresearch.org/img/icon.png</url>
       <title>Authors</title>
       <link>https://zhangresearch.org/authors/</link>
     </image>
-    
-    <item>
-      <title></title>
-      <link>https://zhangresearch.org/authors/admin/</link>
-      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://zhangresearch.org/authors/admin/</guid>
-      <description>&lt;p&gt;I am a research fellow with the &lt;a href=&#34;https://www.mayoclinic.org/departments-centers/radiation-oncology/&#34; target=&#34;_blank&#34;&gt;Department of Radiation Oncology&lt;/a&gt; at &lt;a href=&#34;https://www.mayoclinic.org/&#34; target=&#34;_blank&#34;&gt;Mayo Clinic&lt;/a&gt;, Rochester, Minnesota. My current work focuses on improving motion management in our proton therapy practice with real-time fluoroscopic imaging. To this end, I develop in-house clinical software, and conduct research on reliable tumor-tracking with computer vision / deep learning methods.&lt;/p&gt;
-
-&lt;p&gt;Previously, I studied nanoconfined polymer electrolytes for safer rechargeable lithium-ion batteries at &lt;a href=&#34;https://www.bnl.gov/&#34; target=&#34;_blank&#34;&gt;Brookhaven National Laboratory&lt;/a&gt;, via synchrotron X-ray scattering experiments carried out at the &lt;a href=&#34;https://www.aps.anl.gov/&#34; target=&#34;_blank&#34;&gt;Advanced Photon Source&lt;/a&gt; and the &lt;a href=&#34;https://www.bnl.gov/ps/&#34; target=&#34;_blank&#34;&gt;National Synchrotron Light Source II&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I enjoy solving scientific/quantitative problems with programming. In particular, I am fluent in Python and familiar with its scientific eco-system (i.e. NumPy, SciPy, Matplotlib, LmFit, Mayavi, scikit-image etc.). I like readable, elegant NumPy vectorization solutions, but am also comfortable with extending Python via Numba or pybind11/C++ for numerical performance boosting. For larger coding projects, I use C#/.NET (LINQ is marvelous) and strive for robustness and maintainability through good software engineering principles.&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Amanda J. Deisher</title>
@@ -79,6 +66,29 @@
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/stephen-m.-corner/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Zheng Zhang</title>
+      <link>https://zhangresearch.org/authors/zheng-zhang/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/authors/zheng-zhang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zhangresearch.org/authors/admin/</link>
+      <pubDate>Wed, 11 Dec 2019 12:00:00 -0500</pubDate>
+      <guid>https://zhangresearch.org/authors/admin/</guid>
+      <description>&lt;p&gt;I am a physics resident with the &lt;a href=&#34;https://www.xrt.upenn.edu/&#34; target=&#34;_blank&#34;&gt;Department of Radiation Oncology&lt;/a&gt; at &lt;a href=&#34;https://www.pennmedicine.org/&#34; target=&#34;_blank&#34;&gt;University of Pennsylvania Health System&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Before moving to Philadelphia, I completed a CAMPEP Accredited Postdoctoral Certificate program at &lt;a href=&#34;https://www.mayoclinic.org/departments-centers/radiation-oncology/&#34; target=&#34;_blank&#34;&gt;Mayo Clinic Radiation Oncology&lt;/a&gt;, Rochester, Minnesota. My work delivered an in-house software tool for real-time motion management during proton therapy setup and treatment. This new tool, named Wukong, provides added assurance for tumor/target localization. It has been clinically deployed at Mayo Clinic Rochester and planned for Mayo Clinic Arizona.&lt;/p&gt;
+
+&lt;p&gt;With a former educational background in polymer physics, I studied nanoconfined polymer electrolytes for safer rechargeable lithium-ion batteries at &lt;a href=&#34;https://www.bnl.gov/&#34; target=&#34;_blank&#34;&gt;Brookhaven National Laboratory&lt;/a&gt;. To that end, I performed synchrotron X-ray scattering experiments at the &lt;a href=&#34;https://www.aps.anl.gov/&#34; target=&#34;_blank&#34;&gt;Advanced Photon Source&lt;/a&gt; and the &lt;a href=&#34;https://www.bnl.gov/ps/&#34; target=&#34;_blank&#34;&gt;National Synchrotron Light Source II&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I enjoy solving scientific/quantitative problems by programming. In particular, I am fluent in Python and familiar with its scientific eco-system (i.e. NumPy, SciPy, Matplotlib, LmFit, Mayavi, scikit-image etc.). I like readable, elegant NumPy vectorization solutions, but am also comfortable with extending Python via Numba or pybind11/C++ for numerical performance boosting. For larger coding projects, I use C#/.NET (LINQ is marvelous) and strive for robustness and maintainability through good software engineering principles.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -182,14 +192,6 @@
       <link>https://zhangresearch.org/authors/yugang-zhang/</link>
       <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/authors/yugang-zhang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Zheng Zhang</title>
-      <link>https://zhangresearch.org/authors/zheng-zhang/</link>
-      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://zhangresearch.org/authors/zheng-zhang/</guid>
       <description></description>
     </item>
     

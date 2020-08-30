@@ -5,7 +5,7 @@
     <link>https://zhangresearch.org/talk/</link>
       <atom:link href="https://zhangresearch.org/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Wed, 11 Dec 2019 12:00:00 -0600</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2020, Zheng Zhang</copyright><lastBuildDate>Wed, 11 Dec 2019 12:00:00 -0500</lastBuildDate>
     <image>
       <url>https://zhangresearch.org/img/icon.png</url>
       <title>Recent &amp; Upcoming Talks</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Real-time image guidance for proton therapy with stereoscopic kV x-ray fluoroscopy</title>
       <link>https://zhangresearch.org/talk/2019therapists_ce/</link>
-      <pubDate>Wed, 11 Dec 2019 12:00:00 -0600</pubDate>
+      <pubDate>Wed, 11 Dec 2019 12:00:00 -0500</pubDate>
       <guid>https://zhangresearch.org/talk/2019therapists_ce/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
     <item>
       <title>An in-house Windows GUI application for fluoroscopy-based 4D image guidance in proton beam therapy</title>
       <link>https://zhangresearch.org/talk/2019ground_rounds/</link>
-      <pubDate>Thu, 26 Sep 2019 12:10:00 -0500</pubDate>
+      <pubDate>Thu, 26 Sep 2019 12:10:00 -0400</pubDate>
       <guid>https://zhangresearch.org/talk/2019ground_rounds/</guid>
       <description></description>
     </item>

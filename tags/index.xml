@@ -5,7 +5,7 @@
     <link>https://zhangresearch.org/tags/</link>
       <atom:link href="https://zhangresearch.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2020, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zhangresearch.org/img/icon.png</url>
       <title>Tags</title>
@@ -17,6 +17,22 @@
       <link>https://zhangresearch.org/tags/igpt/</link>
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://zhangresearch.org/tags/igpt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Backup</title>
+      <link>https://zhangresearch.org/tags/backup/</link>
+      <pubDate>Sat, 12 Oct 2019 00:19:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/tags/backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PowerShell</title>
+      <link>https://zhangresearch.org/tags/powershell/</link>
+      <pubDate>Sat, 12 Oct 2019 00:19:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/tags/powershell/</guid>
       <description></description>
     </item>
     
@@ -47,7 +63,7 @@
     <item>
       <title>nanoconfinement</title>
       <link>https://zhangresearch.org/tags/nanoconfinement/</link>
-      <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 -0500</pubDate>
       <guid>https://zhangresearch.org/tags/nanoconfinement/</guid>
       <description></description>
     </item>
@@ -55,7 +71,7 @@
     <item>
       <title>X-ray scattering</title>
       <link>https://zhangresearch.org/tags/x-ray-scattering/</link>
-      <pubDate>Sun, 25 Feb 2018 00:00:00 -0600</pubDate>
+      <pubDate>Sun, 25 Feb 2018 00:00:00 -0500</pubDate>
       <guid>https://zhangresearch.org/tags/x-ray-scattering/</guid>
       <description></description>
     </item>

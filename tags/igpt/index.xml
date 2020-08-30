@@ -5,7 +5,7 @@
     <link>https://zhangresearch.org/tags/igpt/</link>
       <atom:link href="https://zhangresearch.org/tags/igpt/index.xml" rel="self" type="application/rss+xml" />
     <description>IGPT</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2020, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zhangresearch.org/img/icon.png</url>
       <title>IGPT</title>
@@ -38,7 +38,7 @@
     <item>
       <title>Image-guidance Software Development</title>
       <link>https://zhangresearch.org/project/wukong-app-dev/</link>
-      <pubDate>Wed, 15 May 2019 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 15 May 2019 00:00:00 -0400</pubDate>
       <guid>https://zhangresearch.org/project/wukong-app-dev/</guid>
       <description>&lt;p&gt;To augment our proton facility vendor&amp;rsquo;s hardware with the capability of fluoroscopy-based motion verification and monitoring, I am developing a computer vision application (Code name: Wukong), based on high-speed acquisition and real-time processing of flat-panel detector (FPD) data streams. Built as a fully DICOM-aware utility, this .NET/C# Windows desktop application has been integrated into existing treatment planning workflow with Varian Eclipse Scripting API. It also provides an optional ability to store live-captured fluoroscopic data on a HIPAA-compliant scalable storage cloud.&lt;/p&gt;
 </description>
@@ -47,7 +47,7 @@
     <item>
       <title>Flat-panel Detector Calibration</title>
       <link>https://zhangresearch.org/project/fpd-calibration/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 -0600</pubDate>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
       <guid>https://zhangresearch.org/project/fpd-calibration/</guid>
       <description>&lt;p&gt;Accurate delivery of radiotherapy dose is predicated upon careful motion management. This is particularly true for spot-scanned proton therapy. Our proton therapy vendor developed a stereoscopic kV X-ray image-guidance platform for this purpose. While it is engineered to a given specification, the actual positions of the components (e.g. flat-panel detectors) may contain small errors. This project delivers an iterative algorithmic calibration routine to correct such errors, i.e. translation, rotation and non-affine distortions. The main motivation behind this routine is to enable high-fidelity perspective overlays of RT structure sets in our in-house clinical software. It may also be used as an independent QA of vendor&amp;rsquo;s own calibrations.&lt;/p&gt;
 

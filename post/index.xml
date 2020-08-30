@@ -5,7 +5,7 @@
     <link>https://zhangresearch.org/post/</link>
       <atom:link href="https://zhangresearch.org/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2019, Zheng Zhang</copyright><lastBuildDate>Wed, 29 May 2019 00:23:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2020, Zheng Zhang</copyright><lastBuildDate>Sat, 12 Oct 2019 00:19:00 +0000</lastBuildDate>
     <image>
       <url>https://zhangresearch.org/img/icon.png</url>
       <title>Posts</title>
@@ -13,7 +13,23 @@
     </image>
     
     <item>
-      <title>Compile VTK 8.2.0 with Visual Studio 2019 under Windows 10</title>
+      <title>Automated data backup to HIPAA-compliant institutional network share using robocopy</title>
+      <link>https://zhangresearch.org/post/powershell-backup-script/</link>
+      <pubDate>Sat, 12 Oct 2019 00:19:00 +0000</pubDate>
+      <guid>https://zhangresearch.org/post/powershell-backup-script/</guid>
+      <description>&lt;p&gt;Protecting patient information is of utmost importance to a hospital, not only because of regulatory mandate, but also because it is the right thing to do. For this reason, consumer grade cloud storage (e.g. Dropbox, OneDrive etc.) is typically not allowed on a hospital network-connected device. Business solutions such as Office 365 SharePoint, OneDrive for Business etc. sometimes may only be authorized to store non-patient business files, depending on institutional policy.&lt;/p&gt;
+
+&lt;p&gt;In such cases, robocopy to the provisioned account-specific domain home on the intranet makes a lot of sense. I store the command line below in a .ps1 PowerShell script, and create a task in &lt;strong&gt;Task Scheduler&lt;/strong&gt; to be run every midnight.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;ROBOCOPY C:\Workspace \\INTRANET\UserHome\Backup\Workspace /DCOPY:DA /MT /MIR /FFT /Z /XA:SH /R:0 /TEE /XJD
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This script only update new or updated files to the network share.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Compile VTK 8.2.0 with Visual Studio 2019</title>
       <link>https://zhangresearch.org/post/compile-vtk-8.2.0/</link>
       <pubDate>Wed, 29 May 2019 00:23:00 +0000</pubDate>
       <guid>https://zhangresearch.org/post/compile-vtk-8.2.0/</guid>
