@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zheng Zhang</title>
+    <title>Zheng Zhang, Ph.D.</title>
     <link>https://zhangresearch.org/</link>
       <atom:link href="https://zhangresearch.org/index.xml" rel="self" type="application/rss+xml" />
-    <description>Zheng Zhang</description>
+    <description>Zheng Zhang, Ph.D.</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2015–2020, Zheng Zhang</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://zhangresearch.org/img/icon.png</url>
-      <title>Zheng Zhang</title>
+      <title>Zheng Zhang, Ph.D.</title>
       <link>https://zhangresearch.org/</link>
     </image>
     
